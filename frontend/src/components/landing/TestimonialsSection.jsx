@@ -290,7 +290,7 @@ const TestimonialsSection = () => {
                 
                 {/* Quote */}
                 <blockquote className="border-l-2 border-[#e8a032] pl-4 py-2 mb-6 italic text-zinc-400">
-                  "{selectedTestimonial.quote}"
+                  &ldquo;{selectedTestimonial.quote}&rdquo;
                 </blockquote>
                 
                 {/* Results */}
