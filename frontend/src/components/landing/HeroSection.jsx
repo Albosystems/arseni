@@ -11,17 +11,16 @@ const HeroSection = () => {
         {/* Dark base */}
         <div className="absolute inset-0 bg-black" />
         
-        {/* Arseni image - positioned right side on desktop, centered on mobile */}
-        <div className="absolute inset-0 lg:left-1/3">
+        {/* Arseni image - positioned right side on desktop */}
+        <div className="absolute right-0 top-0 bottom-0 w-full lg:w-2/3">
           <img 
-            src={coachData.image}
+            src="https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a8688373aa683065fa_HJPG8201_Original.webp"
             alt="Arseni"
-            className="w-full h-full object-cover object-top opacity-30 lg:opacity-40"
+            className="w-full h-full object-cover object-center opacity-40 lg:opacity-50"
           />
           {/* Gradient overlays for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/60" />
         </div>
       </div>
       
