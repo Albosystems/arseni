@@ -287,3 +287,27 @@ export const footerData = {
   ],
   copyright: "© 2025 Primezeit System. Alle Rechte vorbehalten."
 };
+
+export const marqueeData = {
+  row1: [
+    "15 Kilo runter, Zigarette weg – und Muay-Thai-Kampf gewonnen.",
+    "Testosteronwert +40% – ohne Chemie, nur durch System.",
+    "Ich kann endlich wieder durchschlafen.",
+    "Mehr Fokus, mehr Energie – schon nach wenigen Wochen.",
+    "Das erste Coaching, das nicht nur was verspricht – sondern wirklich wirkt.",
+  ],
+  row2: [
+    "Brain Fog verschwunden – endlich wieder klar im Kopf.",
+    "Mitten im Unternehmerstress – trotzdem körperlich besser als je zuvor.",
+    "Keine Crash-Diät. Kein Hungern. Trotzdem Sixpack in Sicht.",
+    "Ich war ständig gereizt – heute bin ich fokussiert, ruhig und klar.",
+    "Hormone endlich im Griff – fühl mich wie neu.",
+  ],
+  row3: [
+    "Mehr Energie am Morgen – das hatte ich seit Jahren nicht.",
+    "Schichtarbeit + Familie + Transformation = machbar.",
+    "Bauchumfang kleiner, Arme & Brust größer.",
+    "Schlafqualität verbessert – Regeneration auf neuem Level.",
+    "Blutdruck stabilisiert – ohne Medikamente.",
+  ]
+};
