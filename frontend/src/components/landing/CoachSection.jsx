@@ -69,7 +69,7 @@ const CoachSection = () => {
                 {coachData.bio}
               </p>
               <p className="text-white font-medium italic text-lg">
-                "{coachData.approach}"
+                &ldquo;{coachData.approach}&rdquo;
               </p>
             </div>
 
