@@ -280,7 +280,7 @@ const TestimonialsSection = () => {
                 
                 {/* Headline */}
                 <h3 className="text-lg font-semibold text-[#00c6ff] mb-4">
-                  "{selectedTestimonial.headline}"
+                  &ldquo;{selectedTestimonial.headline}&rdquo;
                 </h3>
                 
                 {/* Full Story */}
