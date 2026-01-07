@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import { Button } from '../ui/button';
-import { heroData, siteConfig, coachData } from '../../data/mock';
+import { heroData, siteConfig } from '../../data/mock';
 
 const HeroSection = () => {
   return (
