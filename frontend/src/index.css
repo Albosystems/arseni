@@ -50,22 +50,40 @@ html {
   color: #fff;
 }
 
-/* Marquee animation */
+/* Marquee animations */
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
 
-.animate-marquee:hover {
+.animate-marquee-reverse {
+  animation: marquee-reverse 35s linear infinite;
+}
+
+/* Pause on hover for accessibility */
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
   animation-play-state: paused;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee, 
+  .animate-marquee-reverse {
+    animation: none;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* Focus visible styles */
