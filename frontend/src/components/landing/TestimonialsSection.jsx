@@ -175,7 +175,7 @@ const TestimonialsSection = () => {
                             </div>
                             
                             <h3 className="text-lg font-bold text-white mb-2">
-                              "{testimonial.headline}"
+                              &ldquo;{testimonial.headline}&rdquo;
                             </h3>
                             <p className="text-zinc-300 leading-relaxed mb-4 line-clamp-3">
                               {testimonial.fullStory}
