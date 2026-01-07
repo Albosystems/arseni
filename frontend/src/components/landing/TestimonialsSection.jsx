@@ -127,12 +127,12 @@ const TestimonialsSection = () => {
 
                           {/* Headline */}
                           <h3 className="text-lg lg:text-xl font-bold text-white mb-3">
-                            "{testimonial.headline}"
+                            &ldquo;{testimonial.headline}&rdquo;
                           </h3>
 
                           {/* Quote */}
                           <p className="text-zinc-300 leading-relaxed mb-4 italic line-clamp-3">
-                            "{testimonial.quote}"
+                            &ldquo;{testimonial.quote}&rdquo;
                           </p>
 
                           {/* Results Tags */}
