@@ -1,17 +1,33 @@
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import { Button } from '../ui/button';
-import { heroData, siteConfig } from '../../data/mock';
+import { heroData, siteConfig, coachData } from '../../data/mock';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 py-20 lg:py-32">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-zinc-950" />
+    <section className="relative min-h-screen flex flex-col justify-center px-6 py-20 lg:py-32 overflow-hidden">
+      {/* Background with Arseni image */}
+      <div className="absolute inset-0">
+        {/* Dark base */}
+        <div className="absolute inset-0 bg-black" />
+        
+        {/* Arseni image - positioned right side on desktop, centered on mobile */}
+        <div className="absolute inset-0 lg:left-1/3">
+          <img 
+            src={coachData.image}
+            alt="Arseni"
+            className="w-full h-full object-cover object-top opacity-30 lg:opacity-40"
+          />
+          {/* Gradient overlays for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent" />
+        </div>
+      </div>
       
       {/* Subtle grid pattern */}
       <div 
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}
@@ -37,9 +53,9 @@ const HeroSection = () => {
       </header>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto text-center mt-20">
+      <div className="relative z-10 max-w-5xl mx-auto lg:mx-0 lg:ml-[10%] mt-20">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
           <span className="w-2 h-2 rounded-full bg-[#00c6ff] animate-pulse" />
           <span className="text-sm text-zinc-400 font-medium">{heroData.badge}</span>
         </div>
@@ -57,12 +73,12 @@ const HeroSection = () => {
         </p>
 
         {/* Description */}
-        <p className="text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg sm:text-xl text-zinc-400 max-w-xl mb-10 leading-relaxed">
           {heroData.description}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
           <Button 
             asChild
             size="lg"
@@ -84,7 +100,7 @@ const HeroSection = () => {
         </div>
 
         {/* Feature Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+        <div className="flex flex-wrap items-start gap-4 sm:gap-6">
           {heroData.features.map((feature, index) => (
             <div key={index} className="flex items-center gap-2 text-zinc-300">
               <div className="w-5 h-5 rounded-full bg-[#e8a032]/20 flex items-center justify-center">
