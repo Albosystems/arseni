@@ -15,7 +15,7 @@ const OfferSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-[#00c6ff] text-sm font-medium uppercase tracking-wider mb-4">
-            Das Angebot
+            Kein Schnickschnack
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             {offerData.title}
