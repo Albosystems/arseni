@@ -33,7 +33,7 @@ const StickyCta = () => {
           <div className="flex items-center justify-between gap-4">
             {/* Price info */}
             <div className="flex-1 min-w-0">
-              <p className="text-xs text-zinc-500 mb-1">Primezeit-System™</p>
+              <p className="text-xs text-zinc-500 mb-1">Ein System. Keine 1000 Meinungen.</p>
               <div className="flex items-baseline gap-1">
                 <span className="text-xl font-bold text-white">{offerData.price}€</span>
                 <span className="text-sm text-zinc-500">/Monat</span>
@@ -46,7 +46,7 @@ const StickyCta = () => {
               className="bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,198,255,0.3)] flex-shrink-0"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <span className="hidden sm:inline">Jetzt starten</span>
+                <span className="hidden sm:inline">Schluss mit Raten</span>
                 <span className="sm:hidden">Starten</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
