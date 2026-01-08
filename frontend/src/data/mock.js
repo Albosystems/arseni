@@ -1,4 +1,5 @@
 // Mock data for Primezeit Landing Page
+// UPDATED COPY: Targeting "Der paralysierte Performer"
 
 export const siteConfig = {
   logo: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68ea002732ea05a4ca2d37db_Logo%20Builder.png",
@@ -7,99 +8,99 @@ export const siteConfig = {
 };
 
 export const heroData = {
-  badge: "Das 1:1 High-Performance Coaching für Männer",
-  headline: "Performance auf Abruf.",
-  subheadline: "Physisch. Mental. Hormonell.",
-  description: "Mit System statt Zufall – für Männer, die ihre Biochemie, Leistung und Lebensqualität skalieren wollen.",
-  ctaText: "Jetzt starten",
-  secondaryCta: "Mehr erfahren",
+  badge: "1:1 Coaching für Männer, die endlich EIN System wollen",
+  headline: "Jeder Influencer sagt was anderes.",
+  subheadline: "Du machst nichts.",
+  description: "Du hast 1000 Tabs offen. 50 PDFs gespeichert. 100 Videos geschaut. Trotzdem weißt du nicht, was bei DIR funktioniert. Hier bekommst du EIN System. Keine Entscheidungen mehr. Hormone, Körper, Geist – ich sage dir genau, was du tust.",
+  ctaText: "Schluss mit Raten",
+  secondaryCta: "Wie es funktioniert",
   features: [
     "Monatlich kündbar",
-    "100% individuell",
-    "0% Ausreden"
+    "Ein System, keine 1000 Meinungen",
+    "Wöchentliche Kontrolle"
   ]
 };
 
 export const proofStackData = {
   stats: [
-    { value: "⌀ 43", label: "%", suffix: "Testosteron-Boost" },
-    { value: "30", label: "Min", suffix: "Zeitaufwand pro Tag" },
-    { value: "90", label: "Tage", suffix: "bis zur Transformation" },
+    { value: "⌀ 43", label: "%", suffix: "mehr Testosteron" },
+    { value: "30", label: "Min", suffix: "Training pro Tag" },
+    { value: "1", label: "System", suffix: "statt 1000 Meinungen" },
     { value: "10", label: "Plätze", suffix: "pro Monat" }
   ],
   socialProof: [
     "Unternehmer",
-    "High-Performer",
-    "Führungskräfte",
-    "Leistungssportler"
+    "Selbstständige",
+    "Angestellte mit Verantwortung",
+    "Familienväter"
   ]
 };
 
 export const targetAudienceData = {
   forYou: {
-    title: "Für dich, wenn du...",
+    title: "Das bist du:",
     items: [
-      "Bereits Leistung bringst, aber weißt: Da geht noch mehr",
-      "Dich nicht länger mit 'okay' zufriedengeben willst",
-      "Energie, Klarheit & körperliche Stärke skalieren willst",
-      "Als Unternehmer oder High-Performer gezielt optimieren willst",
-      "Bereit bist, Verantwortung für deine Transformation zu übernehmen"
+      "Du hast alle Infos – aber kein System. YouTube, Instagram, 50 PDFs. Ergebnis: Nichts umgesetzt.",
+      "Du weißt nicht, wem du vertrauen sollst. Einer sagt Keto, der andere High Carb, der dritte Fasten.",
+      "Du bist erschöpft, obwohl du 7h schläfst. Morgens gerädert, nachmittags tot.",
+      "Dein Körper wird weich. Bauch wächst, Muskeln verschwinden, Libido weg.",
+      "Du brauchst jemanden, der dir sagt: Mach DAS. Genau SO. Keine Diskussion."
     ]
   },
   notForYou: {
-    title: "Nicht für dich, wenn du...",
+    title: "Das bist du nicht:",
     items: [
-      "Nach Quick-Fixes oder Wunderpillen suchst",
-      "Nicht bereit bist, Arbeit reinzustecken",
-      "Ausreden wichtiger sind als Ergebnisse",
-      "Ein Diät-Hopper ohne echtes Commitment bist",
-      "Nur reden, aber nicht handeln willst"
+      "Du willst einen 'eigenen Weg finden' – du brauchst kein Coaching, du brauchst ein Hobby.",
+      "Du suchst Wunderpillen oder '7 Tage zum Sixpack' – geh zu Instagram.",
+      "Du willst nicht kontrolliert werden – dann wirst du wieder versagen.",
+      "Ausreden sind dir wichtiger als Ergebnisse.",
+      "Du willst labern statt machen."
     ]
   }
 };
 
 export const problemMechanismData = {
   problem: {
-    title: "Warum 08/15 scheitert",
-    subtitle: "Das Problem mit Standard-Coaching",
+    title: "Warum du immer wieder scheiterst",
+    subtitle: "Das Problem ist nicht du. Das Problem ist das System.",
     points: [
       {
-        title: "Niedriges Testosteron",
-        description: "Keine Power, kein Antrieb – und niemand sagt dir warum"
+        title: "Informations-Paralyse",
+        description: "Influencer A sagt Keto. B sagt Carbs. C sagt Fasten. Du machst GAR NICHTS, weil du nicht weißt, was richtig ist."
       },
       {
-        title: "Hormone außer Kontrolle",
-        description: "Östradiol, Prolaktin, Cortisol – ein Chaos, das dich ausbremst"
+        title: "Standard-Coaching ignoriert das Wesentliche",
+        description: "08/15 Coach: Makros + Training = fertig. Aber deine Hormone, dein Schlaf, dein Stress? Wird ignoriert. Darum null Progress."
       },
       {
-        title: "Plateau im Training",
-        description: "Jahrelang dabei, aber keine echten Resultate"
+        title: "Keine Accountability",
+        description: "Du versuchst es alleine. Supplements gekauft, falsche Dosis. Diät angefangen, nach 2 Wochen abgebrochen. Keiner kontrolliert dich."
       },
       {
-        title: "Chronische Müdigkeit",
-        description: "Schlechter Schlaf, keine Erholung – egal was du versuchst"
+        title: "Du weißt nicht, was bei DIR funktioniert",
+        description: "Jeder Körper ist anders. Was beim YouTube-Typen klappt, funktioniert bei dir vielleicht nicht. Du brauchst ein individuelles System."
       }
     ]
   },
   solution: {
     title: "Was Primezeit anders macht",
-    subtitle: "Das Primezeit-System™",
+    subtitle: "Nicht besser – ANDERS.",
     points: [
       {
-        title: "Testosteron-Boost",
-        description: "Mehr Energie, Drive & Männlichkeit – messbar und spürbar"
+        title: "EIN System, keine 1000 Meinungen",
+        description: "Ich sage dir genau, was du tust. Du machst es. Kopf ausschalten. System folgen. Keine Entscheidungen mehr."
       },
       {
-        title: "Hormone in Balance",
-        description: "Präzise Optimierung aller relevanten Marker"
+        title: "Hormone steuern = Körper funktioniert",
+        description: "Testosteron hoch, Cortisol runter, Schilddrüse rein. So funktioniert Biologie. Nicht Motivation, sondern Biochemie."
       },
       {
-        title: "Athletischer Körper",
-        description: "Fett runter, Muskeln sichtbar – nachhaltig"
+        title: "Wöchentliche Kontrolle – du KANNST nicht versagen",
+        description: "Ich kontrolliere jede Woche. Wenn du aus der Spur kommst, bringe ich dich zurück. Du bist nicht alleine."
       },
       {
-        title: "Tiefe Erholung",
-        description: "Erholsamer Schlaf, klarer Kopf – jeden Tag"
+        title: "Individuell auf DEINE Daten",
+        description: "Kein Copy-Paste-Plan. Basiert auf deinem Körper, deinem Alltag, deinen Werten. Was bei DIR funktioniert."
       }
     ]
   }
@@ -109,172 +110,179 @@ export const testimonialsData = [
   {
     id: 1,
     name: "Besmir",
-    role: "Unternehmer & Trader",
+    role: "Unternehmer, 2 Firmen",
     imageBefore: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68e90cec20dff9b72168107b_Bodybuilder%20Man.webp",
     imageAfter: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68f2249fe48059d8a851ad09_testimonial%202.webp",
-    headline: "15 kg leichter, hormonell im Hoch, Muay-Thai-Kampf gewonnen",
-    quote: "Ich fühle mich wie in meinen besten 20ern – nur klarer im Kopf.",
+    headline: "15 kg runter. Zigarette weg. Muay-Thai-Kampf gewonnen.",
+    quote: "Ich hatte alle Infos. Wusste theoretisch alles über Ernährung. Trotzdem: Übergewicht, Raucher, Energie im Keller. Arseni hat mir nicht noch mehr Infos gegeben – er hat mir gesagt, was ich MACHEN soll. Jeden Tag. Ohne Diskussion.",
     results: [
-      "15 kg abgenommen",
-      "Mit dem Rauchen aufgehört",
-      "Blutdruck stabilisiert",
-      "Muay-Thai-Kampf gewonnen"
+      "15 kg in 3 Monaten",
+      "Rauchfrei nach 20 Jahren",
+      "Blutdruck normalisiert",
+      "Muay-Thai Kampf gewonnen"
     ],
-    fullStory: "Besmir ist ein erfolgreicher Unternehmer, der mit Voclain und Innoversity zwei erfolgreiche Unternehmen aufgebaut hat – doch sein Körper blieb dabei auf der Strecke. Über Jahre sammelten sich Stress, Gewicht und schlechte Gewohnheiten. Im Primetime-System™ haben wir den Schalter umgelegt. In nur drei Monaten hat Besmir 15 kg abgenommen, seinen Blutdruck stabilisiert – und obwohl er jahrzehntelang geraucht hatte, komplett mit dem Rauchen aufgehört."
+    fullStory: "Ich bin Unternehmer. Voclain, Innoversity – zwei Firmen aufgebaut. Aber mein Körper? Komplett vernachlässigt. Jahrelang. Ich wusste ALLES über Fitness. YouTube, Podcasts, Bücher. Trotzdem: 15kg Übergewicht, Kettenraucher, nachmittags tot. Das Problem war nie das Wissen. Das Problem war: Niemand hat mir gesagt, was ICH konkret machen soll. Arseni hat das geändert. Kein 'Finde deinen Weg'. Sondern: 'Mach das. Jetzt. Ich kontrolliere Freitag.' Nach 3 Monaten: 15kg leichter. Mit dem Rauchen aufgehört (nach 20 Jahren!). Und dann in Thailand spontan zu einem Muay-Thai-Kampf angemeldet – und gewonnen. Mit 45. Das System funktioniert. Wenn du machst, was er sagt."
   },
   {
     id: 2,
     name: "Alexander",
-    role: "Fitness-Enthusiast",
+    role: "Fitness-Enthusiast, jahrelang Plateau",
     imageBefore: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68f22507ba487aafa80d8d50_Testimonial%203.webp",
     imageAfter: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68f225061cec50f7e024019b_Testimonial%204.webp",
-    headline: "Vom Stillstand zur Hochleistung",
-    quote: "Trotz jahrelangem Training endlich sichtbare Resultate.",
+    headline: "Jahrelang trainiert. Null Ergebnis. Bis ich aufgehört habe zu raten.",
+    quote: "Testosteron im Keller, Östrogen zu hoch. Kein normaler Coach hätte das gecheckt. Die haben mir gesagt: Mehr trainieren. Das Problem war nie das Training.",
     results: [
-      "Fett weg, Muskeln sichtbar",
-      "Hormone im Gleichgewicht",
-      "Energie auf Hochleistung"
+      "Testosteron verdoppelt",
+      "Sichtbare Muskeln nach Jahren Plateau",
+      "Hormone endlich in Balance",
+      "Energie den ganzen Tag"
     ],
-    fullStory: "Alexander kam mit einer katastrophalen Ausgangslage: Testosteronspiegel im Keller, Stresshormone chronisch erhöht, Östrogene außer Kontrolle. Trotz jahrelangem Training hatte er keine sichtbaren Resultate. Mit dem Primetime-System™ sind wir die Ursachen an der Wurzel angegangen – Hormone, Ernährung, Training, Regeneration."
+    fullStory: "Ich war der Typ, der ALLES probiert hat. Push-Pull-Legs. Ganzkörper. Upper-Lower. Keto. High Carb. Intermittent Fasting. Supplements für 500€/Monat. Ergebnis? Ich sah nach 5 Jahren Training aus wie nach 5 Monaten. Null Progress. Jeder Coach sagte: 'Du musst mehr trainieren' oder 'Du isst zu wenig Protein'. Bullshit. Das Problem waren meine Hormone. Testosteron im Keller, Östrogen viel zu hoch, Cortisol chronisch erhöht. Arseni hat das direkt gecheckt. Nicht geraten – gemessen. Dann ein System, das auf MEINE Werte abgestimmt war. Nicht irgendein YouTube-Plan. Heute: Testosteron fast verdoppelt. Körper, den ich nach 5 Jahren aufgegeben hatte. Und ich trainiere weniger als vorher."
   },
   {
     id: 3,
     name: "Daniel R.",
-    role: "Anlagenmechaniker & Familienvater",
+    role: "Anlagenmechaniker, Familienvater, Schichtarbeit",
     imageBefore: null,
     imageAfter: null,
-    headline: "Trotz Schichtarbeit und Familienleben: messbare Ergebnisse",
-    quote: "Wenn du committed bist, funktioniert es – Punkt.",
+    headline: "Schichtarbeit, Familie, kein Zeit-Argument mehr.",
+    quote: "Ich dachte, ich habe keine Zeit. 3 Kinder, Schichtarbeit, Führungsposition. Arseni hat mir gezeigt: Es geht nicht um Zeit. Es geht darum, das RICHTIGE zu tun.",
     results: [
-      "Fett abgebaut, Muskeln aufgebaut",
-      "Bauchumfang kleiner",
-      "Magenprobleme verschwunden"
+      "Fett runter, Muskeln rauf",
+      "Magenprobleme verschwunden",
+      "30 Min Training reichen",
+      "Funktioniert trotz Schichtarbeit"
     ],
-    fullStory: "Ich bin Familienvater, arbeite als Führungsposition im Schichtsystem und habe auch nebenberuflich viel zu tun. Trotzdem konnte ich im ersten Monat bereits Fett abbauen, Muskeln aufbauen – und das alles messbar. Die Pläne waren realistisch und haben zu meinem Alltag gepasst."
+    fullStory: "Ich bin Familienvater. Drei Kinder. Führungsposition im Schichtbetrieb. Nebenberuflich noch aktiv. Meine Ausrede war immer: 'Keine Zeit.' Arseni hat das zerlegt. Du brauchst keine 2 Stunden im Gym. Du brauchst 30 Minuten – aber die RICHTIGEN 30 Minuten. Mit dem richtigen Plan. Im ersten Monat: Fett abgebaut, Muskeln aufgebaut. Bauchumfang kleiner, Arme größer. Messbar. Nicht gefühlt. Und meine chronischen Magenprobleme? Weg. Komplett. Durch die richtige Ernährung zur richtigen Zeit. Das Zeug, das ich jahrelang ignoriert habe, weil ich dachte, ich weiß es besser."
   },
   {
     id: 4,
     name: "Alexander W.",
-    role: "Erfolgreicher Trader",
+    role: "Trader, 35",
     imageBefore: null,
     imageAfter: null,
-    headline: "Testosteronwert +40% – ohne Chemie, nur durch System",
-    quote: "Eine der besten Entscheidungen überhaupt.",
+    headline: "Testosteron +40% – ohne TRT, nur durch System.",
+    quote: "Mein Hausarzt sagte: Deine Werte sind normal für dein Alter. Arseni sagte: Normal für einen 70-Jährigen. Er hatte Recht.",
     results: [
       "Testosteron +40%",
-      "Brain Fog verschwunden",
-      "Energie & Fokus zurück"
+      "Brain Fog komplett weg",
+      "Morgens endlich wach",
+      "Keine TRT nötig"
     ],
-    fullStory: "Bevor ich ins Coaching kam, fühlte ich mich dauerhaft platt – egal wie lange ich geschlafen hatte. Im Coaching fanden wir schnell die Ursache: chronisch hoher Cortisolspiegel, zu wenig Testosteron. Schon nach zwei Monaten war mein Testosteronwert um über 40% gestiegen."
+    fullStory: "Ich bin Trader. Kopfarbeit den ganzen Tag. Aber mein Kopf hat nicht mehr mitgespielt. Brain Fog. Ständig müde. Morgens gerädert, egal wie viel ich geschlafen habe. Mein Hausarzt: 'Ihre Werte sind normal. Weniger Stress.' Danke für nichts. Arseni hat tiefer geschaut. Testosteron zu niedrig (aber 'normal' laut Referenzwerten – die sind von kranken Leuten!). Cortisol chronisch erhöht. Wir haben das System angepasst. Schlaf optimiert. Supplements im richtigen Timing. Training angepasst. Nach 8 Wochen: Testosteron +40%. Ohne TRT. Ohne Hormone von außen. Nur durch das System. Brain Fog? Weg. Ich funktioniere wieder."
   }
 ];
 
 export const processData = {
-  title: "So läuft es ab",
-  subtitle: "Dein Weg zur Transformation – Schritt für Schritt",
+  title: "So läuft das ab",
+  subtitle: "Kein Gelaber. Du weißt vorher genau, was passiert.",
   steps: [
     {
-      phase: "Onboarding",
-      title: "Dein persönlicher Standort-Scan",
-      description: "Wir analysieren deine Ausgangslage: Hormone, Ernährung, Training, Schlaf. Kein Rätselraten – nur Fakten.",
-      duration: "Tag 1-3"
+      phase: "Tag 1-3",
+      title: "Ich analysiere DICH – nicht irgendeinen Durchschnitts-Typen",
+      description: "Fragebogen zu deinem Alltag, deinem Körper, deinen bisherigen Versuchen. Optional: Blutwerte. Ich will wissen, wo DU stehst. Nicht, was YouTube sagt.",
+      duration: "Onboarding"
     },
     {
       phase: "Woche 1-2",
-      title: "System-Setup & erste Anpassungen",
-      description: "Du bekommst deinen individuellen Plan: Ernährungsstrategie, Trainingsplan, Supplement-Protokoll. Wir starten die Optimierung.",
-      duration: "14 Tage"
+      title: "Du bekommst DEIN System – und fängst sofort an",
+      description: "Trainingsplan (30 Min, 3-4x/Woche). Ernährung (auf 1g genau, passt zu deinem Alltag). Supplements (richtiges Timing, richtige Dosis). Du machst. Ich kontrolliere.",
+      duration: "System-Setup"
     },
     {
-      phase: "Laufende Betreuung",
-      title: "Kontinuierliche Optimierung",
-      description: "24/7 WhatsApp-Support, wöchentliche Check-ins, Reality-Checks. Ich bin an deiner Seite – wenn's zählt.",
-      duration: "Fortlaufend"
+      phase: "Fortlaufend",
+      title: "Wöchentliche Kontrolle – du KANNST nicht versagen",
+      description: "Jeden Freitag: Check-in. Was lief? Was nicht? Was passen wir an? Du bist nie alleine. 24/7 WhatsApp, wenn was ist. Ich bringe dich zurück auf Kurs, bevor du scheiterst.",
+      duration: "Laufende Betreuung"
     }
   ]
 };
 
 export const offerData = {
-  title: "Das Primezeit-System™",
-  subtitle: "Alles, was du brauchst – in einem System",
+  title: "Was du bekommst",
+  subtitle: "Kein Schnickschnack. Das, was funktioniert.",
   price: "297",
   currency: "€",
   period: "/Monat",
   originalValue: "1.013",
   features: [
-    { name: "Performance-Onboarding", value: "149€" },
-    { name: "Persönliche Ernährungsstrategie", value: "149€" },
-    { name: "Supplement- & Schlafoptimierung", value: "149€" },
-    { name: "Mentales Upgrade & Habit-System", value: "99€" },
-    { name: "24/7 WhatsApp-Coaching", value: "199€" },
-    { name: "Performance-Tracking & Reality-Checks", value: "119€" },
-    { name: "Individueller Athletik-Plan", value: "149€" }
+    { name: "Individueller Trainingsplan", value: "3-4x/Woche, 30 Min" },
+    { name: "Ernährungsstrategie auf 1g genau", value: "Passt zu deinem Alltag" },
+    { name: "Supplement-Protokoll", value: "Richtiges Timing, richtige Dosis" },
+    { name: "Schlaf-Optimierung", value: "Hormone brauchen Schlaf" },
+    { name: "24/7 WhatsApp-Support", value: "Frage = Antwort" },
+    { name: "Wöchentliche Check-ins", value: "Du kannst nicht versagen" },
+    { name: "Blutwerte-Analyse", value: "Optional, aber empfohlen" }
   ],
   bonuses: [
-    { name: "Monatlicher Primetime-Guide", value: "69€" },
-    { name: "Zugang zum Primetime-Channel", value: "39€" },
-    { name: "Wöchentlicher Live-Q&A-Call", value: "59€" },
-    { name: "Notion-Template & Dashboard", value: "39€" }
+    { name: "Monatlicher Primetime-Guide", value: "Neue Hacks, sofort umsetzbar" },
+    { name: "Primetime-Channel Zugang", value: "Tägliche Impulse" },
+    { name: "Wöchentlicher Live Q&A Call", value: "Direkte Strategieberatung" },
+    { name: "Notion-Template", value: "Alles auf einen Blick" }
   ],
   highlights: [
     "Monatlich kündbar",
-    "100% individuell",
+    "Kein Vertrag, keine Falle",
     "30-Tage Garantie"
   ]
 };
 
 export const coachData = {
   name: "Arseni",
-  title: "High-Performance Coach & Biohacker",
+  title: "Der Typ, der selbst durchmusste",
   image: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a84fc9d4f73fdc20a7_91008DB6-EF45-4878-BA4F-626D57B02FDD.webp",
   images: [
     "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a8688373aa683065fa_HJPG8201_Original.webp",
     "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a90cc98a6f33381130_IMG_9396.webp",
     "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a907a142c11f6bca1a_IMG_3611.webp"
   ],
-  tagline: "Vom Hormon-Crash zum High-Performer.",
-  bio: "Kein Guru. Kein Hochglanz-Coach. Sondern einer, der selbst durch musste. Ich war früher komplett aus der Spur: Zu viel Gewicht, zu wenig Energie, Hormone im Eimer. Was mir geholfen hat? Der Entschluss, mein Leben von Grund auf neu aufzubauen. Systematisch. Ganzheitlich.",
+  tagline: "Kein Guru. Kein Hochglanz-Coach. Einer, der es selbst durchgemacht hat.",
+  bio: "Ich war früher genau da, wo du jetzt bist. Übergewicht. Hormone im Eimer. Testosteron zu niedrig, Cortisol zu hoch. Jeden Morgen gerädert aufgewacht. Nachmittags tot. Ich habe ALLES probiert. YouTube-Pläne. Supplements für hunderte Euro. Crash-Diäten. Nichts hat funktioniert – weil ich geraten habe statt zu wissen.",
   credentials: [
-    "Biohacking-Ausbildung bei NextVital – staatlich geprüft",
+    "Biohacking-Ausbildung bei NextVital (staatlich geprüft)",
     "HolisticBio-Ausbildung – ganzheitliches Biohacking",
     "10+ Jahre Coaching-Erfahrung",
     "Russischer Meister im Schwimmen (Jugend)",
     "Bayerischer Meister im Kickboxen",
     "Aktiver MMA-Leistungssportler"
   ],
-  approach: "Ich will der Typ sein, den du an deiner Seite hast, wenn's ernst wird. Wenn du durchziehen willst. Wenn du Resultate willst – aber keinen Bullshit."
+  approach: "Ich bin nicht der Coach, der dir sagt, was du hören willst. Ich bin der Typ, der dir sagt, was du tun musst. Direkt. Ohne Bullshit. Wenn du das willst – lass uns arbeiten."
 };
 
 export const faqData = [
   {
-    question: "Ich habe wenig Zeit – passt das überhaupt in meinen Alltag?",
-    answer: "Das System ist für beschäftigte Männer gebaut. Die Pläne sind alltagstauglich und flexibel. Du brauchst keine 3 Stunden im Gym – du brauchst die richtigen Stellschrauben."
+    question: "Ist das wieder nur Gelaber wie bei den anderen Coaches?",
+    answer: "Verstehe ich. Du hast wahrscheinlich schon Geld für Kurse ausgegeben, die nichts gebracht haben. Der Unterschied hier: Ich gebe dir nicht noch mehr Infos. Ich gebe dir ein SYSTEM. Und ich kontrolliere jede Woche, ob du es umsetzt. Wenn nicht, bringe ich dich zurück auf Kurs. Das ist der Unterschied zwischen 'Content-Creator' und Coach."
   },
   {
-    question: "Ich habe schon so viel probiert – warum sollte das diesmal funktionieren?",
-    answer: "Weil wir nicht raten, sondern messen. Wir analysieren deine Hormone, deinen Schlaf, deine Ernährung – und optimieren gezielt. Kein 08/15-Plan, sondern ein System, das auf DICH abgestimmt ist."
+    question: "Ich habe keine Zeit für 2h Gym jeden Tag.",
+    answer: "Brauchst du nicht. 30 Minuten Training, 3-4x pro Woche. Das war's. Der Rest ist Ernährung und Lifestyle – und das integriere ich in DEINEN Alltag, nicht umgekehrt. Schichtarbeit? Kinder? Stress-Job? Alles schon gehabt. Funktioniert trotzdem."
   },
   {
-    question: "Was passiert, wenn die Plätze voll sind?",
-    answer: "Dann kommst du auf die Warteliste. Pro Monat können nur 10 Männer teilnehmen – das garantiert Qualität und persönliche Betreuung."
+    question: "Funktioniert das bei MIR? Mein Körper ist anders.",
+    answer: "Genau deshalb ist es individuell. Ich kopiere nicht einen Plan für alle. Ich schaue mir DEINE Situation an. Deine Werte. Deinen Alltag. Was bei dir funktioniert, funktioniert vielleicht nicht beim nächsten. Darum ist das hier 1:1 Coaching, kein Online-Kurs."
   },
   {
-    question: "Wie läuft der Start genau ab?",
-    answer: "Nach der Buchung bekommst du direkt Zugang. Wir starten mit dem Performance-Onboarding: Fragebogen, Analyse, erstes Strategiegespräch. Innerhalb von 48h hast du deinen ersten Plan."
+    question: "297€/Monat ist viel Geld.",
+    answer: "Stimmt. Und du hast wahrscheinlich schon mehr für Gym-Abos, Supplements und Online-Kurse ausgegeben, die nichts gebracht haben. Der Unterschied: Hier bekommst du nicht nur einen Plan – du bekommst Kontrolle. Jemanden, der dafür sorgt, dass du nicht wieder scheiterst. Was kostet dich EIN weiteres Jahr ohne Ergebnisse?"
   },
   {
-    question: "Was, wenn ich keine Ergebnisse sehe?",
-    answer: "Wenn du nach 30 Tagen keine spürbare Veränderung fühlst, bauen wir deinen Plan komplett neu auf. Und wenn es dann immer noch nicht klappt, kannst du ohne Kosten aussteigen."
+    question: "Was, wenn ich wieder versage?",
+    answer: "Kannst du nicht. Ich kontrolliere jede Woche. Wenn du aus der Spur kommst, merke ich das – und wir korrigieren. Du bist nicht alleine. Das ist der ganze Punkt. Alleine hast du es schon probiert. Hat nicht funktioniert. Diesmal hast du jemanden, der dich nicht versagen lässt."
+  },
+  {
+    question: "Brauche ich Supplements?",
+    answer: "Kommt drauf an. Nicht jeder braucht alles. Ich schaue mir deine Situation an und sage dir, was bei DIR Sinn macht. Kein Supplement-Verkauf, keine Affiliate-Links. Nur das, was funktioniert."
   }
 ];
 
 export const guaranteeData = {
-  title: "Die \"Nur wenn's knallt\" Garantie",
-  description: "Du bist hier für Resultate. Ich auch.",
+  title: "Die 'Nur wenn's knallt' Garantie",
+  description: "Du bist hier für Ergebnisse. Ich auch. Keine Phrasen.",
   points: [
-    "30 Tage: Keine Veränderung? Kompletter Plan-Neuaufbau – kostenlos.",
-    "Immer noch nichts? Du gehst – ohne Kosten, ohne Drama.",
-    "Du bleibst nur, wenn es wirklich wirkt."
+    "30 Tage dabei, keine spürbare Veränderung? Ich baue deinen Plan komplett neu auf. Kostenlos.",
+    "Immer noch nichts? Du gehst. Ohne Kosten. Ohne Drama. Ohne Kleingedrucktes.",
+    "Du bleibst nur, wenn es funktioniert. Ich will keine Kunden, die zahlen und nicht vorankommen."
   ]
 };
 
@@ -290,24 +298,24 @@ export const footerData = {
 
 export const marqueeData = {
   row1: [
-    "15 Kilo runter, Zigarette weg – und Muay-Thai-Kampf gewonnen.",
-    "Testosteronwert +40% – ohne Chemie, nur durch System.",
-    "Ich kann endlich wieder durchschlafen.",
-    "Mehr Fokus, mehr Energie – schon nach wenigen Wochen.",
-    "Das erste Coaching, das nicht nur was verspricht – sondern wirklich wirkt.",
+    "Ich hatte 50 PDFs gespeichert. Nichts umgesetzt. Bis jetzt.",
+    "Testosteron +40% – ohne TRT, nur System.",
+    "Endlich weiß ich, was ICH machen muss.",
+    "30 Min Training reichen. Wer hätte das gedacht.",
+    "Mein Hausarzt sagte 'normal'. Arseni sagte 'viel zu niedrig'. Er hatte Recht.",
   ],
   row2: [
-    "Brain Fog verschwunden – endlich wieder klar im Kopf.",
-    "Mitten im Unternehmerstress – trotzdem körperlich besser als je zuvor.",
-    "Keine Crash-Diät. Kein Hungern. Trotzdem Sixpack in Sicht.",
-    "Ich war ständig gereizt – heute bin ich fokussiert, ruhig und klar.",
-    "Hormone endlich im Griff – fühl mich wie neu.",
+    "Brain Fog weg. Ich funktioniere wieder.",
+    "Schichtarbeit + Familie + Transformation = machbar.",
+    "Kein Raten mehr. Endlich ein System.",
+    "Ich war der Typ mit 1000 Tabs. Jetzt mache ich einfach.",
+    "15 kg runter. Mit 45. Geht also doch.",
   ],
   row3: [
-    "Mehr Energie am Morgen – das hatte ich seit Jahren nicht.",
-    "Schichtarbeit + Familie + Transformation = machbar.",
-    "Bauchumfang kleiner, Arme & Brust größer.",
-    "Schlafqualität verbessert – Regeneration auf neuem Level.",
-    "Blutdruck stabilisiert – ohne Medikamente.",
+    "Jeder Influencer sagt was anderes. Arseni sagt, was ICH tun soll.",
+    "Wöchentliche Kontrolle = ich kann nicht versagen.",
+    "Hormone gecheckt. Problem gefunden. Gelöst.",
+    "Supplements im richtigen Timing. Game Changer.",
+    "Kopf ausschalten. System folgen. Funktioniert.",
   ]
 };
