@@ -22,10 +22,10 @@ export const heroData = {
 
 export const proofStackData = {
   stats: [
-    { value: "40+", label: "% Testosteron-Boost", suffix: "im Schnitt" },
-    { value: "15", label: "kg Fettverlust", suffix: "Top-Ergebnis" },
+    { value: "⌀ 43", label: "%", suffix: "Testosteron-Boost" },
+    { value: "30", label: "Min", suffix: "Zeitaufwand pro Tag" },
     { value: "90", label: "Tage", suffix: "bis zur Transformation" },
-    { value: "10", label: "Plätze/Monat", suffix: "streng limitiert" }
+    { value: "10", label: "Plätze", suffix: "pro Monat" }
   ],
   socialProof: [
     "Unternehmer",
