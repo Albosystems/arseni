@@ -9,10 +9,10 @@ const ProblemMechanismSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Warum <span className="text-zinc-500">08/15</span> scheitert
+            Warum du <span className="text-zinc-500">immer wieder</span> scheiterst
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Und was das Primezeit-System anders macht.
+            Und warum das nicht deine Schuld ist.
           </p>
         </div>
 
