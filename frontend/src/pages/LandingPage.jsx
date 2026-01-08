@@ -3,28 +3,46 @@ import HeroSection from '../components/landing/HeroSection';
 import ProofStackSection from '../components/landing/ProofStackSection';
 import TargetAudienceSection from '../components/landing/TargetAudienceSection';
 import TestimonialsSection from '../components/landing/TestimonialsSection';
+import MarqueeSection from '../components/landing/MarqueeSection';
 import ProblemMechanismSection from '../components/landing/ProblemMechanismSection';
-import ProcessSection from '../components/landing/ProcessSection';
 import OfferSection from '../components/landing/OfferSection';
+import ProcessSection from '../components/landing/ProcessSection';
 import CoachSection from '../components/landing/CoachSection';
 import FaqSection from '../components/landing/FaqSection';
 import Footer from '../components/landing/Footer';
-import MarqueeSection from '../components/landing/MarqueeSection';
 import StickyCta from '../components/landing/StickyCta';
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* 1. Hero + CTA */}
       <HeroSection />
+      {/* Mini section: Micro-Proof Stack */}
       <ProofStackSection />
+      
+      {/* 2. Für wen ist es? / Für wen nicht? */}
       <TargetAudienceSection />
+      
+      {/* 3. Case Studies / Testimonials */}
       <TestimonialsSection />
+      {/* Mini section: Marquee Proof-Chips */}
       <MarqueeSection />
+      
+      {/* 4. Problem → Mechanismus */}
       <ProblemMechanismSection />
-      <ProcessSection />
+      
+      {/* 5. Was du bekommst (Offer) */}
       <OfferSection />
+      
+      {/* 6. So läuft es ab */}
+      <ProcessSection />
+      
+      {/* 7. Über den Coach */}
       <CoachSection />
+      
+      {/* 8. FAQ + Garantie */}
       <FaqSection />
+      
       <Footer />
       <StickyCta />
     </div>
