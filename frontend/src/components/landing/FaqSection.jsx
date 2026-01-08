@@ -48,7 +48,7 @@ const FaqSection = () => {
         {/* Final CTA */}
         <div className="mt-16 text-center">
           <p className="text-zinc-400 mb-6">
-            Noch Fragen? Starte jetzt – oder schreib mir auf Instagram.
+            Noch unsicher? Dann bist du wahrscheinlich noch nicht bereit. Kein Problem.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
@@ -57,7 +57,7 @@ const FaqSection = () => {
               className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,198,255,0.3)]"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
-                Jetzt starten – 297€/Monat
+                Ich bin bereit – 297€/Monat
               </a>
             </Button>
             <Button 
@@ -67,7 +67,7 @@ const FaqSection = () => {
               className="w-full sm:w-auto border-zinc-700 text-white hover:bg-white/5 px-8 py-6 rounded-xl"
             >
               <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer">
-                Instagram kontaktieren
+                Erst mal Instagram checken
               </a>
             </Button>
           </div>
