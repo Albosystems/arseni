@@ -12,7 +12,7 @@ const CoachSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-[#e8a032] text-sm font-medium uppercase tracking-wider mb-4">
-            Dein Coach
+            Wer dahinter steckt
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             {coachData.name}
