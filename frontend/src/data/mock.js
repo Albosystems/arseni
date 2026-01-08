@@ -5,6 +5,8 @@ export const siteConfig = {
   logo: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68ea002732ea05a4ca2d37db_Logo%20Builder.png",
   stripeCheckoutUrl: "https://buy.stripe.com/eVq9AT3JZeDZb7hdSO0gw02",
   instagramUrl: "https://www.instagram.com/arsenibiohacking/",
+  whatsappNumber: "491725985145",
+  whatsappMessage: "Hi Arseni, ich komme von deiner Webseite und interessiere mich fürs Primezeit System. Ich wollte dich kontaktieren wegen:",
 };
 
 export const heroData = {
