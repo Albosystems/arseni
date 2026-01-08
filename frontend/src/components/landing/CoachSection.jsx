@@ -105,7 +105,7 @@ const CoachSection = () => {
               className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                Mit Arseni arbeiten
+                Lass uns arbeiten
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
