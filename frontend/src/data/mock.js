@@ -11,7 +11,7 @@ export const siteConfig = {
 
 export const heroData = {
   badge: "1:1 Coaching für Männer, die endlich EIN System wollen",
-  headline: "Jeder Influencer sagt was anderes.",
+  headline: "Jeder sagt was anderes.",
   subheadline: "Du machst nichts.",
   description: "Du hast 1000 Tabs offen. 50 PDFs gespeichert. 100 Videos geschaut. Trotzdem weißt du nicht, was bei DIR funktioniert. Hier bekommst du EIN System. Keine Entscheidungen mehr. Hormone, Körper, Geist – ich sage dir genau, was du tust.",
   ctaText: "Schluss mit Raten",
