@@ -16,10 +16,10 @@ const FaqSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Häufige <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">Fragen</span>
+            Deine <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">Einwände</span>
           </h2>
           <p className="text-zinc-400 text-lg">
-            Direkt & ehrlich beantwortet.
+            Ich kenne sie alle. Hier sind die Antworten.
           </p>
         </div>
 
