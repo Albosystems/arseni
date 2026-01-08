@@ -9,10 +9,10 @@ const TargetAudienceSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Ist das <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">für dich?</span>
+            Erkennst du dich <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">wieder?</span>
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Das Primezeit-System ist nicht für jeden. Finde heraus, ob es zu dir passt.
+            Lies das. Wenn du nickst, bist du hier richtig.
           </p>
         </div>
 
