@@ -367,7 +367,7 @@ export const whatsAppSectionData = {
 };
 
 export const availableSpotsData = {
-  current: 8,
+  current: 2,
   total: 10
 };
 
