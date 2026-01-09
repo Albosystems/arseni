@@ -179,7 +179,7 @@ const AGBPage = () => {
       {/* Simple Footer */}
       <footer className="py-8 px-6 border-t border-zinc-800">
         <div className="max-w-4xl mx-auto text-center text-zinc-500 text-sm">
-          <p>Copyright 2025 Primezeit System. Alle Rechte vorbehalten.</p>
+          <p>Copyright 2026 Primezeit System. Alle Rechte vorbehalten.</p>
         </div>
       </footer>
     </div>

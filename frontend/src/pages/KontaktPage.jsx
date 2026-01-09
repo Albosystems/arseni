@@ -279,7 +279,7 @@ const KontaktPage = () => {
       {/* Simple Footer */}
       <footer className="py-8 px-6 border-t border-zinc-800">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-500 text-sm">
-          <p>© 2025 Primezeit System. Alle Rechte vorbehalten.</p>
+          <p>© 2026 Primezeit System. Alle Rechte vorbehalten.</p>
           <div className="flex gap-4">
             <Link to="/impressum" className="hover:text-white transition-colors">Impressum</Link>
             <Link to="/datenschutz" className="hover:text-white transition-colors">Datenschutz</Link>
