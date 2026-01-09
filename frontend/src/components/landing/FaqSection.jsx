@@ -11,12 +11,12 @@ import { faqData, faqOutro, siteConfig } from '../../data/mock';
 
 const FaqSection = () => {
   return (
-    <section className="relative py-20 lg:py-32 px-6 bg-black">
+    <section className="relative py-20 lg:py-32 px-6 bg-[#121212]">
       <div className="max-w-3xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Deine <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">Einwände</span>
+            Deine <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">Einwände</span>
           </h2>
           <p className="text-zinc-400 text-lg">
             Du hast Fragen – völlig normal. Hier sind klare Antworten, damit du weißt, worauf du dich einlässt.
@@ -29,7 +29,7 @@ const FaqSection = () => {
             <AccordionItem 
               key={index} 
               value={`faq-${index}`}
-              className="border border-zinc-800/50 rounded-2xl bg-zinc-900/30 px-6 overflow-hidden data-[state=open]:border-[#00c6ff]/30 transition-colors"
+              className="border border-zinc-800/50 rounded-2xl bg-zinc-900/30 px-6 overflow-hidden data-[state=open]:border-[#4FC3F7]/30 transition-colors"
             >
               <AccordionTrigger className="py-5 hover:no-underline text-left">
                 <span className="text-white font-semibold pr-4">
@@ -54,7 +54,7 @@ const FaqSection = () => {
             <Button 
               asChild
               size="lg"
-              className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,198,255,0.3)]"
+              className="w-full sm:w-auto bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(79,195,247,0.3)]"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
                 {faqOutro.primaryCta}
