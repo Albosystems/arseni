@@ -12,7 +12,7 @@ const CoachSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-[#e8a032] text-sm font-medium uppercase tracking-wider mb-4">
-            Wer dahinter steckt
+            {coachData.badge}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             {coachData.name}
@@ -65,12 +65,14 @@ const CoachSection = () => {
           <div>
             {/* Bio */}
             <div className="mb-8">
-              <p className="text-zinc-300 text-lg leading-relaxed mb-4">
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
                 {coachData.bio}
               </p>
-              <p className="text-white font-medium italic text-lg">
-                &ldquo;{coachData.approach}&rdquo;
-              </p>
+              <blockquote className="border-l-2 border-[#e8a032] pl-4 py-2">
+                <p className="text-white font-medium italic text-lg">
+                  &ldquo;{coachData.approach}&rdquo;
+                </p>
+              </blockquote>
             </div>
 
             {/* Credentials */}
@@ -105,7 +107,7 @@ const CoachSection = () => {
               className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                Lass uns arbeiten
+                {coachData.ctaText}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
