@@ -77,7 +77,7 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
           <Button 
             asChild
             size="lg"
@@ -109,12 +109,6 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-xs text-zinc-500 uppercase tracking-widest">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-zinc-500 to-transparent" />
       </div>
     </section>
   );
