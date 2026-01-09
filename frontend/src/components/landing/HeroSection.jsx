@@ -6,15 +6,15 @@ import { heroData, siteConfig } from '../../data/mock';
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center px-6 py-20 lg:py-32 overflow-hidden">
-      {/* Background with Arseni image */}
+      {/* Background with new Arseni image - NO grid overlay */}
       <div className="absolute inset-0">
-        {/* Dark base - updated to #121212 */}
+        {/* Dark base */}
         <div className="absolute inset-0 bg-[#121212]" />
         
-        {/* Arseni image - positioned right side on desktop */}
+        {/* New Arseni image - positioned right side on desktop */}
         <div className="absolute right-0 top-0 bottom-0 w-full lg:w-2/3">
           <img 
-            src="https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a8688373aa683065fa_HJPG8201_Original.webp"
+            src="https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/695d8f92d5b4836e15d374ce.jpeg"
             alt="Arseni"
             className="w-full h-full object-cover object-center opacity-50 lg:opacity-60"
           />
@@ -23,14 +23,6 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-[#121212]/40" />
         </div>
       </div>
-      
-      {/* Subtle grid pattern */}
-      <div 
-        className="absolute inset-0 opacity-[0.02]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}
-      />
 
       {/* Pulse animation styles */}
       <style>{`
@@ -81,7 +73,7 @@ const HeroSection = () => {
           <span className="text-white">{heroData.headline}</span>
         </h1>
         
-        {/* Subheadline with gradient - updated colors */}
+        {/* Subheadline with gradient */}
         <p className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
           <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">
             {heroData.subheadline}
