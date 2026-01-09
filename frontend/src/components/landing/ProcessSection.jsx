@@ -1,6 +1,7 @@
 import React from 'react';
 import { ClipboardCheck, Rocket, HeartHandshake, ArrowRight } from 'lucide-react';
-import { processData } from '../../data/mock';
+import { processData, siteConfig } from '../../data/mock';
+import { Button } from '../ui/button';
 
 const ProcessSection = () => {
   const icons = [ClipboardCheck, Rocket, HeartHandshake];
@@ -11,7 +12,7 @@ const ProcessSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
           <p className="text-[#e8a032] text-sm font-medium uppercase tracking-wider mb-4">
-            Dein Weg
+            {processData.badge}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             {processData.title}
@@ -57,7 +58,7 @@ const ProcessSection = () => {
                       <h3 className="text-xl font-bold text-white mb-3">
                         {step.title}
                       </h3>
-                      <p className="text-zinc-400 leading-relaxed">
+                      <p className="text-zinc-400 leading-relaxed text-sm">
                         {step.description}
                       </p>
                     </div>
@@ -110,12 +111,19 @@ const ProcessSection = () => {
           </div>
         </div>
 
-        {/* Bottom CTA hint */}
+        {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 text-zinc-500 text-sm">
-            <span>Bereit zu starten?</span>
-            <ArrowRight className="w-4 h-4 animate-pulse" />
-          </div>
+          <p className="text-zinc-500 text-sm mb-4">{processData.footerText}</p>
+          <Button 
+            asChild
+            variant="outline"
+            className="border-zinc-700 text-white hover:bg-white/5 px-6 py-3 rounded-xl"
+          >
+            <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              Jetzt starten
+              <ArrowRight className="w-4 h-4 animate-pulse" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>
