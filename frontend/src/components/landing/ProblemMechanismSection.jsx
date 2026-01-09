@@ -63,11 +63,11 @@ const ProblemMechanismSection = () => {
             <div className="sticky top-8">
               {/* Solution Header */}
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 rounded-xl bg-[#00c6ff]/10 flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-[#00c6ff]" />
+                <div className="w-12 h-12 rounded-xl bg-[#4FC3F7]/10 flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-[#4FC3F7]" />
                 </div>
                 <div>
-                  <p className="text-[#00c6ff]/80 text-sm font-medium uppercase tracking-wider">
+                  <p className="text-[#4FC3F7]/80 text-sm font-medium uppercase tracking-wider">
                     {problemMechanismData.solution.title}
                   </p>
                   <h3 className="text-2xl font-bold text-white">
@@ -81,11 +81,11 @@ const ProblemMechanismSection = () => {
                 {problemMechanismData.solution.points.map((point, index) => (
                   <div 
                     key={index}
-                    className="p-5 rounded-2xl bg-gradient-to-r from-zinc-900/80 to-zinc-900/40 border border-zinc-800/50 hover:border-[#00c6ff]/30 transition-all duration-300 group"
+                    className="p-5 rounded-2xl bg-gradient-to-r from-zinc-900/80 to-zinc-900/40 border border-zinc-800/50 hover:border-[#4FC3F7]/30 transition-all duration-300 group"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 rounded-lg bg-[#00c6ff]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00c6ff]/20 transition-colors">
-                        <Check className="w-4 h-4 text-[#00c6ff]" />
+                      <div className="w-8 h-8 rounded-lg bg-[#4FC3F7]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#4FC3F7]/20 transition-colors">
+                        <Check className="w-4 h-4 text-[#4FC3F7]" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-white mb-1">{point.title}</h4>
@@ -103,7 +103,7 @@ const ProblemMechanismSection = () => {
         <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex-col items-center">
           <div className="w-px h-20 bg-gradient-to-b from-transparent via-zinc-700 to-transparent" />
           <div className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center my-4">
-            <Zap className="w-5 h-5 text-[#e8a032]" />
+            <Zap className="w-5 h-5 text-[#FFD700]" />
           </div>
           <div className="w-px h-20 bg-gradient-to-b from-transparent via-zinc-700 to-transparent" />
         </div>
