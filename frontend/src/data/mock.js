@@ -48,7 +48,7 @@ export const targetAudienceData = {
       "Überall hörst du etwas anderes. Du weißt nicht, wem du vertrauen sollst. Ein Influencer schwört auf Keto, der nächste sagt, dass Low Carb dein Testosteron killt, und der dritte predigt intermittent Fasten. Du stehst da mit all diesen Infos und machst am Ende gar nichts, weil du Angst hast, das Falsche zu tun.",
       "Du schläfst eigentlich lang genug, aber trotzdem fühlst du dich jeden Morgen wie gerädert. Nachmittags bist du komplett platt, und abends hast du weder Energie für deine Familie noch Lust auf Sex. Dieser ständige Brain Fog und die Müdigkeit begleiten dich den ganzen Tag.",
       "Dein Körper verändert sich – und nicht zum Besseren. Der Bauch wird weicher, Muskeln verschwinden langsam, und auch deine Libido ist nicht mehr das, was sie mal war. Du merkst, dass etwas nicht stimmt, aber du weißt nicht, wo du ansetzen sollst.",
-      "Du willst keinen weiteren Trainingsplan oder die hundertste Meinung – du brauchst jemanden, der dir klipp und klar sagt, was du tun musst und was zu dir und deiner Situation passt. Kein „probier mal das" oder „vielleicht funktioniert bei dir eher jenes". Du willst ein System, das funktioniert, und jemanden, der dich dabei begleitet und kontrolliert, damit du nicht wieder aufgibst."
+      "Du willst keinen weiteren Trainingsplan oder die hundertste Meinung – du brauchst jemanden, der dir klipp und klar sagt, was du tun musst und was zu dir und deiner Situation passt. Kein \"probier mal das\" oder \"vielleicht funktioniert bei dir eher jenes\". Du willst ein System, das funktioniert, und jemanden, der dich dabei begleitet und kontrolliert, damit du nicht wieder aufgibst."
     ]
   },
   notForYou: {
@@ -187,13 +187,13 @@ export const processData = {
     {
       phase: "Onboarding",
       title: "Ich analysiere DICH – nicht irgendeinen Durchschnitts-Typen",
-      description: "Am Anfang schauen wir uns an, wo du wirklich stehst: Alltag, Schlaf, Stress, Ernährung, Training, Beschwerden und deine bisherigen Versuche. Wenn du Blutwerte hast (oder machen willst), nutzen wir sie optional, um schneller zu sehen, was bei dir im System gerade blockiert. Ziel ist nicht, dir „noch mehr Wissen" zu geben, sondern eine saubere Ausgangslage zu schaffen, auf der wir ein System aufbauen können, das zu dir passt.",
+      description: "Am Anfang schauen wir uns an, wo du wirklich stehst: Alltag, Schlaf, Stress, Ernährung, Training, Beschwerden und deine bisherigen Versuche. Wenn du Blutwerte hast (oder machen willst), nutzen wir sie optional, um schneller zu sehen, was bei dir im System gerade blockiert. Ziel ist nicht, dir \"noch mehr Wissen\" zu geben, sondern eine saubere Ausgangslage zu schaffen, auf der wir ein System aufbauen können, das zu dir passt.",
       duration: "Tag 1–3"
     },
     {
       phase: "System-Setup",
       title: "Du bekommst DEIN System – und setzt sofort um",
-      description: "Du bekommst einen Plan, der sich an deinem Alltag orientiert – nicht umgekehrt. Training, Ernährung, Supplement-Strategie und Schlaf werden so zusammengestellt, dass du es auch wirklich durchziehst, ohne ständig Entscheidungen treffen zu müssen. Du weißt glasklar, was du tust, warum du es tust und woran wir messen, ob es funktioniert. Und wenn etwas nicht passt, wird es angepasst – nicht „durchgebissen".",
+      description: "Du bekommst einen Plan, der sich an deinem Alltag orientiert – nicht umgekehrt. Training, Ernährung, Supplement-Strategie und Schlaf werden so zusammengestellt, dass du es auch wirklich durchziehst, ohne ständig Entscheidungen treffen zu müssen. Du weißt glasklar, was du tust, warum du es tust und woran wir messen, ob es funktioniert. Und wenn etwas nicht passt, wird es angepasst – nicht \"durchgebissen\".",
       duration: "Woche 1–2"
     },
     {
@@ -248,7 +248,7 @@ export const offerData = {
     { 
       name: "24/7 WhatsApp-Support", 
       subtitle: "",
-      description: "Du hast eine Frage? Du bekommst eine Antwort – so einfach ist das. Keine Wartezeiten, kein „Ich melde mich nächste Woche". Du bist nicht alleine in diesem Prozess.",
+      description: "Du hast eine Frage? Du bekommst eine Antwort – so einfach ist das. Keine Wartezeiten, kein \"Ich melde mich nächste Woche\". Du bist nicht alleine in diesem Prozess.",
       value: "199 €" 
     },
     { 
@@ -261,7 +261,7 @@ export const offerData = {
   bonuses: [
     { 
       name: "Monatlicher Primetime-Guide (PDF/Video)", 
-      description: "„Testosteron-Boost", „Kaffee-Hacks", „Low Dopamin Days", „Schlaf wie ein Tier" – du bekommst monatlich kompaktes Know-how, das du direkt umsetzen kannst. Wissenschaftlich fundiert, praxisnah, kein Bullshit.",
+      description: "\"Testosteron-Boost\", \"Kaffee-Hacks\", \"Low Dopamin Days\", \"Schlaf wie ein Tier\" – du bekommst monatlich kompaktes Know-how, das du direkt umsetzen kannst. Wissenschaftlich fundiert, praxisnah, kein Bullshit.",
       value: "69 € / Monat" 
     },
     { 
@@ -280,7 +280,7 @@ export const offerData = {
       value: "39 € (einmalig)" 
     }
   ],
-  bonusTotal: "≈ 206 € / Monat",
+  bonusTotal: "ca. 206 € / Monat",
   bonusNote: "Du bekommst alles kostenlos dazu – nur solange Plätze verfügbar sind.",
   highlights: [
     "Jederzeit kündbar",
@@ -301,7 +301,7 @@ export const coachData = {
     "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a907a142c11f6bca1a_IMG_3611.webp"
   ],
   tagline: "Kein Guru und kein Hochglanz-Coach – sondern jemand, der es selbst durchgemacht hat.",
-  bio: "Ich war früher genau da, wo du jetzt bist: Übergewicht, keine Energie und das Gefühl, dass im Körper irgendwas nicht stimmt. Mein Testosteron war zu niedrig, mein Cortisol zu hoch, und egal wie lange ich geschlafen habe, ich bin morgens gerädert aufgewacht und nachmittags komplett eingebrochen. Ich habe alles ausprobiert, was man so ausprobiert: YouTube-Pläne, Supplements für hunderte Euro und die nächste „geniale" Crash-Diät. Funktioniert hat es trotzdem nicht – weil ich am Ende immer geraten habe, statt ein System zu haben, das wirklich zu mir passt.",
+  bio: "Ich war früher genau da, wo du jetzt bist: Übergewicht, keine Energie und das Gefühl, dass im Körper irgendwas nicht stimmt. Mein Testosteron war zu niedrig, mein Cortisol zu hoch, und egal wie lange ich geschlafen habe, ich bin morgens gerädert aufgewacht und nachmittags komplett eingebrochen. Ich habe alles ausprobiert, was man so ausprobiert: YouTube-Pläne, Supplements für hunderte Euro und die nächste \"geniale\" Crash-Diät. Funktioniert hat es trotzdem nicht – weil ich am Ende immer geraten habe, statt ein System zu haben, das wirklich zu mir passt.",
   credentials: [
     "Biohacking-Ausbildung bei NextVital (staatlich geprüft)",
     "HolisticBio-Ausbildung (ganzheitliches Biohacking)",
@@ -317,11 +317,11 @@ export const coachData = {
 export const faqData = [
   {
     question: "Ist das wieder nur Gelaber wie bei den anderen Coaches?",
-    answer: "Verstehe ich. Viele haben schon Geld für Inhalte ausgegeben, die sich gut anhören, aber im Alltag nichts verändern. Der Unterschied hier ist nicht „noch mehr Wissen", sondern ein System, das auf dich zugeschnitten ist – inklusive sauberer Umsetzung. Du bekommst klare Schritte, wir checken regelmäßig, was funktioniert und was nicht, und ich passe das so lange an, bis es in deinem Leben läuft und Ergebnisse liefert."
+    answer: "Verstehe ich. Viele haben schon Geld für Inhalte ausgegeben, die sich gut anhören, aber im Alltag nichts verändern. Der Unterschied hier ist nicht \"noch mehr Wissen\", sondern ein System, das auf dich zugeschnitten ist – inklusive sauberer Umsetzung. Du bekommst klare Schritte, wir checken regelmäßig, was funktioniert und was nicht, und ich passe das so lange an, bis es in deinem Leben läuft und Ergebnisse liefert."
   },
   {
     question: "Ich habe keine Zeit für 2h Gym jeden Tag.",
-    answer: "Musst du auch nicht. Wir bauen das Ganze so, dass es zu deinem Alltag passt – nicht umgekehrt. Entscheidend ist nicht, wie „perfekt" es auf dem Papier aussieht, sondern was du realistisch und konstant umsetzen kannst. Egal ob Schichtarbeit, Kinder oder Stress-Job: Wir wählen den kleinsten Aufwand, der die größte Wirkung bringt, und setzen genau dort an."
+    answer: "Musst du auch nicht. Wir bauen das Ganze so, dass es zu deinem Alltag passt – nicht umgekehrt. Entscheidend ist nicht, wie \"perfekt\" es auf dem Papier aussieht, sondern was du realistisch und konstant umsetzen kannst. Egal ob Schichtarbeit, Kinder oder Stress-Job: Wir wählen den kleinsten Aufwand, der die größte Wirkung bringt, und setzen genau dort an."
   },
   {
     question: "Funktioniert das bei MIR? Mein Körper ist anders.",
@@ -329,11 +329,11 @@ export const faqData = [
   },
   {
     question: "297€/Monat ist viel Geld.",
-    answer: "Ja, das ist eine Entscheidung – und die sollst du bewusst treffen. Du bezahlst hier nicht für „einen Plan", sondern dafür, dass du ein System bekommst, das zu dir passt, und dass du jemanden hast, der dich durch die Umsetzung führt und nachjustiert, wenn's hakt. Wenn du willst, kannst du es ganz nüchtern sehen: Was hat dich bisher Geld gekostet, ohne dass sich langfristig etwas geändert hat – und was wäre es dir wert, wenn es diesmal wirklich läuft?"
+    answer: "Ja, das ist eine Entscheidung – und die sollst du bewusst treffen. Du bezahlst hier nicht für \"einen Plan\", sondern dafür, dass du ein System bekommst, das zu dir passt, und dass du jemanden hast, der dich durch die Umsetzung führt und nachjustiert, wenn's hakt. Wenn du willst, kannst du es ganz nüchtern sehen: Was hat dich bisher Geld gekostet, ohne dass sich langfristig etwas geändert hat – und was wäre es dir wert, wenn es diesmal wirklich läuft?"
   },
   {
     question: "Was, wenn ich wieder versage?",
-    answer: "Dann ist das kein „Charakterproblem", sondern ein Signal, dass das System an einer Stelle noch nicht gut genug in deinen Alltag integriert ist. Genau dafür sind die Check-ins da: Wir sehen früh, wo du abrutschst, und korrigieren, bevor daraus wieder ein kompletter Abbruch wird. Du musst nicht perfekt sein – du brauchst ein System, das dich auffängt und auf Kurs hält."
+    answer: "Dann ist das kein \"Charakterproblem\", sondern ein Signal, dass das System an einer Stelle noch nicht gut genug in deinen Alltag integriert ist. Genau dafür sind die Check-ins da: Wir sehen früh, wo du abrutschst, und korrigieren, bevor daraus wieder ein kompletter Abbruch wird. Du musst nicht perfekt sein – du brauchst ein System, das dich auffängt und auf Kurs hält."
   },
   {
     question: "Brauche ich Supplements?",
@@ -348,13 +348,13 @@ export const faqOutro = {
 };
 
 export const guaranteeData = {
-  title: "Die „Nur wenn's knallt"-Garantie",
+  title: "Die \"Nur wenn's knallt\"-Garantie",
   subtitle: "Du sollst in den ersten Wochen merken, dass sich wirklich etwas bewegt. Wenn das nicht passiert, übernehmen wir das – fair, transparent und ohne Diskussion.",
   points: [
     "Wenn du nach 30 Tagen keine spürbare Veränderung hast, bauen wir dein System komplett neu auf. Das heißt: Wir schauen gemeinsam sehr konkret auf Training, Ernährung, Schlaf, Stress und Umsetzung und finden heraus, was bei dir gerade noch bremst. Danach bekommst du eine überarbeitete Version deines Systems, die besser zu deinem Alltag und deinem Körper passt – ohne Zusatzkosten.",
-    "Was „spürbare Veränderung" bedeutet, ist bei jedem Mann etwas anderes – und genau so bewerten wir es auch. Es kann zum Beispiel sein, dass du morgens leichter rauskommst, tagsüber mehr Energie hast, der Brain Fog nachlässt, du im Training wieder Leistung aufbaust oder sich Körpergefühl und Umfang sichtbar verändern. Entscheidend ist nicht, dass du „perfekt" bist, sondern dass wir eine klare Bewegung in die richtige Richtung sehen.",
+    "Was \"spürbare Veränderung\" bedeutet, ist bei jedem Mann etwas anderes – und genau so bewerten wir es auch. Es kann zum Beispiel sein, dass du morgens leichter rauskommst, tagsüber mehr Energie hast, der Brain Fog nachlässt, du im Training wieder Leistung aufbaust oder sich Körpergefühl und Umfang sichtbar verändern. Entscheidend ist nicht, dass du \"perfekt\" bist, sondern dass wir eine klare Bewegung in die richtige Richtung sehen.",
     "Und wenn es trotz Neuaufbau immer noch nicht passt, kannst du gehen. Ohne Drama, ohne Kleingedrucktes und ohne dass du dich rechtfertigen musst. Du sollst nur bleiben, wenn du wirklich merkst, dass es für dich funktioniert.",
-    "Du zahlst hier nicht dafür, „dabei zu sein", sondern dafür, voranzukommen. Wenn du Fortschritt siehst, machen wir weiter. Wenn nicht, lösen wir es sauber – so einfach ist das."
+    "Du zahlst hier nicht dafür, \"dabei zu sein\", sondern dafür, voranzukommen. Wenn du Fortschritt siehst, machen wir weiter. Wenn nicht, lösen wir es sauber – so einfach ist das."
   ]
 };
 
