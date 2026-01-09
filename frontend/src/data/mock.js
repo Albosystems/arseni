@@ -337,7 +337,7 @@ export const faqData = [
 export const faqOutro = {
   text: "Noch unsicher? Dann lass uns kurz schauen, ob das überhaupt zu dir passt.",
   primaryCta: "Ich bin bereit – 297€/Monat",
-  secondaryCta: "Erst mal mehr erfahren"
+  secondaryCta: "Schreib mir auf Instagram"
 };
 
 export const guaranteeData = {
