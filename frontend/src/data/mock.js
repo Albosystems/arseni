@@ -289,9 +289,10 @@ export const coachData = {
   title: "Der Typ, der selbst durchmusste",
   image: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a84fc9d4f73fdc20a7_91008DB6-EF45-4878-BA4F-626D57B02FDD.webp",
   images: [
-    "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a8688373aa683065fa_HJPG8201_Original.webp",
-    "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a90cc98a6f33381130_IMG_9396.webp",
-    "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a907a142c11f6bca1a_IMG_3611.webp"
+    "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/695d8f92de2c14c1874b0aae.jpeg",
+    "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/695d8f9294b57d47c4c64677.jpeg",
+    "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/695d8f923a532d202857c6f0.jpeg",
+    "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/695d8f9222afaa5870d7b33f.jpeg"
   ],
   tagline: "Kein Guru und kein Hochglanz-Coach – sondern jemand, der es selbst durchgemacht hat.",
   bio: "Ich war früher genau da, wo du jetzt bist: Übergewicht, keine Energie und das Gefühl, dass im Körper irgendwas nicht stimmt. Mein Testosteron war zu niedrig, mein Cortisol zu hoch, und egal wie lange ich geschlafen habe, ich bin morgens gerädert aufgewacht und nachmittags komplett eingebrochen. Ich habe alles ausprobiert, was man so ausprobiert: YouTube-Pläne, Supplements für hunderte Euro und die nächste \"geniale\" Crash-Diät. Funktioniert hat es trotzdem nicht – weil ich am Ende immer geraten habe, statt ein System zu haben, das wirklich zu mir passt.",
