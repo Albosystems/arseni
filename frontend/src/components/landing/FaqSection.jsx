@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Shield, Check } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -66,7 +66,8 @@ const FaqSection = () => {
               size="lg"
               className="w-full sm:w-auto border-zinc-700 text-white hover:bg-white/5 px-8 py-6 rounded-xl"
             >
-              <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer">
+              <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Instagram className="w-5 h-5" />
                 {faqOutro.secondaryCta}
               </a>
             </Button>
