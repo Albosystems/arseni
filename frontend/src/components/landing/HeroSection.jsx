@@ -116,7 +116,7 @@ const HeroSection = () => {
         </div>
 
         {/* Feature Pills - CENTERED */}
-        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           {heroData.features.map((feature, index) => (
             <div key={index} className="flex items-center gap-2 text-zinc-300">
               <div className="w-5 h-5 rounded-full bg-[#FFD700]/20 flex items-center justify-center">
