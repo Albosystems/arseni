@@ -405,10 +405,10 @@ export const dominoEffectData = {
 
 export const footerData = {
   links: [
-    { label: "Home", url: "#hero" },
-    { label: "Testimonials", url: "#testimonials" },
-    { label: "FAQ", url: "#faq" },
-    { label: "Jetzt starten", url: "#offer" }
+    { label: "Home", url: "/" },
+    { label: "Testimonials", url: "/#testimonials" },
+    { label: "FAQ", url: "/#faq" },
+    { label: "Kontakt", url: "/kontakt" }
   ],
   copyright: "© 2025 Primezeit System. Alle Rechte vorbehalten."
 };
