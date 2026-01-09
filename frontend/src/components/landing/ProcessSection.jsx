@@ -11,7 +11,7 @@ const ProcessSection = () => {
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
-          <p className="text-[#e8a032] text-sm font-medium uppercase tracking-wider mb-4">
+          <p className="text-[#FFD700] text-sm font-medium uppercase tracking-wider mb-4">
             {processData.badge}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
@@ -43,15 +43,15 @@ const ProcessSection = () => {
                   <div className={`hidden lg:flex lg:w-1/2 ${
                     isEven ? 'lg:justify-end lg:pr-12' : 'lg:order-2 lg:pl-12'
                   }`}>
-                    <div className={`max-w-md p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800/50 hover:border-[#00c6ff]/20 transition-all duration-500 ${
+                    <div className={`max-w-md p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800/50 hover:border-[#4FC3F7]/20 transition-all duration-500 ${
                       isEven ? 'text-right' : 'text-left'
                     }`}>
                       {/* Phase Badge */}
-                      <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#e8a032]/10 text-[#e8a032] text-sm font-medium mb-4 ${
+                      <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FFD700]/10 text-[#FFD700] text-sm font-medium mb-4 ${
                         isEven ? 'flex-row-reverse' : ''
                       }`}>
                         <span>{step.phase}</span>
-                        <span className="text-[#e8a032]/50">|</span>
+                        <span className="text-[#FFD700]/50">|</span>
                         <span className="text-zinc-500">{step.duration}</span>
                       </div>
 
@@ -66,7 +66,7 @@ const ProcessSection = () => {
 
                   {/* Center Icon - Desktop */}
                   <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-16 h-16 rounded-2xl bg-zinc-900 border border-zinc-700 items-center justify-center z-10">
-                    <Icon className="w-7 h-7 text-[#00c6ff]" />
+                    <Icon className="w-7 h-7 text-[#4FC3F7]" />
                   </div>
 
                   {/* Spacer - Desktop */}
@@ -80,7 +80,7 @@ const ProcessSection = () => {
                       {/* Icon */}
                       <div className="flex flex-col items-center">
                         <div className="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center">
-                          <Icon className="w-6 h-6 text-[#00c6ff]" />
+                          <Icon className="w-6 h-6 text-[#4FC3F7]" />
                         </div>
                         {index !== processData.steps.length - 1 && (
                           <div className="w-px h-full bg-zinc-800 mt-4" />
@@ -90,9 +90,9 @@ const ProcessSection = () => {
                       {/* Content */}
                       <div className="flex-1 pb-8">
                         {/* Phase Badge */}
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#e8a032]/10 text-[#e8a032] text-sm font-medium mb-3">
+                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FFD700]/10 text-[#FFD700] text-sm font-medium mb-3">
                           <span>{step.phase}</span>
-                          <span className="text-[#e8a032]/50">|</span>
+                          <span className="text-[#FFD700]/50">|</span>
                           <span className="text-zinc-500">{step.duration}</span>
                         </div>
 
