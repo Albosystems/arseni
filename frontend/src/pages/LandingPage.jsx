@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroSection from '../components/landing/HeroSection';
-import ProofStackSection from '../components/landing/ProofStackSection';
 import TargetAudienceSection from '../components/landing/TargetAudienceSection';
 import TestimonialsSection from '../components/landing/TestimonialsSection';
 import MarqueeSection from '../components/landing/MarqueeSection';
@@ -18,8 +17,6 @@ const LandingPage = () => {
     <div className="min-h-screen bg-black text-white">
       {/* 1. Hero + CTA */}
       <HeroSection />
-      {/* Mini section: Micro-Proof Stack */}
-      <ProofStackSection />
       
       {/* 2. Für wen ist es? / Für wen nicht? */}
       <TargetAudienceSection />
