@@ -185,19 +185,28 @@ const OfferSection = () => {
               {/* Scarcity with Progress Bar */}
               <div className="inline-flex flex-col items-center gap-3 px-6 py-5 rounded-2xl bg-[#FFD700]/10 border border-[#FFD700]/30 w-full max-w-md">
                 <span className="text-[#FFD700] font-bold text-lg">
-                  Nur 10 Plätze pro Monat – jederzeit kündbar
+                  Nur 10 Plätze pro Monat
                 </span>
                 
-                {/* Progress Bar */}
+                {/* Animated Progress Bar */}
                 <div className="w-full">
                   <div className="flex justify-between text-sm mb-2">
                     <span className="text-zinc-400">Aktuell verfügbar:</span>
                     <span className="text-white font-semibold">{availableSpotsData.current}/{availableSpotsData.total} Plätze</span>
                   </div>
-                  <div className="h-3 bg-zinc-800 rounded-full overflow-hidden">
+                  <div className="h-3 bg-zinc-800 rounded-full overflow-hidden relative">
                     <div 
-                      className="h-full bg-gradient-to-r from-[#FFD700] to-[#FF6B6B] rounded-full transition-all duration-1000"
+                      className="h-full bg-gradient-to-r from-[#FFD700] to-[#FF6B6B] rounded-full transition-all duration-1000 relative overflow-hidden"
                       style={{ width: `${spotsPercentage}%` }}
+                    >
+                      {/* Animated shine effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shimmer_2s_infinite]" 
+                           style={{ transform: 'skewX(-20deg)' }} />
+                    </div>
+                    {/* Pulsing glow at the end */}
+                    <div 
+                      className="absolute top-0 h-full w-2 bg-[#FF6B6B] rounded-full animate-pulse shadow-[0_0_8px_#FF6B6B,0_0_16px_#FF6B6B]"
+                      style={{ left: `calc(${spotsPercentage}% - 4px)` }}
                     />
                   </div>
                   <p className="text-xs text-zinc-500 mt-2">
@@ -205,6 +214,11 @@ const OfferSection = () => {
                   </p>
                 </div>
               </div>
+              
+              {/* Jederzeit kündbar - subtle below */}
+              <p className="text-zinc-500 text-sm mt-4">
+                Jederzeit kündbar
+              </p>
             </div>
 
             {/* CTA */}

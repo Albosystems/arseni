@@ -64,7 +64,7 @@ const DominoEffectSection = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
-            Der <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">Domino-Effekt</span>
+            Performance beginnt bei der <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">Basis</span>
           </h2>
           <p className="text-zinc-400">
             Dreh an der Basis und sieh, wie sich das Ergebnis verändert.
