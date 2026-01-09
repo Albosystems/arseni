@@ -383,24 +383,24 @@ export const footerData = {
 
 export const marqueeData = {
   row1: [
-    "Ich hatte 50 PDFs gespeichert, aber nichts davon umgesetzt – bis jetzt.",
-    "Mein Testosteron ist um 40% gestiegen – ohne TRT, nur durch das System.",
-    "Endlich weiß ich genau, was ICH machen muss – kein Raten mehr.",
-    "30 Minuten Training reichen aus – wer hätte das gedacht?",
-    "Mein Hausarzt sagte meine Werte sind normal, aber Arseni sagte sie sind viel zu niedrig – und er hatte Recht.",
+    "50 PDFs gespeichert, nichts umgesetzt – bis jetzt.",
+    "Testosteron +40% – ohne TRT.",
+    "Endlich weiß ich, was ICH machen muss.",
+    "30 Min Training reichen aus.",
+    "Meine Werte waren „normal" – Arseni sagte: viel zu niedrig.",
   ],
   row2: [
-    "Der Brain Fog ist komplett weg und ich funktioniere endlich wieder.",
-    "Schichtarbeit, Familie und Transformation – das alles ist machbar, wenn man das richtige System hat.",
-    "Kein Raten mehr, kein Ausprobieren – endlich habe ich ein System, das funktioniert.",
-    "Ich war der Typ mit 1000 offenen Tabs und null Umsetzung – jetzt mache ich einfach.",
-    "15 Kilogramm runter mit 45 Jahren – es geht also doch.",
+    "Brain Fog komplett weg.",
+    "Schichtarbeit, Familie, Transformation – machbar.",
+    "Endlich ein System, das funktioniert.",
+    "1000 offene Tabs, null Umsetzung – jetzt mache ich einfach.",
+    "15kg runter mit 45 Jahren.",
   ],
   row3: [
-    "Die wöchentliche Kontrolle sorgt dafür, dass ich gar nicht versagen kann.",
-    "Hormone gecheckt, Problem gefunden und gelöst – so einfach war das.",
-    "Supplements im richtigen Timing zu nehmen war ein absoluter Game Changer für mich.",
-    "Einfach den Kopf ausschalten, dem System folgen – und es funktioniert.",
-    "Jeder Influencer sagt was anderes, aber Arseni sagt mir genau, was ICH tun soll.",
+    "Wöchentliche Kontrolle = kein Versagen möglich.",
+    "Hormone gecheckt, Problem gelöst.",
+    "Supplements im richtigen Timing = Game Changer.",
+    "Kopf aus, System folgen – funktioniert.",
+    "Arseni sagt mir genau, was ICH tun soll.",
   ]
 };
