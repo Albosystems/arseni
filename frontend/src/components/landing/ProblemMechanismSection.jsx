@@ -12,7 +12,7 @@ const ProblemMechanismSection = () => {
             Warum du <span className="text-zinc-500">immer wieder</span> scheiterst
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Und warum das nicht deine Schuld ist.
+            {problemMechanismData.problem.subtext}
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const ProblemMechanismSection = () => {
                 </div>
                 <div>
                   <p className="text-[#00c6ff]/80 text-sm font-medium uppercase tracking-wider">
-                    Die Lösung
+                    {problemMechanismData.solution.title}
                   </p>
                   <h3 className="text-2xl font-bold text-white">
                     {problemMechanismData.solution.subtitle}
