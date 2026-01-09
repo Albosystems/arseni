@@ -410,7 +410,7 @@ export const footerData = {
     { label: "FAQ", url: "/#faq" },
     { label: "Kontakt", url: "/kontakt" }
   ],
-  copyright: "© 2025 Primezeit System. Alle Rechte vorbehalten."
+  copyright: "© 2026 Primezeit System. Alle Rechte vorbehalten."
 };
 
 export const marqueeData = {

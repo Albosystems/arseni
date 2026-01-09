@@ -22,18 +22,13 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
         <div className="flex flex-col lg:flex-row items-start justify-between gap-10 mb-10">
-          {/* Logo & Description */}
+          {/* Description & Social */}
           <div className="flex flex-col gap-4 max-w-sm">
-            <img 
-              src={siteConfig.logo}
-              alt="Primezeit"
-              className="h-10 w-auto brightness-0 invert opacity-80"
-            />
             <p className="text-zinc-500 text-sm leading-relaxed">
               1:1 Performance Coaching fur Manner, die ein komplettes System wollen - nicht noch mehr Informationen.
             </p>
             {/* Social Icons */}
-            <div className="flex items-center gap-3 mt-2">
+            <div className="flex items-center gap-3">
               <a 
                 href={siteConfig.instagramUrl}
                 target="_blank"
