@@ -49,14 +49,22 @@ const HeroSection = () => {
             alt="Primezeit" 
             className="h-10 lg:h-12 w-auto brightness-0 invert"
           />
-          <Button 
-            asChild
-            className="bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105"
-          >
-            <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
-              Jetzt starten
+          <div className="flex items-center gap-4">
+            <a 
+              href="/kontakt"
+              className="hidden sm:inline-flex text-zinc-300 hover:text-white text-sm font-medium transition-colors"
+            >
+              Kontakt
             </a>
-          </Button>
+            <Button 
+              asChild
+              className="bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105"
+            >
+              <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
+                Jetzt starten
+              </a>
+            </Button>
+          </div>
         </nav>
       </header>
 
