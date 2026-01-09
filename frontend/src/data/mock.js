@@ -200,7 +200,7 @@ export const processData = {
 
 export const offerData = {
   badge: "DAS KOMPLETTE SYSTEM",
-  title: "Was du bekommst",
+  title: "Was du hier bekommst",
   subtitle: "Alles, was du brauchst, um endlich Ergebnisse zu sehen.",
   price: "297",
   currency: "€",
