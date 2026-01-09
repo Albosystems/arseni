@@ -28,7 +28,7 @@ const ProblemMechanismSection = () => {
                 </div>
                 <div>
                   <p className="text-red-400/80 text-sm font-medium uppercase tracking-wider">
-                    Das Problem
+                    {problemMechanismData.problem.title}
                   </p>
                   <h3 className="text-2xl font-bold text-white">
                     {problemMechanismData.problem.subtitle}
