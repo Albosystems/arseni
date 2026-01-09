@@ -9,10 +9,16 @@ const TargetAudienceSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Erkennst du dich <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">wieder?</span>
+            {targetAudienceData.sectionHeadline.split(' ').map((word, i) => 
+              word === 'wieder?' ? (
+                <span key={i} className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">{word}</span>
+              ) : (
+                <span key={i}>{word} </span>
+              )
+            )}
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Lies das. Wenn du nickst, bist du hier richtig.
+            {targetAudienceData.sectionSubheadline}
           </p>
         </div>
 
@@ -29,13 +35,13 @@ const TargetAudienceSection = () => {
               </h3>
             </div>
             
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               {targetAudienceData.forYou.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-[#00c6ff]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-[#00c6ff]/10 flex items-center justify-center flex-shrink-0 mt-1">
                     <Check className="w-3 h-3 text-[#00c6ff]" />
                   </div>
-                  <span className="text-zinc-300 leading-relaxed">{item}</span>
+                  <span className="text-zinc-300 leading-relaxed text-sm lg:text-base">{item}</span>
                 </li>
               ))}
             </ul>
@@ -52,13 +58,13 @@ const TargetAudienceSection = () => {
               </h3>
             </div>
             
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               {targetAudienceData.notForYou.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-zinc-800/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-zinc-800/50 flex items-center justify-center flex-shrink-0 mt-1">
                     <X className="w-3 h-3 text-zinc-600" />
                   </div>
-                  <span className="text-zinc-500 leading-relaxed">{item}</span>
+                  <span className="text-zinc-500 leading-relaxed text-sm lg:text-base">{item}</span>
                 </li>
               ))}
             </ul>
