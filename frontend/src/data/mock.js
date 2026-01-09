@@ -13,7 +13,7 @@ export const heroData = {
   badge: "1:1 Coaching für Männer, die endlich EIN ganzes System wollen",
   headline: "Mehr Fokus. Mehr Energie. Mehr Kraft.",
   subheadline: "Schon in den ersten 30 Tagen.",
-  description: "Der typische Fitness-Coach optimiert deine Makros und gibt dir einen Trainingsplan. Aber deine Hormone? Dein Schlaf? Dein Stresslevel? Interessiert sie nicht. Genau deshalb siehst du keine Fortschritte, obwohl du dich an den Plan hältst. Hier schauen wir auf das gesamte System: Testosteron optimieren, Cortisol senken, Schilddrüse unterstützen – nicht nur Kalorien zählen.",
+  description: "Viele Coaches optimieren nur Training und Ernährung – aber ignorieren dabei das, was am Ende alles steuert: Hormone, Schlaf und Stress. Genau deshalb bleibt der Fortschritt aus, obwohl du „alles richtig" machst – hier optimieren wir das ganze System, nicht nur Kalorien.",
   ctaText: "System starten",
   secondaryCta: "Ablauf ansehen",
   features: [
@@ -23,89 +23,74 @@ export const heroData = {
   ]
 };
 
-export const proofStackData = {
-  stats: [
-    { value: "⌀ 43", label: "%", suffix: "mehr Testosteron" },
-    { value: "30", label: "Min", suffix: "Training pro Tag" },
-    { value: "1", label: "System", suffix: "statt 1000 Meinungen" },
-    { value: "10", label: "Plätze", suffix: "pro Monat" }
-  ],
-  socialProof: [
-    "Unternehmer",
-    "Selbstständige",
-    "Angestellte mit Verantwortung",
-    "Familienväter"
-  ]
-};
-
 export const targetAudienceData = {
   sectionHeadline: "Erkennst du dich wieder?",
   sectionSubheadline: "Nicht jeder Mann passt zu diesem System. Hier siehst du, ob du dazugehörst.",
   forYou: {
     title: "Das bist du:",
     items: [
-      "Du hast dir unzählige YouTube-Videos angesehen, und unzählige PDFs heruntergeladen – aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weißt, welche Information jetzt die richtige ist und wo du anfangen sollst.",
-      "Überall hörst du etwas anderes. Du weißt nicht, wem du vertrauen sollst. Ein Influencer schwört auf Keto, der nächste sagt, dass Low Carb dein Testosteron killt, und der dritte predigt intermittent Fasten. Du stehst da mit all diesen Infos und machst am Ende gar nichts, weil du Angst hast, das Falsche zu tun.",
-      "Du schläfst eigentlich lang genug, aber trotzdem fühlst du dich jeden Morgen wie gerädert. Nachmittags bist du komplett platt, und abends hast du weder Energie für deine Familie noch Lust auf Sex. Dieser ständige Brain Fog und die Müdigkeit begleiten dich den ganzen Tag.",
+      "Du hast dir unzählige Videos angesehen und PDFs heruntergeladen – aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weißt, welche Informationen jetzt die richtigen sind.",
+      "Überall hörst du etwas anderes. Ein Influencer schwört auf Keto, der nächste sagt, dass Low Carb dein Testosteron killt, und der dritte predigt intermittent Fasten. Du stehst da mit all diesen Infos und machst am Ende gar nichts.",
+      "Du schläfst eigentlich lang genug, hast aber trotzdem Brain Fog und die Müdigkeit begleiten dich den ganzen Tag. Nachmittags bist du komplett platt, und abends hast du weder Energie für deine Familie noch Lust auf Sex.",
       "Dein Körper verändert sich – und nicht zum Besseren. Der Bauch wird weicher, Muskeln verschwinden langsam, und auch deine Libido ist nicht mehr das, was sie mal war. Du merkst, dass etwas nicht stimmt, aber du weißt nicht, wo du ansetzen sollst.",
-      "Du willst keinen weiteren Trainingsplan oder die hundertste Meinung – du brauchst jemanden, der dir klipp und klar sagt, was du tun musst und was zu dir und deiner Situation passt. Kein \"probier mal das\" oder \"vielleicht funktioniert bei dir eher jenes\". Du willst ein System, das funktioniert, und jemanden, der dich dabei begleitet und kontrolliert, damit du nicht wieder aufgibst."
+      "Du willst keinen weiteren Trainingsplan oder die hundertste Meinung – du brauchst jemanden, der dir klipp und klar sagt, was du tun musst und was zu dir und deiner Situation passt."
     ]
   },
   notForYou: {
     title: "Das bist du NICHT:",
     items: [
-      "Du willst selber deinen eigenen Weg finden und dich selbst verwirklichen. Wenn du das suchst, brauchst du kein Coaching – dann brauchst du ein Hobby, bei dem du experimentieren kannst.",
-      "Du willst nicht kontrolliert oder zur Verantwortung gezogen werden. Verstehe ich. Aber dann musst du dir die Frage stellen: Hat es ohne diese Kontrolle jemals funktioniert? Wenn die Antwort nein ist, dann weißt du, was passieren wird.",
+      "Du willst selber deinen eigenen Weg finden und dich selbst verwirklichen. Dann brauchst du kein Coaching – sondern ein Hobby, bei dem du experimentieren kannst.",
+      "Du willst nicht kontrolliert oder zur Verantwortung gezogen werden. Verstehe ich. Aber dann musst du dich fragen: Hat es ohne diese Kontrolle jemals funktioniert?",
       "Du glaubst an Wunderpillen, Crash-Diäten oder dass du in 7 Tagen ein Sixpack bekommst. Wenn das deine Erwartung ist, dann ist Instagram der bessere Ort für dich.",
       "Ausreden sind dir wichtiger als Ergebnisse. Wenn du lieber erklären willst, warum etwas nicht geht, anstatt es einfach zu machen, dann verschwendest du hier nur deine Zeit.",
-      "Du suchst nach Mindset-Coaching und Manifestation. Du glaubst, dass du nur positiver denken musst, dann wird alles besser. Spoiler: Wenn deine Biologie nicht mitspielt, kannst du denken, was du willst – du wirst dich trotzdem wie Scheiße fühlen. Hier fangen wir unten an, nicht oben."
+      "Du suchst nach Mindset-Coaching und Manifestation. Du glaubst, dass du nur positiver denken musst, dann wird alles besser. Spoiler: Wenn deine Biologie nicht mitspielt, kannst du denken, was du willst – du wirst dich trotzdem wie Scheiße fühlen."
     ]
   }
 };
 
 export const problemMechanismData = {
   problem: {
-    title: "Warum du immer wieder scheiterst",
+    title: "DAS PROBLEM",
     subtitle: "Das Problem bist nicht du, sondern das System.",
     subtext: "Und warum das nicht deine Schuld ist.",
     points: [
       {
         title: "Informations-Paralyse",
-        description: "Influencer A sagt Keto, Influencer B sagt Carbs, Influencer C sagt Fasten. Am Ende machst du GAR NICHTS, weil du einfach nicht weißt, was davon jetzt richtig ist."
+        description: "Influencer A sagt Keto, Influencer B sagt Carbs. Am Ende machst du GAR NICHTS, weil du nicht weißt, was zu dir wirklich passt."
       },
       {
         title: "Standard-Coaching ignoriert das Wesentliche",
-        description: "Der typische 08/15 Coach sagt: Makros tracken und Training abarbeiten, dann passt das schon. Aber was ist mit deinen Hormonen, deinem Schlaf, deinem Stress? Das wird komplett ignoriert – und genau deshalb siehst du null Progress."
+        description: "Der 08/15 Coach sagt: Makros tracken und trainieren, dann passt das schon. Aber was ist mit deinen Hormonen, deinem Schlaf, deinem Stress? Das wird komplett ignoriert – und genau deshalb siehst du null Progress."
       },
       {
         title: "Keine Accountability",
-        description: "Du versuchst es alleine: Supplements gekauft, aber in der falschen Dosis. Diät angefangen und nach 2 Wochen wieder abgebrochen. Das Problem ist, dass niemand da ist, der dich kontrolliert und auf Kurs hält."
+        description: "Du versuchst es alleine: Supplements gekauft. Diät angefangen und nach 2 Wochen wieder abgebrochen. Das Problem ist, dass niemand für dich da ist, der dich kontrolliert und auf Kurs hält."
       },
       {
         title: "Du weißt nicht, was bei DIR funktioniert",
-        description: "Jeder Körper ist anders, und was bei irgendeinem YouTube-Typen funktioniert, funktioniert bei dir vielleicht überhaupt nicht. Du brauchst kein allgemeines Programm – du brauchst ein System, das auf DEINEN Körper abgestimmt ist."
+        description: "Jeder Körper ist anders, und was bei irgendeinem YouTube-Typen funktioniert, muss nicht bei dir funktionieren. Du brauchst kein allgemeines Programm – du brauchst ein System, das auf DEINEN Körper abgestimmt ist."
       }
     ]
   },
   solution: {
-    title: "Die Lösung",
+    title: "DIE LÖSUNG",
     subtitle: "Nicht besser – ANDERS.",
     points: [
       {
         title: "EIN System, keine 1000 Meinungen",
-        description: "Ich sage dir genau, was du tun musst, und du machst es einfach. Kopf ausschalten, System folgen – keine Entscheidungen mehr, keine Zweifel, keine Paralyse."
+        description: "Ich sage dir nach der Analyse über dich genau was du tun musst und du machst es einfach. Kopf ausschalten, System folgen."
       },
       {
         title: "Hormone steuern = Körper funktioniert",
-        description: "Testosteron hochbringen, Cortisol senken, Schilddrüse unterstützen – so funktioniert Biologie. Es geht hier nicht um Motivation oder Mindset, sondern um Biochemie."
+        description: "Testosteron hochbringen, Cortisol senken, Schilddrüse unterstützen – so funktioniert Biologie. Es geht hier nicht um Motivation oder Mindset, sondern um Biohacking."
       },
       {
         title: "Wöchentliche Kontrolle – du KANNST nicht versagen",
-        description: "Ich kontrolliere dich jede Woche, und wenn du aus der Spur kommst, bringe ich dich sofort zurück auf Kurs. Du bist nicht alleine – du kannst gar nicht versagen."
+        description: "Ich kontrolliere dich jede Woche und wenn du aus der Spur kommst, bringe ich dich sofort zurück auf Kurs. Du bist nicht alleine – du kannst also gar nicht versagen."
       },
       {
         title: "Individuell auf DEINE Daten",
-        description: "Kein Copy-Paste-Plan, den jeder bekommt. Alles basiert auf deinem Körper, deinem Alltag, deinen Werten – auf dem, was bei DIR funktioniert."
+        description: "Kein Copy-Paste-Plan, den jeder bekommt. Alles basiert auf deinem Körper, deinem Alltag, deinen Werten. Also auf dem, was bei DIR funktioniert."
       }
     ]
   }
@@ -205,6 +190,14 @@ export const processData = {
   ]
 };
 
+// Preisberechnung:
+// Features (monatlich): 179 + 199 + 129 + 99 + 149 + 249 = 1.004 € / Monat
+// Features (einmalig): 249 € (Onboarding)
+// Bonuses (monatlich): 49 + 29 + 99 = 177 € / Monat
+// Bonuses (einmalig): 49 € (Notion)
+// Gesamtwert monatlich: 1.004 + 177 = 1.181 € / Monat (+ einmalig 249 + 49 = 298 €)
+// Für die Anzeige: 1.181 € / Monat Gesamtwert
+
 export const offerData = {
   badge: "DAS KOMPLETTE SYSTEM",
   title: "Was du bekommst",
@@ -212,75 +205,75 @@ export const offerData = {
   price: "297",
   currency: "€",
   period: "/Monat",
-  originalValue: "1.013",
-  savings: "716",
+  originalValue: "1.181",
+  savings: "884",
   features: [
     { 
       name: "Performance-Onboarding", 
       subtitle: "dein persönlicher Standort-Scan",
       description: "Bevor wir irgendwas machen, analysieren wir deinen aktuellen Stand: Wo stehst du körperlich? Was läuft gut, was nicht? Welche Gewohnheiten sabotieren dich? Das ist die Basis für alles, was danach kommt – individuell auf dich abgestimmt.",
-      value: "149 €" 
+      value: "249 € (einmalig)" 
     },
     { 
-      name: "Individueller Trainingsplan", 
+      name: "Individueller Trainingsplan inkl. Anpassungen", 
       subtitle: "dein physisches Fundament",
-      description: "3-4x pro Woche, jeweils 30 Minuten. Kein stundenlanger Gym-Marathon. Du bekommst genau die Übungen, die bei DIR funktionieren – abgestimmt auf deinen Körper, deine Zeit und deine Ziele. Mehr brauchst du nicht.",
-      value: "149 €" 
+      description: "Kein stundenlanger Gym-Marathon. Du bekommst genau die Übungen, die bei DIR funktionieren – abgestimmt auf deinen Körper, deine Zeit und deine Ziele. Mehr brauchst du nicht.",
+      value: "179 € / Monat" 
     },
     { 
-      name: "Persönliche Ernährungsstrategie & Makro-System", 
+      name: "Persönliche Ernährungsstrategie & Makro-System inkl. Anpassungen", 
       subtitle: "",
-      description: "Ernährung auf 1g genau – aber so, dass es in deinen Alltag passt. Keine komplizierten Rezepte, keine unrealistischen Pläne. Du weißt genau, was du essen musst, wann du es essen musst und warum. Kein Raten mehr.",
-      value: "149 €" 
+      description: "Ernährung die in deinen Alltag passt. Keine komplizierten Rezepte, keine unrealistischen Pläne. Du weißt genau, was du essen musst, wann du es essen musst und warum.",
+      value: "199 € / Monat" 
     },
     { 
       name: "Supplement- & Schlafoptimierung", 
       subtitle: "",
       description: "Die richtigen Supplements im richtigen Timing und in der richtigen Dosis. Dazu optimieren wir deinen Schlaf, denn ohne guten Schlaf funktionieren deine Hormone nicht – egal wie gut der Rest ist.",
-      value: "149 €" 
+      value: "129 € / Monat" 
     },
     { 
       name: "Mentales Upgrade & Habit-Reprogrammierung", 
       subtitle: "",
       description: "Disziplin ist kein Charakterzug – es ist ein System. Wir bauen die richtigen Gewohnheiten auf und eliminieren die, die dich sabotieren. So wird das Ganze automatisch, nicht anstrengend.",
-      value: "99 €" 
+      value: "99 € / Monat" 
     },
     { 
       name: "24/7 WhatsApp-Support", 
       subtitle: "",
       description: "Du hast eine Frage? Du bekommst eine Antwort – so einfach ist das. Keine Wartezeiten, kein \"Ich melde mich nächste Woche\". Du bist nicht alleine in diesem Prozess.",
-      value: "199 €" 
+      value: "149 € / Monat" 
     },
     { 
       name: "Wöchentliche Check-ins & Performance-Tracking", 
       subtitle: "",
       description: "Jeden Freitag kontrolliere ich deine Fortschritte. Wenn du aus der Spur kommst, bringe ich dich sofort zurück auf Kurs. Du kannst gar nicht versagen, weil ich jede Woche auf dich schaue.",
-      value: "119 €" 
+      value: "249 € / Monat" 
     }
   ],
   bonuses: [
     { 
       name: "Monatlicher Primetime-Guide (PDF/Video)", 
       description: "\"Testosteron-Boost\", \"Kaffee-Hacks\", \"Low Dopamin Days\", \"Schlaf wie ein Tier\" – du bekommst monatlich kompaktes Know-how, das du direkt umsetzen kannst. Wissenschaftlich fundiert, praxisnah, kein Bullshit.",
-      value: "69 € / Monat" 
+      value: "49 € / Monat" 
     },
     { 
       name: "Zugang zum Primetime-Channel", 
       description: "Tägliche Impulse, neue Studien, Biohacks, Routinen und Selbstexperimente – direkt auf dein Handy. Kein Smalltalk, keine Ablenkung, nur purer Input für dein System-Upgrade.",
-      value: "39 € / Monat" 
+      value: "29 € / Monat" 
     },
     { 
       name: "Wöchentlicher Live-Q&A-Call (Zoom)", 
       description: "Einmal pro Woche direkte Strategieberatung mit mir. Du hast Fragen? Ich liefere dir die Antworten – klar, direkt und sofort umsetzbar.",
-      value: "59 € / Monat" 
+      value: "99 € / Monat" 
     },
     { 
       name: "Notion-Template & Tracking-Dashboard", 
       description: "Alles auf einen Blick: Makros, Schlaf, Fortschritt, Ziele, Check-ins. Strukturiert, fokussiert und messbar – du siehst immer genau, wo du stehst.",
-      value: "39 € (einmalig)" 
+      value: "49 € (einmalig)" 
     }
   ],
-  bonusTotal: "ca. 206 € / Monat",
+  bonusTotal: "ca. 177 € / Monat",
   bonusNote: "Du bekommst alles kostenlos dazu – nur solange Plätze verfügbar sind.",
   highlights: [
     "Jederzeit kündbar",
@@ -349,13 +342,21 @@ export const faqOutro = {
 
 export const guaranteeData = {
   title: "Die \"Nur wenn's knallt\"-Garantie",
-  subtitle: "Du sollst in den ersten Wochen merken, dass sich wirklich etwas bewegt. Wenn das nicht passiert, übernehmen wir das – fair, transparent und ohne Diskussion.",
+  subtitle: "Du sollst in den ersten Wochen direkt merken, dass sich schon etwas bewegt.",
   points: [
     "Wenn du nach 30 Tagen keine spürbare Veränderung hast, bauen wir dein System komplett neu auf. Das heißt: Wir schauen gemeinsam sehr konkret auf Training, Ernährung, Schlaf, Stress und Umsetzung und finden heraus, was bei dir gerade noch bremst. Danach bekommst du eine überarbeitete Version deines Systems, die besser zu deinem Alltag und deinem Körper passt – ohne Zusatzkosten.",
     "Was \"spürbare Veränderung\" bedeutet, ist bei jedem Mann etwas anderes – und genau so bewerten wir es auch. Es kann zum Beispiel sein, dass du morgens leichter rauskommst, tagsüber mehr Energie hast, der Brain Fog nachlässt, du im Training wieder Leistung aufbaust oder sich Körpergefühl und Umfang sichtbar verändern. Entscheidend ist nicht, dass du \"perfekt\" bist, sondern dass wir eine klare Bewegung in die richtige Richtung sehen.",
-    "Und wenn es trotz Neuaufbau immer noch nicht passt, kannst du gehen. Ohne Drama, ohne Kleingedrucktes und ohne dass du dich rechtfertigen musst. Du sollst nur bleiben, wenn du wirklich merkst, dass es für dich funktioniert.",
+    "Und wenn es trotz Neuaufbau immer noch nicht passt, kannst du einfach kündigen. Ohne Kleingedrucktes, ohne Extra Kosten und ohne dass du dich rechtfertigen musst. Du sollst nur bleiben, wenn du wirklich merkst, dass es für dich funktioniert.",
     "Du zahlst hier nicht dafür, \"dabei zu sein\", sondern dafür, voranzukommen. Wenn du Fortschritt siehst, machen wir weiter. Wenn nicht, lösen wir es sauber – so einfach ist das."
   ]
+};
+
+export const stickyCtaData = {
+  tagline: "Ein System. Individuell für dich.",
+  price: "297",
+  period: "/ Monat",
+  suffix: "· jederzeit kündbar",
+  buttonText: "Los geht's"
 };
 
 export const footerData = {
