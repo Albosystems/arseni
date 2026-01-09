@@ -371,6 +371,37 @@ export const availableSpotsData = {
   total: 10
 };
 
+export const dominoEffectData = {
+  title: "Der Domino-Effekt",
+  subtitle: "Warum die Basis alles entscheidet",
+  basis: {
+    title: "Die Basis",
+    items: ["Schlaf", "Stress", "Hormone"]
+  },
+  result: {
+    title: "Das Resultat",
+    items: ["Energie", "Leistung", "Körper"]
+  },
+  average: {
+    label: "Durchschnittlicher Mann",
+    effects: [
+      { cause: "Schlechter Schlaf", result: "Heißhunger & Fressattacken" },
+      { cause: "Chronischer Stress", result: "Trainingsplateau" },
+      { cause: "Hormone im Keller", result: "Null Energie & Libido" }
+    ],
+    outcome: "Teufelskreis ohne Fortschritt"
+  },
+  primezeit: {
+    label: "Primezeit Mann",
+    effects: [
+      { cause: "Optimierter Schlaf", result: "Stabiler Appetit & Fokus" },
+      { cause: "Kontrollierter Stress", result: "Konstante Fortschritte" },
+      { cause: "Hormone optimiert", result: "Power & Drive" }
+    ],
+    outcome: "Aufwärtsspirale mit echten Ergebnissen"
+  }
+};
+
 export const footerData = {
   links: [
     { label: "Impressum", url: "/impressum" },
