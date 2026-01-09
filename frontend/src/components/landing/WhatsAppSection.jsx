@@ -7,7 +7,7 @@ const WhatsAppSection = () => {
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`;
 
   return (
-    <section className="py-16 px-6 bg-black">
+    <section className="py-16 px-6 bg-[#121212]">
       <div className="max-w-2xl mx-auto text-center">
         <div className="p-8 rounded-3xl bg-gradient-to-b from-zinc-900/80 to-zinc-950/80 border border-zinc-800/50">
           <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">
