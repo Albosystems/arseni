@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Check, ArrowRight, Shield, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
+import { Check, ArrowRight, Shield, Sparkles, ChevronDown, ChevronUp, Clock } from 'lucide-react';
 import { Button } from '../ui/button';
-import { offerData, guaranteeData, siteConfig } from '../../data/mock';
+import { offerData, guaranteeData, siteConfig, availableSpotsData } from '../../data/mock';
 
 const OfferSection = () => {
   const [expandedFeature, setExpandedFeature] = useState(null);
@@ -69,11 +69,16 @@ const OfferSection = () => {
                         <div className="flex-1">
                           <span className="text-white font-medium">{feature.name}</span>
                           {feature.subtitle && (
-                            <span className="text-zinc-500 text-sm ml-2">– {feature.subtitle}</span>
+                            <span className="text-zinc-500 text-sm ml-2 hidden sm:inline">– {feature.subtitle}</span>
                           )}
+                          {/* Mobile: Always show price */}
+                          <div className="sm:hidden mt-1">
+                            <span className="text-[#00c6ff] text-sm font-medium">{feature.value}</span>
+                          </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
+                        {/* Desktop: Show price */}
                         <span className="text-zinc-500 text-sm hidden sm:block">{feature.value}</span>
                         {expandedFeature === index ? (
                           <ChevronUp className="w-5 h-5 text-zinc-500" />
@@ -86,7 +91,6 @@ const OfferSection = () => {
                       <div className="px-4 pb-4 pt-0">
                         <div className="pl-11">
                           <p className="text-zinc-400 text-sm leading-relaxed">{feature.description}</p>
-                          <p className="text-[#00c6ff] text-sm font-medium mt-2">Wert: {feature.value}</p>
                         </div>
                       </div>
                     )}
@@ -122,9 +126,16 @@ const OfferSection = () => {
                         <div className="w-8 h-8 rounded-lg bg-[#e8a032]/10 flex items-center justify-center flex-shrink-0">
                           <Sparkles className="w-4 h-4 text-[#e8a032]" />
                         </div>
-                        <span className="text-white font-medium">{bonus.name}</span>
+                        <div className="flex-1">
+                          <span className="text-white font-medium">{bonus.name}</span>
+                          {/* Mobile: Always show price */}
+                          <div className="sm:hidden mt-1">
+                            <span className="text-[#e8a032] text-sm font-medium line-through">{bonus.value}</span>
+                          </div>
+                        </div>
                       </div>
                       <div className="flex items-center gap-3">
+                        {/* Desktop: Show price */}
                         <span className="text-zinc-500 text-sm line-through hidden sm:block">{bonus.value}</span>
                         {expandedBonus === index ? (
                           <ChevronUp className="w-5 h-5 text-zinc-500" />
@@ -137,7 +148,6 @@ const OfferSection = () => {
                       <div className="px-4 pb-4 pt-0">
                         <div className="pl-11">
                           <p className="text-zinc-400 text-sm leading-relaxed">{bonus.description}</p>
-                          <p className="text-[#e8a032] text-sm font-medium mt-2 line-through">Wert: {bonus.value}</p>
                         </div>
                       </div>
                     )}
@@ -149,24 +159,39 @@ const OfferSection = () => {
               </p>
             </div>
 
-            {/* Price Section */}
+            {/* Price Section - Updated with strikethrough */}
             <div className="text-center py-8 border-t border-b border-zinc-800/50 mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e8a032]/10 text-[#e8a032] text-sm font-medium mb-4">
-                <span>Gesamtwert: {offerData.originalValue}€ / Monat</span>
-              </div>
-
-              <div className="flex items-baseline justify-center gap-2 mb-2">
+              <div className="flex flex-col items-center gap-3 mb-4">
                 <span className="text-lg text-zinc-500">Dein Preis:</span>
-                <span className="text-5xl lg:text-6xl font-bold text-white">
-                  {offerData.price}
-                </span>
-                <span className="text-2xl text-white">{offerData.currency}</span>
+                <div className="flex items-center gap-4">
+                  {/* Original price - crossed out in red */}
+                  <span className="text-2xl lg:text-3xl font-bold text-red-500 line-through decoration-2">
+                    {offerData.originalValue}€
+                  </span>
+                  {/* Actual price */}
+                  <span className="text-5xl lg:text-6xl font-bold text-white">
+                    {offerData.price}€
+                  </span>
+                </div>
                 <span className="text-xl text-zinc-500">{offerData.period}</span>
               </div>
 
-              <p className="text-[#00c6ff] font-medium">
+              <p className="text-[#00c6ff] font-medium mb-6">
                 Das sind {offerData.savings}€ Ersparnis pro Monat.
               </p>
+
+              {/* Scarcity - More prominent */}
+              <div className="inline-flex flex-col items-center gap-2 px-6 py-4 rounded-2xl bg-[#e8a032]/10 border border-[#e8a032]/30">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-5 h-5 text-[#e8a032]" />
+                  <span className="text-[#e8a032] font-bold text-lg">
+                    Nur 10 Plätze pro Monat – jederzeit kündbar
+                  </span>
+                </div>
+                <span className="text-zinc-400 text-sm">
+                  Aktuell verfügbar: <span className="text-white font-semibold">{availableSpotsData.current}/{availableSpotsData.total} Plätze</span>
+                </span>
+              </div>
             </div>
 
             {/* CTA */}
@@ -181,10 +206,6 @@ const OfferSection = () => {
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
-
-              <p className="mt-4 text-zinc-500 text-sm">
-                {offerData.scarcity}
-              </p>
             </div>
           </div>
         </div>
