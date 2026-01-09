@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Cookie, Check, Settings } from 'lucide-react';
-import { Button } from '../ui/button';
+import { Button } from './ui/button';
 
 const CookieBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
