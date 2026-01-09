@@ -1,191 +1,279 @@
-import React, { useState } from 'react';
-import { ArrowRight, Check, X, Zap } from 'lucide-react';
-import { dominoEffectData } from '../../data/mock';
+import React, { useState, useEffect } from 'react';
+import { Battery, Zap, Brain, Dumbbell, Moon, Wind, Thermometer, AlertTriangle, CheckCircle2 } from 'lucide-react';
 
 const DominoEffectSection = () => {
-  const [activeMode, setActiveMode] = useState('primezeit'); // 'average' or 'primezeit'
+  // Ursachen-Werte (0-100)
+  const [levers, setLevers] = useState({
+    schlaf: 90,
+    stress: 20,
+    hormone: 85
+  });
 
-  const currentData = activeMode === 'average' ? dominoEffectData.average : dominoEffectData.primezeit;
-  const isAverage = activeMode === 'average';
+  const [score, setScore] = useState(85);
+
+  // Berechnung des Gesamtzustands bei jeder Änderung
+  useEffect(() => {
+    const avg = (levers.schlaf + (100 - levers.stress) + levers.hormone) / 3;
+    setScore(avg);
+  }, [levers]);
+
+  const handleLevelChange = (key, val) => {
+    setLevers(prev => ({ ...prev, [key]: parseInt(val) }));
+  };
+
+  // Vordefinierte Zustände (Toggles)
+  const setPrime = () => {
+    setLevers({ schlaf: 90, stress: 20, hormone: 85 });
+  };
+
+  const setAverage = () => {
+    setLevers({ schlaf: 45, stress: 75, hormone: 40 });
+  };
+
+  const isPrime = score > 65;
 
   return (
     <section className="relative py-16 lg:py-24 px-6 bg-[#121212] overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[150px] transition-colors duration-700 ${
-          isAverage ? 'bg-red-500/10' : 'bg-[#4FC3F7]/10'
+        <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[150px] transition-all duration-1000 ${
+          isPrime ? 'bg-[#4FC3F7]/10' : 'bg-red-500/10'
         }`} />
       </div>
 
       <div className="relative max-w-5xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
-            {dominoEffectData.title}
+            Der <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">Domino-Effekt</span>
           </h2>
           <p className="text-zinc-400">
-            {dominoEffectData.subtitle}
+            Warum die Basis alles entscheidet - teste es selbst.
           </p>
         </div>
 
-        {/* Toggle Buttons */}
-        <div className="flex justify-center gap-4 mb-12">
-          <button
-            onClick={() => setActiveMode('average')}
-            className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-              isAverage 
-                ? 'bg-red-500/20 text-red-400 border-2 border-red-500/50' 
-                : 'bg-zinc-900/50 text-zinc-500 border-2 border-zinc-800 hover:border-zinc-700'
-            }`}
-          >
-            {dominoEffectData.average.label}
-          </button>
-          <button
-            onClick={() => setActiveMode('primezeit')}
-            className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-              !isAverage 
-                ? 'bg-[#4FC3F7]/20 text-[#4FC3F7] border-2 border-[#4FC3F7]/50' 
-                : 'bg-zinc-900/50 text-zinc-500 border-2 border-zinc-800 hover:border-zinc-700'
-            }`}
-          >
-            {dominoEffectData.primezeit.label}
-          </button>
-        </div>
-
-        {/* Domino Visual */}
-        <div className="relative">
-          {/* Connection line */}
-          <div className="hidden lg:block absolute top-1/2 left-1/4 right-1/4 h-1 -translate-y-1/2">
-            <div className={`h-full rounded-full transition-all duration-700 ${
-              isAverage 
-                ? 'bg-gradient-to-r from-red-500/50 via-red-400/30 to-red-500/50' 
-                : 'bg-gradient-to-r from-[#4FC3F7]/50 via-[#FFD700]/30 to-[#4FC3F7]/50'
-            }`} />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-              <ArrowRight className={`w-8 h-8 transition-colors duration-700 ${
-                isAverage ? 'text-red-500' : 'text-[#4FC3F7]'
-              }`} />
-            </div>
+        {/* Switchboard Card */}
+        <div className="bg-zinc-950/80 p-6 sm:p-8 rounded-3xl border border-zinc-800/50 text-white max-w-4xl mx-auto shadow-2xl backdrop-blur-sm">
+          
+          {/* Globaler Toggle-Bereich */}
+          <div className="flex justify-center gap-3 sm:gap-4 mb-8 sm:mb-10">
+            <button 
+              onClick={setAverage}
+              className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 border ${
+                !isPrime 
+                  ? 'bg-red-500/20 border-red-500/50 text-red-400 shadow-[0_0_20px_rgba(239,68,68,0.2)]' 
+                  : 'bg-zinc-900 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
+              }`}
+            >
+              Durchschnittlicher Mann
+            </button>
+            <button 
+              onClick={setPrime}
+              className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 border ${
+                isPrime 
+                  ? 'bg-[#4FC3F7]/20 border-[#4FC3F7]/50 text-[#4FC3F7] shadow-[0_0_20px_rgba(79,195,247,0.2)]' 
+                  : 'bg-zinc-900 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
+              }`}
+            >
+              Primezeit Mann
+            </button>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
-            {/* BASIS - Left Column */}
-            <div className="text-center lg:text-left">
-              <h4 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">
-                {dominoEffectData.basis.title}
-              </h4>
-              <div className="space-y-3">
-                {dominoEffectData.basis.items.map((item, index) => (
-                  <div 
-                    key={index}
-                    className={`p-4 rounded-xl border transition-all duration-500 transform ${
-                      isAverage 
-                        ? 'bg-red-500/10 border-red-500/30 rotate-[-2deg] translate-x-1' 
-                        : 'bg-[#4FC3F7]/10 border-[#4FC3F7]/30'
-                    }`}
-                    style={{ 
-                      transitionDelay: `${index * 100}ms`,
-                      transform: isAverage ? `rotate(${-2 - index}deg) translateX(${index * 2}px)` : 'rotate(0) translateX(0)'
-                    }}
-                  >
-                    <span className={`font-semibold transition-colors duration-500 ${
-                      isAverage ? 'text-red-400' : 'text-[#4FC3F7]'
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+            
+            {/* LINKS: Die Steuerhebel (Ursache) */}
+            <div className="space-y-6">
+              <div className="flex items-center justify-between gap-2">
+                <h3 className="text-lg font-bold text-[#4FC3F7] uppercase tracking-wider">Die Basis</h3>
+                <span className="text-[10px] bg-[#4FC3F7]/10 text-[#4FC3F7] px-2 py-1 rounded border border-[#4FC3F7]/20 whitespace-nowrap">
+                  Schieberegler nutzen
+                </span>
+              </div>
+              
+              <div className="space-y-5">
+                {/* Schlaf */}
+                <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="flex items-center gap-2 text-sm font-medium">
+                      <Moon className="w-4 h-4 text-indigo-400" /> 
+                      Schlaf-Qualität
+                    </span>
+                    <span className={`font-mono text-sm font-bold transition-colors ${
+                      levers.schlaf > 70 ? 'text-[#4FC3F7]' : levers.schlaf > 40 ? 'text-[#FFD700]' : 'text-red-400'
                     }`}>
-                      {item}
+                      {levers.schlaf}%
                     </span>
                   </div>
-                ))}
+                  <input 
+                    type="range" 
+                    min="0"
+                    max="100"
+                    value={levers.schlaf}
+                    onChange={(e) => handleLevelChange('schlaf', e.target.value)}
+                    className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer slider-thumb"
+                    style={{
+                      background: `linear-gradient(to right, #4FC3F7 0%, #4FC3F7 ${levers.schlaf}%, #27272a ${levers.schlaf}%, #27272a 100%)`
+                    }}
+                  />
+                  <p className="text-xs text-zinc-500">
+                    {levers.schlaf > 70 ? 'Optimiert - Hormone regenerieren sich' : levers.schlaf > 40 ? 'Mittel - Suboptimale Regeneration' : 'Kritisch - Cortisolspiegel steigt'}
+                  </p>
+                </div>
+
+                {/* Stress */}
+                <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="flex items-center gap-2 text-sm font-medium">
+                      <Wind className="w-4 h-4 text-orange-400" /> 
+                      Stress-Level
+                    </span>
+                    <span className={`font-mono text-sm font-bold transition-colors ${
+                      levers.stress < 30 ? 'text-[#4FC3F7]' : levers.stress < 60 ? 'text-[#FFD700]' : 'text-red-400'
+                    }`}>
+                      {levers.stress}%
+                    </span>
+                  </div>
+                  <input 
+                    type="range"
+                    min="0"
+                    max="100" 
+                    value={levers.stress}
+                    onChange={(e) => handleLevelChange('stress', e.target.value)}
+                    className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer"
+                    style={{
+                      background: `linear-gradient(to right, #ef4444 0%, #ef4444 ${levers.stress}%, #27272a ${levers.stress}%, #27272a 100%)`
+                    }}
+                  />
+                  <p className="text-xs text-zinc-500">
+                    {levers.stress < 30 ? 'Niedrig - Körper kann aufbauen' : levers.stress < 60 ? 'Erhöht - Regeneration eingeschränkt' : 'Chronisch - Testosteron sinkt'}
+                  </p>
+                </div>
+
+                {/* Hormone */}
+                <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="flex items-center gap-2 text-sm font-medium">
+                      <Thermometer className="w-4 h-4 text-pink-400" /> 
+                      Hormon-Status
+                    </span>
+                    <span className={`font-mono text-sm font-bold transition-colors ${
+                      levers.hormone > 70 ? 'text-[#4FC3F7]' : levers.hormone > 40 ? 'text-[#FFD700]' : 'text-red-400'
+                    }`}>
+                      {levers.hormone}%
+                    </span>
+                  </div>
+                  <input 
+                    type="range"
+                    min="0"
+                    max="100" 
+                    value={levers.hormone}
+                    onChange={(e) => handleLevelChange('hormone', e.target.value)}
+                    className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer"
+                    style={{
+                      background: `linear-gradient(to right, #FFD700 0%, #FFD700 ${levers.hormone}%, #27272a ${levers.hormone}%, #27272a 100%)`
+                    }}
+                  />
+                  <p className="text-xs text-zinc-500">
+                    {levers.hormone > 70 ? 'Optimiert - Testosteron & Schilddrüse top' : levers.hormone > 40 ? 'Suboptimal - Fortschritt gehemmt' : 'Im Keller - Null Energie & Libido'}
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* EFFECTS - Middle Column */}
-            <div className="lg:col-span-1">
-              <h4 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4 text-center">
-                Die Kettenreaktion
-              </h4>
-              <div className="space-y-3">
-                {currentData.effects.map((effect, index) => (
-                  <div 
-                    key={index}
-                    className={`p-4 rounded-xl border transition-all duration-500 ${
-                      isAverage 
-                        ? 'bg-zinc-900/80 border-red-500/20' 
-                        : 'bg-zinc-900/80 border-[#4FC3F7]/20'
-                    }`}
-                    style={{ transitionDelay: `${index * 150}ms` }}
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${
-                        isAverage ? 'bg-red-500/20' : 'bg-[#4FC3F7]/20'
-                      }`}>
-                        {isAverage ? (
-                          <X className="w-4 h-4 text-red-400" />
-                        ) : (
-                          <Check className="w-4 h-4 text-[#4FC3F7]" />
-                        )}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-xs text-zinc-500">{effect.cause}</p>
-                        <p className={`text-sm font-medium ${
-                          isAverage ? 'text-red-400' : 'text-[#FFD700]'
-                        }`}>
-                          → {effect.result}
-                        </p>
-                      </div>
+            {/* RECHTS: Das Ergebnis-Panel (Folge) */}
+            <div className="bg-zinc-900/30 p-5 sm:p-6 rounded-2xl border border-zinc-800/50 space-y-6 relative overflow-hidden">
+              {/* Hintergrund-Animation für Prime-Status */}
+              <div className={`absolute inset-0 transition-opacity duration-1000 ${isPrime ? 'opacity-20' : 'opacity-0'}`}>
+                <div className="absolute inset-0 bg-[#4FC3F7] blur-[80px] animate-pulse" />
+              </div>
+
+              <h3 className="text-lg font-bold text-[#FFD700] uppercase tracking-wider relative z-10">Das Resultat</h3>
+              
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 relative z-10">
+                {[
+                  { label: "Energie", val: Math.min(score * 1.1, 100), icon: <Battery className="w-5 h-5" />, color: "bg-[#4FC3F7]" },
+                  { label: "Fokus", val: Math.min((levers.schlaf * 0.6 + (100-levers.stress) * 0.4), 100), icon: <Brain className="w-5 h-5" />, color: "bg-indigo-500" },
+                  { label: "Körper", val: Math.min((levers.hormone * 0.7 + (100-levers.stress) * 0.3), 100), icon: <Dumbbell className="w-5 h-5" />, color: "bg-orange-500" },
+                  { label: "Drive", val: Math.min(score, 100), icon: <Zap className="w-5 h-5" />, color: "bg-[#FFD700]" }
+                ].map(res => (
+                  <div key={res.label} className="p-4 bg-zinc-950/80 rounded-xl border border-zinc-800/50 text-center">
+                    <div className={`flex justify-center mb-2 transition-colors duration-500 ${res.val > 60 ? 'text-white' : 'text-zinc-600'}`}>
+                      {res.icon}
+                    </div>
+                    <div className="text-[10px] uppercase tracking-wider text-zinc-500 mb-2">{res.label}</div>
+                    <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
+                      <div 
+                        className={`h-full transition-all duration-700 ease-out rounded-full ${res.color}`}
+                        style={{ width: `${Math.min(res.val, 100)}%` }}
+                      />
+                    </div>
+                    <div className={`text-xs font-bold mt-2 transition-colors ${res.val > 60 ? 'text-white' : 'text-zinc-600'}`}>
+                      {Math.round(res.val)}%
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
 
-            {/* RESULT - Right Column */}
-            <div className="text-center lg:text-right">
-              <h4 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">
-                {dominoEffectData.result.title}
-              </h4>
-              <div className="space-y-3">
-                {dominoEffectData.result.items.map((item, index) => (
-                  <div 
-                    key={index}
-                    className={`p-4 rounded-xl border transition-all duration-500 ${
-                      isAverage 
-                        ? 'bg-zinc-900/50 border-zinc-800 opacity-50' 
-                        : 'bg-[#FFD700]/10 border-[#FFD700]/30'
-                    }`}
-                    style={{ transitionDelay: `${index * 100 + 300}ms` }}
-                  >
-                    <span className={`font-semibold transition-colors duration-500 ${
-                      isAverage ? 'text-zinc-600' : 'text-[#FFD700]'
-                    }`}>
-                      {item}
-                    </span>
-                  </div>
-                ))}
+              {/* Zentrales Status-Icon */}
+              <div className="flex flex-col items-center justify-center pt-4 relative z-10">
+                <div className={`transition-all duration-500 transform ${isPrime ? 'scale-110 text-[#4FC3F7]' : 'scale-100 text-red-500'}`}>
+                  {isPrime ? <CheckCircle2 size={48} /> : <AlertTriangle size={48} />}
+                </div>
+                <span className={`text-xs font-black mt-3 tracking-[0.15em] transition-colors ${isPrime ? 'text-[#4FC3F7]' : 'text-red-500'}`}>
+                  {isPrime ? 'SYSTEM OPTIMIERT' : 'SYSTEM KRITISCH'}
+                </span>
+                <p className="text-zinc-500 text-xs mt-2 text-center max-w-xs">
+                  {isPrime 
+                    ? 'Deine Basis stimmt - Fortschritt ist unvermeidlich.' 
+                    : 'Die Basis ist instabil - kein Plan wird hier funktionieren.'}
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Outcome Banner */}
-          <div className={`mt-8 p-6 rounded-2xl text-center transition-all duration-700 ${
-            isAverage 
-              ? 'bg-red-500/10 border border-red-500/30' 
-              : 'bg-gradient-to-r from-[#4FC3F7]/10 via-[#FFD700]/10 to-[#4FC3F7]/10 border border-[#4FC3F7]/30'
+          {/* Bottom Note */}
+          <div className={`mt-8 p-4 rounded-xl text-center transition-all duration-500 ${
+            isPrime 
+              ? 'bg-[#4FC3F7]/10 border border-[#4FC3F7]/30' 
+              : 'bg-red-500/10 border border-red-500/30'
           }`}>
-            <div className="flex items-center justify-center gap-3">
-              {isAverage ? (
-                <X className="w-6 h-6 text-red-400" />
-              ) : (
-                <Zap className="w-6 h-6 text-[#FFD700]" />
-              )}
-              <span className={`text-lg font-bold ${
-                isAverage ? 'text-red-400' : 'text-white'
-              }`}>
-                {currentData.outcome}
-              </span>
-            </div>
+            <p className={`text-sm font-medium ${isPrime ? 'text-[#4FC3F7]' : 'text-red-400'}`}>
+              {isPrime 
+                ? '→ Mit diesem Setup baust du auf - nicht ab.' 
+                : '→ Genau hier setzen wir an. Nicht am Training, nicht an der Ernährung - an der Basis.'}
+            </p>
           </div>
         </div>
       </div>
+
+      {/* Custom slider styles */}
+      <style>{`
+        input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: white;
+          cursor: pointer;
+          border: 2px solid #4FC3F7;
+          box-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+          transition: all 0.2s;
+        }
+        input[type="range"]::-webkit-slider-thumb:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 15px rgba(79, 195, 247, 0.5);
+        }
+        input[type="range"]::-moz-range-thumb {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: white;
+          cursor: pointer;
+          border: 2px solid #4FC3F7;
+          box-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+        }
+      `}</style>
     </section>
   );
 };
