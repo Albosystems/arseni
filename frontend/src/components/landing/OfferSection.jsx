@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, ArrowRight, Shield, Sparkles, ChevronDown, ChevronUp, Clock } from 'lucide-react';
+import { Check, ArrowRight, Shield, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '../ui/button';
 import { offerData, guaranteeData, siteConfig, availableSpotsData } from '../../data/mock';
 
@@ -7,17 +7,19 @@ const OfferSection = () => {
   const [expandedFeature, setExpandedFeature] = useState(null);
   const [expandedBonus, setExpandedBonus] = useState(null);
 
+  const spotsPercentage = ((availableSpotsData.total - availableSpotsData.current) / availableSpotsData.total) * 100;
+
   return (
-    <section className="relative py-20 lg:py-32 px-6 bg-black">
+    <section className="relative py-20 lg:py-32 px-6 bg-[#121212]">
       {/* Background accent */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-[#00c6ff]/5 blur-[120px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-[#4FC3F7]/5 blur-[120px]" />
       </div>
 
       <div className="relative max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#00c6ff]/10 text-[#00c6ff] text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#4FC3F7]/10 text-[#4FC3F7] text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
             <span>{offerData.badge}</span>
           </div>
@@ -33,7 +35,7 @@ const OfferSection = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
           {offerData.highlights.map((highlight, index) => (
             <div key={index} className="flex items-center gap-2 text-zinc-400">
-              <Check className="w-4 h-4 text-[#00c6ff]" />
+              <Check className="w-4 h-4 text-[#4FC3F7]" />
               <span className="text-sm">{highlight}</span>
             </div>
           ))}
@@ -42,7 +44,7 @@ const OfferSection = () => {
         {/* Main Offer Card */}
         <div className="relative rounded-3xl overflow-hidden">
           {/* Border gradient effect */}
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-[#00c6ff]/20 via-transparent to-[#e8a032]/20 p-px">
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-[#4FC3F7]/20 via-transparent to-[#FFD700]/20 p-px">
             <div className="w-full h-full rounded-3xl bg-zinc-950" />
           </div>
 
@@ -56,15 +58,15 @@ const OfferSection = () => {
                 {offerData.features.map((feature, index) => (
                   <div 
                     key={index}
-                    className="border border-zinc-800/50 rounded-2xl bg-zinc-900/30 overflow-hidden transition-all duration-300 hover:border-[#00c6ff]/20"
+                    className="border border-zinc-800/50 rounded-2xl bg-zinc-900/30 overflow-hidden transition-all duration-300 hover:border-[#4FC3F7]/20"
                   >
                     <button
                       onClick={() => setExpandedFeature(expandedFeature === index ? null : index)}
                       className="w-full flex items-center justify-between gap-4 p-4 text-left"
                     >
                       <div className="flex items-center gap-3 flex-1">
-                        <div className="w-8 h-8 rounded-lg bg-[#00c6ff]/10 flex items-center justify-center flex-shrink-0">
-                          <Check className="w-4 h-4 text-[#00c6ff]" />
+                        <div className="w-8 h-8 rounded-lg bg-[#4FC3F7]/10 flex items-center justify-center flex-shrink-0">
+                          <Check className="w-4 h-4 text-[#4FC3F7]" />
                         </div>
                         <div className="flex-1">
                           <span className="text-white font-medium">{feature.name}</span>
@@ -73,7 +75,7 @@ const OfferSection = () => {
                           )}
                           {/* Mobile: Always show price */}
                           <div className="sm:hidden mt-1">
-                            <span className="text-[#00c6ff] text-sm font-medium">{feature.value}</span>
+                            <span className="text-[#4FC3F7] text-sm font-medium">{feature.value}</span>
                           </div>
                         </div>
                       </div>
@@ -102,10 +104,10 @@ const OfferSection = () => {
             {/* Bonuses */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-6">
-                <h4 className="text-sm font-semibold text-[#e8a032] uppercase tracking-wider">
+                <h4 className="text-sm font-semibold text-[#FFD700] uppercase tracking-wider">
                   Bonus – Gratis dazu
                 </h4>
-                <span className="px-2 py-1 rounded-full bg-[#e8a032]/10 text-[#e8a032] text-xs font-medium">
+                <span className="px-2 py-1 rounded-full bg-[#FFD700]/10 text-[#FFD700] text-xs font-medium">
                   Exklusiv
                 </span>
               </div>
@@ -116,21 +118,21 @@ const OfferSection = () => {
                 {offerData.bonuses.map((bonus, index) => (
                   <div 
                     key={index}
-                    className="border border-zinc-800/50 rounded-2xl bg-zinc-900/30 overflow-hidden transition-all duration-300 hover:border-[#e8a032]/20"
+                    className="border border-zinc-800/50 rounded-2xl bg-zinc-900/30 overflow-hidden transition-all duration-300 hover:border-[#FFD700]/20"
                   >
                     <button
                       onClick={() => setExpandedBonus(expandedBonus === index ? null : index)}
                       className="w-full flex items-center justify-between gap-4 p-4 text-left"
                     >
                       <div className="flex items-center gap-3 flex-1">
-                        <div className="w-8 h-8 rounded-lg bg-[#e8a032]/10 flex items-center justify-center flex-shrink-0">
-                          <Sparkles className="w-4 h-4 text-[#e8a032]" />
+                        <div className="w-8 h-8 rounded-lg bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
+                          <Sparkles className="w-4 h-4 text-[#FFD700]" />
                         </div>
                         <div className="flex-1">
                           <span className="text-white font-medium">{bonus.name}</span>
                           {/* Mobile: Always show price */}
                           <div className="sm:hidden mt-1">
-                            <span className="text-[#e8a032] text-sm font-medium line-through">{bonus.value}</span>
+                            <span className="text-[#FFD700] text-sm font-medium line-through">{bonus.value}</span>
                           </div>
                         </div>
                       </div>
@@ -155,11 +157,11 @@ const OfferSection = () => {
                 ))}
               </div>
               <p className="text-zinc-500 text-sm mt-4 text-center">
-                Gesamtwert der Boni: <span className="text-[#e8a032]">{offerData.bonusTotal}</span> – {offerData.bonusNote}
+                Gesamtwert der Boni: <span className="text-[#FFD700]">{offerData.bonusTotal}</span> – {offerData.bonusNote}
               </p>
             </div>
 
-            {/* Price Section - Updated with strikethrough */}
+            {/* Price Section */}
             <div className="text-center py-8 border-t border-b border-zinc-800/50 mb-8">
               <div className="flex flex-col items-center gap-3 mb-4">
                 <span className="text-lg text-zinc-500">Dein Preis:</span>
@@ -176,21 +178,32 @@ const OfferSection = () => {
                 <span className="text-xl text-zinc-500">{offerData.period}</span>
               </div>
 
-              <p className="text-[#00c6ff] font-medium mb-6">
+              <p className="text-[#4FC3F7] font-medium mb-6">
                 Das sind {offerData.savings}€ Ersparnis pro Monat.
               </p>
 
-              {/* Scarcity - More prominent */}
-              <div className="inline-flex flex-col items-center gap-2 px-6 py-4 rounded-2xl bg-[#e8a032]/10 border border-[#e8a032]/30">
-                <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-[#e8a032]" />
-                  <span className="text-[#e8a032] font-bold text-lg">
-                    Nur 10 Plätze pro Monat – jederzeit kündbar
-                  </span>
-                </div>
-                <span className="text-zinc-400 text-sm">
-                  Aktuell verfügbar: <span className="text-white font-semibold">{availableSpotsData.current}/{availableSpotsData.total} Plätze</span>
+              {/* Scarcity with Progress Bar */}
+              <div className="inline-flex flex-col items-center gap-3 px-6 py-5 rounded-2xl bg-[#FFD700]/10 border border-[#FFD700]/30 w-full max-w-md">
+                <span className="text-[#FFD700] font-bold text-lg">
+                  Nur 10 Plätze pro Monat – jederzeit kündbar
                 </span>
+                
+                {/* Progress Bar */}
+                <div className="w-full">
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="text-zinc-400">Aktuell verfügbar:</span>
+                    <span className="text-white font-semibold">{availableSpotsData.current}/{availableSpotsData.total} Plätze</span>
+                  </div>
+                  <div className="h-3 bg-zinc-800 rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-gradient-to-r from-[#FFD700] to-[#FF6B6B] rounded-full transition-all duration-1000"
+                      style={{ width: `${spotsPercentage}%` }}
+                    />
+                  </div>
+                  <p className="text-xs text-zinc-500 mt-2">
+                    {availableSpotsData.total - availableSpotsData.current} von {availableSpotsData.total} Plätzen bereits vergeben
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -199,7 +212,7 @@ const OfferSection = () => {
               <Button 
                 asChild
                 size="lg"
-                className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold text-lg px-12 py-7 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,198,255,0.4)]"
+                className="w-full sm:w-auto bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold text-lg px-12 py-7 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(79,195,247,0.4)]"
               >
                 <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Jetzt Coaching starten
@@ -213,8 +226,8 @@ const OfferSection = () => {
         {/* Guarantee Section */}
         <div className="mt-12 p-8 lg:p-10 rounded-3xl bg-zinc-900/30 border border-zinc-800/50">
           <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="w-14 h-14 rounded-xl bg-[#e8a032]/10 flex items-center justify-center flex-shrink-0">
-              <Shield className="w-7 h-7 text-[#e8a032]" />
+            <div className="w-14 h-14 rounded-xl bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
+              <Shield className="w-7 h-7 text-[#FFD700]" />
             </div>
             <div>
               <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">
@@ -226,7 +239,7 @@ const OfferSection = () => {
               <ul className="space-y-4">
                 {guaranteeData.points.map((point, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-[#e8a032] flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#FFD700] flex-shrink-0 mt-0.5" />
                     <span className="text-zinc-300 text-sm leading-relaxed">{point}</span>
                   </li>
                 ))}
