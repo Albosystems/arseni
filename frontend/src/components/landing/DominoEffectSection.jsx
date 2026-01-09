@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Battery, Zap, Brain, Dumbbell, Moon, Wind, Thermometer, AlertTriangle, CheckCircle2 } from 'lucide-react';
+import { Battery, Zap, Brain, Dumbbell, Moon, Wind, Thermometer, AlertTriangle, CheckCircle2, SlidersHorizontal } from 'lucide-react';
 
 const DominoEffectSection = () => {
   // Ursachen-Werte (0-100)
@@ -32,6 +32,25 @@ const DominoEffectSection = () => {
 
   const isPrime = score > 65;
 
+  // Status-Texte für jeden Slider
+  const getSchlafStatus = (val) => {
+    if (val < 40) return { text: "Kritisch - Cortisolspiegel steigt", color: "text-red-400" };
+    if (val < 70) return { text: "Du erholst dich, aber noch nicht zuverlässig genug.", color: "text-[#FFD700]" };
+    return { text: "Du lädst sauber auf - das ist die Basis für Fortschritt.", color: "text-[#4FC3F7]" };
+  };
+
+  const getStressStatus = (val) => {
+    if (val < 40) return { text: "Dein Körper kann aufbauen und sich erholen.", color: "text-[#4FC3F7]" };
+    if (val < 70) return { text: "Fortschritt wird zäh, weil Erholung gebremst ist.", color: "text-[#FFD700]" };
+    return { text: "Cortisol dominiert - Testosteron sinkt.", color: "text-red-400" };
+  };
+
+  const getHormoneStatus = (val) => {
+    if (val < 40) return { text: "Antrieb und Energie sind flach, auch wenn du \"alles machst\".", color: "text-red-400" };
+    if (val < 70) return { text: "Es geht voran, aber dein System bremst noch.", color: "text-[#FFD700]" };
+    return { text: "Stabiler Antrieb, bessere Regeneration und mehr Drive.", color: "text-[#4FC3F7]" };
+  };
+
   return (
     <section className="relative py-16 lg:py-24 px-6 bg-[#121212] overflow-hidden">
       {/* Background glow */}
@@ -48,7 +67,7 @@ const DominoEffectSection = () => {
             Der <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">Domino-Effekt</span>
           </h2>
           <p className="text-zinc-400">
-            Warum die Basis alles entscheidet - teste es selbst.
+            Dreh an der Basis und sieh, wie sich das Ergebnis verändert.
           </p>
         </div>
 
@@ -59,23 +78,23 @@ const DominoEffectSection = () => {
           <div className="flex justify-center gap-3 sm:gap-4 mb-8 sm:mb-10">
             <button 
               onClick={setAverage}
-              className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 border ${
+              className={`px-5 sm:px-6 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 border ${
                 !isPrime 
                   ? 'bg-red-500/20 border-red-500/50 text-red-400 shadow-[0_0_20px_rgba(239,68,68,0.2)]' 
                   : 'bg-zinc-900 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
               }`}
             >
-              Durchschnittlicher Mann
+              Durchschnitt
             </button>
             <button 
               onClick={setPrime}
-              className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 border ${
+              className={`px-5 sm:px-6 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 border ${
                 isPrime 
                   ? 'bg-[#4FC3F7]/20 border-[#4FC3F7]/50 text-[#4FC3F7] shadow-[0_0_20px_rgba(79,195,247,0.2)]' 
                   : 'bg-zinc-900 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
               }`}
             >
-              Primezeit Mann
+              Primezeit
             </button>
           </div>
 
@@ -85,12 +104,13 @@ const DominoEffectSection = () => {
             <div className="space-y-6">
               <div className="flex items-center justify-between gap-2">
                 <h3 className="text-lg font-bold text-[#4FC3F7] uppercase tracking-wider">Die Basis</h3>
-                <span className="text-[10px] bg-[#4FC3F7]/10 text-[#4FC3F7] px-2 py-1 rounded border border-[#4FC3F7]/20 whitespace-nowrap">
-                  Schieberegler nutzen
+                <span className="flex items-center gap-1.5 text-[10px] bg-[#4FC3F7]/10 text-[#4FC3F7] px-2.5 py-1.5 rounded border border-[#4FC3F7]/20 whitespace-nowrap">
+                  <SlidersHorizontal className="w-3 h-3" />
+                  Regler bewegen
                 </span>
               </div>
               
-              <div className="space-y-5">
+              <div className="space-y-4">
                 {/* Schlaf */}
                 <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
                   <div className="flex justify-between items-center">
@@ -110,13 +130,13 @@ const DominoEffectSection = () => {
                     max="100"
                     value={levers.schlaf}
                     onChange={(e) => handleLevelChange('schlaf', e.target.value)}
-                    className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer slider-thumb"
+                    className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer"
                     style={{
                       background: `linear-gradient(to right, #4FC3F7 0%, #4FC3F7 ${levers.schlaf}%, #27272a ${levers.schlaf}%, #27272a 100%)`
                     }}
                   />
-                  <p className="text-xs text-zinc-500">
-                    {levers.schlaf > 70 ? 'Optimiert - Hormone regenerieren sich' : levers.schlaf > 40 ? 'Mittel - Suboptimale Regeneration' : 'Kritisch - Cortisolspiegel steigt'}
+                  <p className={`text-xs transition-colors ${getSchlafStatus(levers.schlaf).color}`}>
+                    {getSchlafStatus(levers.schlaf).text}
                   </p>
                 </div>
 
@@ -128,7 +148,7 @@ const DominoEffectSection = () => {
                       Stress-Level
                     </span>
                     <span className={`font-mono text-sm font-bold transition-colors ${
-                      levers.stress < 30 ? 'text-[#4FC3F7]' : levers.stress < 60 ? 'text-[#FFD700]' : 'text-red-400'
+                      levers.stress < 40 ? 'text-[#4FC3F7]' : levers.stress < 70 ? 'text-[#FFD700]' : 'text-red-400'
                     }`}>
                       {levers.stress}%
                     </span>
@@ -144,8 +164,8 @@ const DominoEffectSection = () => {
                       background: `linear-gradient(to right, #ef4444 0%, #ef4444 ${levers.stress}%, #27272a ${levers.stress}%, #27272a 100%)`
                     }}
                   />
-                  <p className="text-xs text-zinc-500">
-                    {levers.stress < 30 ? 'Niedrig - Körper kann aufbauen' : levers.stress < 60 ? 'Erhöht - Regeneration eingeschränkt' : 'Chronisch - Testosteron sinkt'}
+                  <p className={`text-xs transition-colors ${getStressStatus(levers.stress).color}`}>
+                    {getStressStatus(levers.stress).text}
                   </p>
                 </div>
 
@@ -173,8 +193,8 @@ const DominoEffectSection = () => {
                       background: `linear-gradient(to right, #FFD700 0%, #FFD700 ${levers.hormone}%, #27272a ${levers.hormone}%, #27272a 100%)`
                     }}
                   />
-                  <p className="text-xs text-zinc-500">
-                    {levers.hormone > 70 ? 'Optimiert - Testosteron & Schilddrüse top' : levers.hormone > 40 ? 'Suboptimal - Fortschritt gehemmt' : 'Im Keller - Null Energie & Libido'}
+                  <p className={`text-xs transition-colors ${getHormoneStatus(levers.hormone).color}`}>
+                    {getHormoneStatus(levers.hormone).text}
                   </p>
                 </div>
               </div>
@@ -187,7 +207,7 @@ const DominoEffectSection = () => {
                 <div className="absolute inset-0 bg-[#4FC3F7] blur-[80px] animate-pulse" />
               </div>
 
-              <h3 className="text-lg font-bold text-[#FFD700] uppercase tracking-wider relative z-10">Das Resultat</h3>
+              <h3 className="text-lg font-bold text-[#FFD700] uppercase tracking-wider relative z-10">Das Ergebnis</h3>
               
               <div className="grid grid-cols-2 gap-3 sm:gap-4 relative z-10">
                 {[
@@ -219,19 +239,19 @@ const DominoEffectSection = () => {
                 <div className={`transition-all duration-500 transform ${isPrime ? 'scale-110 text-[#4FC3F7]' : 'scale-100 text-red-500'}`}>
                   {isPrime ? <CheckCircle2 size={48} /> : <AlertTriangle size={48} />}
                 </div>
-                <span className={`text-xs font-black mt-3 tracking-[0.15em] transition-colors ${isPrime ? 'text-[#4FC3F7]' : 'text-red-500'}`}>
-                  {isPrime ? 'SYSTEM OPTIMIERT' : 'SYSTEM KRITISCH'}
+                <span className={`text-xs font-black mt-3 tracking-[0.1em] transition-colors ${isPrime ? 'text-[#4FC3F7]' : 'text-red-500'}`}>
+                  {isPrime ? 'SYSTEM OPTIMIERT' : 'BASIS INSTABIL'}
                 </span>
                 <p className="text-zinc-500 text-xs mt-2 text-center max-w-xs">
                   {isPrime 
                     ? 'Deine Basis stimmt - Fortschritt ist unvermeidlich.' 
-                    : 'Die Basis ist instabil - kein Plan wird hier funktionieren.'}
+                    : 'Solange die Basis wackelt, bleibt Fortschritt unzuverlässig - egal wie "diszipliniert" du bist.'}
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Bottom Note */}
+          {/* Bottom-Bar */}
           <div className={`mt-8 p-4 rounded-xl text-center transition-all duration-500 ${
             isPrime 
               ? 'bg-[#4FC3F7]/10 border border-[#4FC3F7]/30' 
@@ -240,7 +260,7 @@ const DominoEffectSection = () => {
             <p className={`text-sm font-medium ${isPrime ? 'text-[#4FC3F7]' : 'text-red-400'}`}>
               {isPrime 
                 ? '→ Mit diesem Setup baust du auf - nicht ab.' 
-                : '→ Genau hier setzen wir an. Nicht am Training, nicht an der Ernährung - an der Basis.'}
+                : '→ Wir stabilisieren zuerst die Basis - dann greifen Training und Ernährung.'}
             </p>
           </div>
         </div>
