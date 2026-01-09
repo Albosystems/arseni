@@ -32,6 +32,23 @@ const HeroSection = () => {
         }}
       />
 
+      {/* Pulse animation styles */}
+      <style>{`
+        @keyframes pulse-glow {
+          0%, 100% {
+            box-shadow: 0 0 20px rgba(0, 198, 255, 0.4), 0 0 40px rgba(0, 198, 255, 0.2);
+            transform: scale(1);
+          }
+          50% {
+            box-shadow: 0 0 30px rgba(0, 198, 255, 0.6), 0 0 60px rgba(0, 198, 255, 0.3);
+            transform: scale(1.02);
+          }
+        }
+        .pulse-button {
+          animation: pulse-glow 2s ease-in-out infinite;
+        }
+      `}</style>
+
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-50 px-6 py-6">
         <nav className="max-w-7xl mx-auto flex items-center justify-between">
@@ -81,7 +98,7 @@ const HeroSection = () => {
           <Button 
             asChild
             size="lg"
-            className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,198,255,0.3)]"
+            className="pulse-button w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
           >
             <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               {heroData.ctaText}
