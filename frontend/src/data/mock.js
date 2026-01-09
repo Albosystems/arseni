@@ -37,7 +37,7 @@ export const targetAudienceData = {
     ]
   },
   notForYou: {
-    title: "Das bist du NICHT:",
+    title: "Nicht für dich:",
     items: [
       "Du willst selber deinen eigenen Weg finden und dich selbst verwirklichen. Dann brauchst du kein Coaching – sondern ein Hobby, bei dem du experimentieren kannst.",
       "Du willst nicht kontrolliert oder zur Verantwortung gezogen werden. Verstehe ich. Aber dann musst du dich fragen: Hat es ohne diese Kontrolle jemals funktioniert?",
