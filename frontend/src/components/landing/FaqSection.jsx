@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from '../ui/accordion';
 import { Button } from '../ui/button';
-import { faqData, guaranteeData, siteConfig } from '../../data/mock';
+import { faqData, faqOutro, siteConfig } from '../../data/mock';
 
 const FaqSection = () => {
   return (
@@ -19,7 +19,7 @@ const FaqSection = () => {
             Deine <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">Einwände</span>
           </h2>
           <p className="text-zinc-400 text-lg">
-            Ich kenne sie alle. Hier sind die Antworten.
+            Du hast Fragen – völlig normal. Hier sind klare Antworten, damit du weißt, worauf du dich einlässt.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ const FaqSection = () => {
         {/* Final CTA */}
         <div className="mt-16 text-center">
           <p className="text-zinc-400 mb-6">
-            Noch unsicher? Dann bist du wahrscheinlich noch nicht bereit. Kein Problem.
+            {faqOutro.text}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
@@ -57,7 +57,7 @@ const FaqSection = () => {
               className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,198,255,0.3)]"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
-                Ich bin bereit – 297€/Monat
+                {faqOutro.primaryCta}
               </a>
             </Button>
             <Button 
@@ -67,7 +67,7 @@ const FaqSection = () => {
               className="w-full sm:w-auto border-zinc-700 text-white hover:bg-white/5 px-8 py-6 rounded-xl"
             >
               <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer">
-                Erst mal Instagram checken
+                {faqOutro.secondaryCta}
               </a>
             </Button>
           </div>
