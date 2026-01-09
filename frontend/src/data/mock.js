@@ -1,5 +1,5 @@
 // Mock data for Primezeit Landing Page
-// UPDATED COPY: Targeting "Der paralysierte Performer"
+// UPDATED COPY: "No-Bullshit" Ton, biologische Logik, Accountability als Hauptversprechen
 
 export const siteConfig = {
   logo: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68ea002732ea05a4ca2d37db_Logo%20Builder.png",
@@ -10,15 +10,15 @@ export const siteConfig = {
 };
 
 export const heroData = {
-  badge: "1:1 Coaching für Männer, die endlich EIN System wollen",
-  headline: "Jeder sagt was anderes.",
-  subheadline: "Du machst nichts.",
-  description: "Du hast 1000 Tabs offen. 50 PDFs gespeichert. 100 Videos geschaut. Trotzdem weißt du nicht, was bei DIR funktioniert. Hier bekommst du EIN System. Keine Entscheidungen mehr. Hormone, Körper, Geist – ich sage dir genau, was du tust.",
-  ctaText: "Schluss mit Raten",
-  secondaryCta: "Wie es funktioniert",
+  badge: "1:1 Coaching für Männer, die endlich EIN ganzes System wollen",
+  headline: "Mehr Fokus. Mehr Energie. Mehr Kraft.",
+  subheadline: "Schon in den ersten 30 Tagen.",
+  description: "Der typische Fitness-Coach optimiert deine Makros und gibt dir einen Trainingsplan. Aber deine Hormone? Dein Schlaf? Dein Stresslevel? Interessiert sie nicht. Genau deshalb siehst du keine Fortschritte, obwohl du dich an den Plan hältst. Hier schauen wir auf das gesamte System: Testosteron optimieren, Cortisol senken, Schilddrüse unterstützen – nicht nur Kalorien zählen.",
+  ctaText: "System starten",
+  secondaryCta: "Ablauf ansehen",
   features: [
-    "Monatlich kündbar",
-    "Ein System, keine 1000 Meinungen",
+    "100% individuell",
+    "24/7 WhatsApp-Support",
     "Wöchentliche Kontrolle"
   ]
 };
@@ -39,24 +39,26 @@ export const proofStackData = {
 };
 
 export const targetAudienceData = {
+  sectionHeadline: "Erkennst du dich wieder?",
+  sectionSubheadline: "Nicht jeder Mann passt zu diesem System. Hier siehst du, ob du dazugehörst.",
   forYou: {
     title: "Das bist du:",
     items: [
-      "Du hast alle Infos – aber kein System. YouTube, Instagram, 50 PDFs. Ergebnis: Nichts umgesetzt.",
-      "Du weißt nicht, wem du vertrauen sollst. Einer sagt Keto, der andere High Carb, der dritte Fasten.",
-      "Du bist erschöpft, obwohl du 7h schläfst. Morgens gerädert, nachmittags tot.",
-      "Dein Körper wird weich. Bauch wächst, Muskeln verschwinden, Libido weg.",
-      "Du brauchst jemanden, der dir sagt: Mach DAS. Genau SO. Keine Diskussion."
+      "Du hast dir unzählige YouTube-Videos angesehen, und unzählige PDFs heruntergeladen – aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weißt, welche Information jetzt die richtige ist und wo du anfangen sollst.",
+      "Überall hörst du etwas anderes. Du weißt nicht, wem du vertrauen sollst. Ein Influencer schwört auf Keto, der nächste sagt, dass Low Carb dein Testosteron killt, und der dritte predigt intermittent Fasten. Du stehst da mit all diesen Infos und machst am Ende gar nichts, weil du Angst hast, das Falsche zu tun.",
+      "Du schläfst eigentlich lang genug, aber trotzdem fühlst du dich jeden Morgen wie gerädert. Nachmittags bist du komplett platt, und abends hast du weder Energie für deine Familie noch Lust auf Sex. Dieser ständige Brain Fog und die Müdigkeit begleiten dich den ganzen Tag.",
+      "Dein Körper verändert sich – und nicht zum Besseren. Der Bauch wird weicher, Muskeln verschwinden langsam, und auch deine Libido ist nicht mehr das, was sie mal war. Du merkst, dass etwas nicht stimmt, aber du weißt nicht, wo du ansetzen sollst.",
+      "Du willst keinen weiteren Trainingsplan oder die hundertste Meinung – du brauchst jemanden, der dir klipp und klar sagt, was du tun musst und was zu dir und deiner Situation passt. Kein „probier mal das" oder „vielleicht funktioniert bei dir eher jenes". Du willst ein System, das funktioniert, und jemanden, der dich dabei begleitet und kontrolliert, damit du nicht wieder aufgibst."
     ]
   },
   notForYou: {
-    title: "Das bist du nicht:",
+    title: "Das bist du NICHT:",
     items: [
-      "Du willst einen 'eigenen Weg finden' – du brauchst kein Coaching, du brauchst ein Hobby.",
-      "Du suchst Wunderpillen oder '7 Tage zum Sixpack' – geh zu Instagram.",
-      "Du willst nicht kontrolliert werden – dann wirst du wieder versagen.",
-      "Ausreden sind dir wichtiger als Ergebnisse.",
-      "Du willst labern statt machen."
+      "Du willst selber deinen eigenen Weg finden und dich selbst verwirklichen. Wenn du das suchst, brauchst du kein Coaching – dann brauchst du ein Hobby, bei dem du experimentieren kannst.",
+      "Du willst nicht kontrolliert oder zur Verantwortung gezogen werden. Verstehe ich. Aber dann musst du dir die Frage stellen: Hat es ohne diese Kontrolle jemals funktioniert? Wenn die Antwort nein ist, dann weißt du, was passieren wird.",
+      "Du glaubst an Wunderpillen, Crash-Diäten oder dass du in 7 Tagen ein Sixpack bekommst. Wenn das deine Erwartung ist, dann ist Instagram der bessere Ort für dich.",
+      "Ausreden sind dir wichtiger als Ergebnisse. Wenn du lieber erklären willst, warum etwas nicht geht, anstatt es einfach zu machen, dann verschwendest du hier nur deine Zeit.",
+      "Du suchst nach Mindset-Coaching und Manifestation. Du glaubst, dass du nur positiver denken musst, dann wird alles besser. Spoiler: Wenn deine Biologie nicht mitspielt, kannst du denken, was du willst – du wirst dich trotzdem wie Scheiße fühlen. Hier fangen wir unten an, nicht oben."
     ]
   }
 };
@@ -64,45 +66,46 @@ export const targetAudienceData = {
 export const problemMechanismData = {
   problem: {
     title: "Warum du immer wieder scheiterst",
-    subtitle: "Das Problem ist nicht du. Das Problem ist das System.",
+    subtitle: "Das Problem bist nicht du, sondern das System.",
+    subtext: "Und warum das nicht deine Schuld ist.",
     points: [
       {
         title: "Informations-Paralyse",
-        description: "Influencer A sagt Keto. B sagt Carbs. C sagt Fasten. Du machst GAR NICHTS, weil du nicht weißt, was richtig ist."
+        description: "Influencer A sagt Keto, Influencer B sagt Carbs, Influencer C sagt Fasten. Am Ende machst du GAR NICHTS, weil du einfach nicht weißt, was davon jetzt richtig ist."
       },
       {
         title: "Standard-Coaching ignoriert das Wesentliche",
-        description: "08/15 Coach: Makros + Training = fertig. Aber deine Hormone, dein Schlaf, dein Stress? Wird ignoriert. Darum null Progress."
+        description: "Der typische 08/15 Coach sagt: Makros tracken und Training abarbeiten, dann passt das schon. Aber was ist mit deinen Hormonen, deinem Schlaf, deinem Stress? Das wird komplett ignoriert – und genau deshalb siehst du null Progress."
       },
       {
         title: "Keine Accountability",
-        description: "Du versuchst es alleine. Supplements gekauft, falsche Dosis. Diät angefangen, nach 2 Wochen abgebrochen. Keiner kontrolliert dich."
+        description: "Du versuchst es alleine: Supplements gekauft, aber in der falschen Dosis. Diät angefangen und nach 2 Wochen wieder abgebrochen. Das Problem ist, dass niemand da ist, der dich kontrolliert und auf Kurs hält."
       },
       {
         title: "Du weißt nicht, was bei DIR funktioniert",
-        description: "Jeder Körper ist anders. Was beim YouTube-Typen klappt, funktioniert bei dir vielleicht nicht. Du brauchst ein individuelles System."
+        description: "Jeder Körper ist anders, und was bei irgendeinem YouTube-Typen funktioniert, funktioniert bei dir vielleicht überhaupt nicht. Du brauchst kein allgemeines Programm – du brauchst ein System, das auf DEINEN Körper abgestimmt ist."
       }
     ]
   },
   solution: {
-    title: "Was Primezeit anders macht",
+    title: "Die Lösung",
     subtitle: "Nicht besser – ANDERS.",
     points: [
       {
         title: "EIN System, keine 1000 Meinungen",
-        description: "Ich sage dir genau, was du tust. Du machst es. Kopf ausschalten. System folgen. Keine Entscheidungen mehr."
+        description: "Ich sage dir genau, was du tun musst, und du machst es einfach. Kopf ausschalten, System folgen – keine Entscheidungen mehr, keine Zweifel, keine Paralyse."
       },
       {
         title: "Hormone steuern = Körper funktioniert",
-        description: "Testosteron hoch, Cortisol runter, Schilddrüse rein. So funktioniert Biologie. Nicht Motivation, sondern Biochemie."
+        description: "Testosteron hochbringen, Cortisol senken, Schilddrüse unterstützen – so funktioniert Biologie. Es geht hier nicht um Motivation oder Mindset, sondern um Biochemie."
       },
       {
         title: "Wöchentliche Kontrolle – du KANNST nicht versagen",
-        description: "Ich kontrolliere jede Woche. Wenn du aus der Spur kommst, bringe ich dich zurück. Du bist nicht alleine."
+        description: "Ich kontrolliere dich jede Woche, und wenn du aus der Spur kommst, bringe ich dich sofort zurück auf Kurs. Du bist nicht alleine – du kannst gar nicht versagen."
       },
       {
         title: "Individuell auf DEINE Daten",
-        description: "Kein Copy-Paste-Plan. Basiert auf deinem Körper, deinem Alltag, deinen Werten. Was bei DIR funktioniert."
+        description: "Kein Copy-Paste-Plan, den jeder bekommt. Alles basiert auf deinem Körper, deinem Alltag, deinen Werten – auf dem, was bei DIR funktioniert."
       }
     ]
   }
@@ -112,18 +115,18 @@ export const testimonialsData = [
   {
     id: 1,
     name: "Besmir",
-    role: "Unternehmer, 2 Firmen",
+    role: "Unternehmer – Voclain, Innoversity",
     imageBefore: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68e90cec20dff9b72168107b_Bodybuilder%20Man.webp",
     imageAfter: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68f2249fe48059d8a851ad09_testimonial%202.webp",
-    headline: "15 kg runter. Zigarette weg. Muay-Thai-Kampf gewonnen.",
-    quote: "Ich hatte alle Infos. Wusste theoretisch alles über Ernährung. Trotzdem: Übergewicht, Raucher, Energie im Keller. Arseni hat mir nicht noch mehr Infos gegeben – er hat mir gesagt, was ich MACHEN soll. Jeden Tag. Ohne Diskussion.",
+    headline: "15kg leichter, Rauchfrei nach 20 Jahren, Muay-Thai-Kampf gewonnen – mit 45.",
+    quote: "Ich hatte alle Infos und wusste theoretisch alles über Ernährung. Trotzdem war ich übergewichtig, Raucher und hatte keine Energie mehr. Arseni hat mir nicht noch mehr Infos gegeben – er hat mir gesagt, was ich MACHEN soll. Jeden Tag, ohne Diskussion.",
     results: [
       "15 kg in 3 Monaten",
       "Rauchfrei nach 20 Jahren",
-      "Blutdruck normalisiert",
-      "Muay-Thai Kampf gewonnen"
+      "Muay-Thai Kampf gewonnen",
+      "Mit 45 Jahren"
     ],
-    fullStory: "Ich bin Unternehmer. Voclain, Innoversity – zwei Firmen aufgebaut. Aber mein Körper? Komplett vernachlässigt. Jahrelang. Ich wusste ALLES über Fitness. YouTube, Podcasts, Bücher. Trotzdem: 15kg Übergewicht, Kettenraucher, nachmittags tot. Das Problem war nie das Wissen. Das Problem war: Niemand hat mir gesagt, was ICH konkret machen soll. Arseni hat das geändert. Kein 'Finde deinen Weg'. Sondern: 'Mach das. Jetzt. Ich kontrolliere Freitag.' Nach 3 Monaten: 15kg leichter. Mit dem Rauchen aufgehört (nach 20 Jahren!). Und dann in Thailand spontan zu einem Muay-Thai-Kampf angemeldet – und gewonnen. Mit 45. Das System funktioniert. Wenn du machst, was er sagt."
+    fullStory: "Ich bin Unternehmer – Voclain, Innoversity, zwei Firmen aufgebaut. Aber mein Körper? Den habe ich jahrelang komplett vernachlässigt. Dabei wusste ich ALLES über Fitness: YouTube, Podcasts, Bücher, ich hatte mir alles angesehen. Trotzdem hatte ich 15kg Übergewicht, war Kettenraucher und nachmittags war ich komplett tot. Das Problem war nie das Wissen. Das Problem war, dass mir niemand gesagt hat, was ICH konkret machen soll. Arseni hat das geändert. Nicht dieses 'Finde deinen Weg'-Gelaber, sondern klare Ansagen: 'Mach genau das. Jetzt. Und am Freitag kontrolliere ich, ob du es gemacht hast.' Nach 3 Monaten war ich 15kg leichter, hatte mit dem Rauchen aufgehört (nach 20 Jahren!) und habe mich in Thailand spontan zu einem Muay-Thai-Kampf angemeldet – den ich dann auch gewonnen habe. Mit 45 Jahren. Das System funktioniert, wenn du machst, was er sagt."
   },
   {
     id: 2,
@@ -131,105 +134,164 @@ export const testimonialsData = [
     role: "Fitness-Enthusiast, jahrelang Plateau",
     imageBefore: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68f22507ba487aafa80d8d50_Testimonial%203.webp",
     imageAfter: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68f225061cec50f7e024019b_Testimonial%204.webp",
-    headline: "Jahrelang trainiert. Null Ergebnis. Bis ich aufgehört habe zu raten.",
-    quote: "Testosteron im Keller, Östrogen zu hoch. Kein normaler Coach hätte das gecheckt. Die haben mir gesagt: Mehr trainieren. Das Problem war nie das Training.",
+    headline: "Testosteron fast verdoppelt – weniger Training als vorher.",
+    quote: "Mein Testosteron war im Keller und mein Östrogen viel zu hoch. Kein normaler Coach hätte das überhaupt gecheckt. Die haben mir nur gesagt: Mehr trainieren. Aber das Problem war nie das Training.",
     results: [
       "Testosteron verdoppelt",
-      "Sichtbare Muskeln nach Jahren Plateau",
-      "Hormone endlich in Balance",
-      "Energie den ganzen Tag"
+      "Östrogen normalisiert",
+      "Sichtbare Muskeln nach Jahren",
+      "Weniger Training"
     ],
-    fullStory: "Ich war der Typ, der ALLES probiert hat. Push-Pull-Legs. Ganzkörper. Upper-Lower. Keto. High Carb. Intermittent Fasting. Supplements für 500€/Monat. Ergebnis? Ich sah nach 5 Jahren Training aus wie nach 5 Monaten. Null Progress. Jeder Coach sagte: 'Du musst mehr trainieren' oder 'Du isst zu wenig Protein'. Bullshit. Das Problem waren meine Hormone. Testosteron im Keller, Östrogen viel zu hoch, Cortisol chronisch erhöht. Arseni hat das direkt gecheckt. Nicht geraten – gemessen. Dann ein System, das auf MEINE Werte abgestimmt war. Nicht irgendein YouTube-Plan. Heute: Testosteron fast verdoppelt. Körper, den ich nach 5 Jahren aufgegeben hatte. Und ich trainiere weniger als vorher."
+    fullStory: "Ich war der Typ, der ALLES probiert hat: Push-Pull-Legs, Ganzkörper, Upper-Lower, Keto, High Carb, Intermittent Fasting, Supplements für 500€ im Monat. Das Ergebnis? Nach 5 Jahren Training sah ich aus wie nach 5 Monaten – null Progress, nichts hatte sich verändert. Jeder Coach sagte: 'Du musst mehr trainieren' oder 'Du isst zu wenig Protein'. Bullshit. Das Problem waren meine Hormone: Testosteron im Keller, Östrogen viel zu hoch, Cortisol chronisch erhöht. Arseni hat das direkt gecheckt – nicht geraten, sondern gemessen. Dann hat er ein System entwickelt, das auf MEINE Werte abgestimmt war – nicht irgendein YouTube-Plan. Heute ist mein Testosteron fast verdoppelt und ich habe den Körper, den ich nach 5 Jahren schon aufgegeben hatte. Und ich trainiere weniger als vorher."
   },
   {
     id: 3,
-    name: "Daniel R.",
-    role: "Anlagenmechaniker, Familienvater, Schichtarbeit",
+    name: "Daniel",
+    role: "Familienvater, Führungsposition, Schichtbetrieb",
     imageBefore: null,
     imageAfter: null,
-    headline: "Schichtarbeit, Familie, kein Zeit-Argument mehr.",
-    quote: "Ich dachte, ich habe keine Zeit. 3 Kinder, Schichtarbeit, Führungsposition. Arseni hat mir gezeigt: Es geht nicht um Zeit. Es geht darum, das RICHTIGE zu tun.",
+    headline: "30 Minuten Training reichen aus – wer hätte das gedacht?",
+    quote: "Ich dachte, ich habe keine Zeit – 3 Kinder, Schichtarbeit, Führungsposition. Arseni hat mir gezeigt: Es geht nicht um Zeit. Es geht darum, das RICHTIGE zu tun.",
     results: [
       "Fett runter, Muskeln rauf",
       "Magenprobleme verschwunden",
       "30 Min Training reichen",
-      "Funktioniert trotz Schichtarbeit"
+      "Trotz Schichtarbeit"
     ],
-    fullStory: "Ich bin Familienvater. Drei Kinder. Führungsposition im Schichtbetrieb. Nebenberuflich noch aktiv. Meine Ausrede war immer: 'Keine Zeit.' Arseni hat das zerlegt. Du brauchst keine 2 Stunden im Gym. Du brauchst 30 Minuten – aber die RICHTIGEN 30 Minuten. Mit dem richtigen Plan. Im ersten Monat: Fett abgebaut, Muskeln aufgebaut. Bauchumfang kleiner, Arme größer. Messbar. Nicht gefühlt. Und meine chronischen Magenprobleme? Weg. Komplett. Durch die richtige Ernährung zur richtigen Zeit. Das Zeug, das ich jahrelang ignoriert habe, weil ich dachte, ich weiß es besser."
+    fullStory: "Ich bin Familienvater mit drei Kindern, arbeite in einer Führungsposition im Schichtbetrieb und bin nebenberuflich noch aktiv. Meine Ausrede war immer: 'Keine Zeit.' Arseni hat das zerlegt. Du brauchst keine 2 Stunden im Gym. Du brauchst 30 Minuten – aber die RICHTIGEN 30 Minuten mit dem richtigen Plan. Im ersten Monat habe ich Fett abgebaut und Muskeln aufgebaut: Bauchumfang kleiner, Arme größer – messbar, nicht nur gefühlt. Und meine chronischen Magenprobleme sind komplett verschwunden durch die richtige Ernährung zur richtigen Zeit. Das Zeug, das ich jahrelang ignoriert habe, weil ich dachte, ich weiß es besser."
   },
   {
     id: 4,
     name: "Alexander W.",
-    role: "Trader, 35",
+    role: "Trader, Kopfarbeiter",
     imageBefore: null,
     imageAfter: null,
-    headline: "Testosteron +40% – ohne TRT, nur durch System.",
+    headline: "Testosteron +40% – ohne TRT, nur durch das System.",
     quote: "Mein Hausarzt sagte: Deine Werte sind normal für dein Alter. Arseni sagte: Normal für einen 70-Jährigen. Er hatte Recht.",
     results: [
       "Testosteron +40%",
       "Brain Fog komplett weg",
-      "Morgens endlich wach",
-      "Keine TRT nötig"
+      "Ohne TRT",
+      "Funktioniere wieder"
     ],
-    fullStory: "Ich bin Trader. Kopfarbeit den ganzen Tag. Aber mein Kopf hat nicht mehr mitgespielt. Brain Fog. Ständig müde. Morgens gerädert, egal wie viel ich geschlafen habe. Mein Hausarzt: 'Ihre Werte sind normal. Weniger Stress.' Danke für nichts. Arseni hat tiefer geschaut. Testosteron zu niedrig (aber 'normal' laut Referenzwerten – die sind von kranken Leuten!). Cortisol chronisch erhöht. Wir haben das System angepasst. Schlaf optimiert. Supplements im richtigen Timing. Training angepasst. Nach 8 Wochen: Testosteron +40%. Ohne TRT. Ohne Hormone von außen. Nur durch das System. Brain Fog? Weg. Ich funktioniere wieder."
+    fullStory: "Ich bin Trader und mache den ganzen Tag Kopfarbeit. Aber mein Kopf hat nicht mehr mitgespielt: Brain Fog, ständig müde, morgens gerädert, egal wie viel ich geschlafen habe. Mein Hausarzt: 'Ihre Werte sind normal. Weniger Stress.' Danke für nichts. Arseni hat tiefer geschaut: Testosteron zu niedrig (aber 'normal' laut Referenzwerten – die sind von kranken Leuten!) und Cortisol chronisch erhöht. Wir haben das System angepasst, meinen Schlaf optimiert, Supplements im richtigen Timing genommen und das Training angepasst. Nach 8 Wochen war mein Testosteron um 40% gestiegen – ohne TRT, ohne Hormone von außen, nur durch das System. Der Brain Fog ist komplett verschwunden. Ich funktioniere wieder."
   }
 ];
 
 export const processData = {
+  badge: "DEIN WEG",
   title: "So läuft das ab",
-  subtitle: "Kein Gelaber. Du weißt vorher genau, was passiert.",
+  subtitle: "Damit du den Prozess kennst, bevor du startest.",
+  footerText: "Bereit zu starten?",
   steps: [
     {
-      phase: "Tag 1-3",
+      phase: "Onboarding",
       title: "Ich analysiere DICH – nicht irgendeinen Durchschnitts-Typen",
-      description: "Fragebogen zu deinem Alltag, deinem Körper, deinen bisherigen Versuchen. Optional: Blutwerte. Ich will wissen, wo DU stehst. Nicht, was YouTube sagt.",
-      duration: "Onboarding"
+      description: "Am Anfang schauen wir uns an, wo du wirklich stehst: Alltag, Schlaf, Stress, Ernährung, Training, Beschwerden und deine bisherigen Versuche. Wenn du Blutwerte hast (oder machen willst), nutzen wir sie optional, um schneller zu sehen, was bei dir im System gerade blockiert. Ziel ist nicht, dir „noch mehr Wissen" zu geben, sondern eine saubere Ausgangslage zu schaffen, auf der wir ein System aufbauen können, das zu dir passt.",
+      duration: "Tag 1–3"
     },
     {
-      phase: "Woche 1-2",
-      title: "Du bekommst DEIN System – und fängst sofort an",
-      description: "Trainingsplan (30 Min, 3-4x/Woche). Ernährung (auf 1g genau, passt zu deinem Alltag). Supplements (richtiges Timing, richtige Dosis). Du machst. Ich kontrolliere.",
-      duration: "System-Setup"
+      phase: "System-Setup",
+      title: "Du bekommst DEIN System – und setzt sofort um",
+      description: "Du bekommst einen Plan, der sich an deinem Alltag orientiert – nicht umgekehrt. Training, Ernährung, Supplement-Strategie und Schlaf werden so zusammengestellt, dass du es auch wirklich durchziehst, ohne ständig Entscheidungen treffen zu müssen. Du weißt glasklar, was du tust, warum du es tust und woran wir messen, ob es funktioniert. Und wenn etwas nicht passt, wird es angepasst – nicht „durchgebissen".",
+      duration: "Woche 1–2"
     },
     {
-      phase: "Fortlaufend",
-      title: "Wöchentliche Kontrolle – du KANNST nicht versagen",
-      description: "Jeden Freitag: Check-in. Was lief? Was nicht? Was passen wir an? Du bist nie alleine. 24/7 WhatsApp, wenn was ist. Ich bringe dich zurück auf Kurs, bevor du scheiterst.",
-      duration: "Laufende Betreuung"
+      phase: "Laufende Betreuung",
+      title: "Wöchentliche Kontrolle – damit du nicht wieder abrutschst",
+      description: "Jede Woche prüfen wir, was funktioniert hat, wo du abgewichen bist und was wir konkret verändern, damit du wieder sauber auf Kurs bist. Du musst dabei nicht alleine herumprobieren: Wenn etwas auftaucht, klären wir es direkt per WhatsApp, bevor aus einem kleinen Fehler wieder ein kompletter Abbruch wird. Genau dafür ist die Betreuung da: Umsetzung sichern, Kurs halten, Fortschritt erzwingen.",
+      duration: "Fortlaufend"
     }
   ]
 };
 
 export const offerData = {
+  badge: "DAS KOMPLETTE SYSTEM",
   title: "Was du bekommst",
-  subtitle: "Kein Schnickschnack. Das, was funktioniert.",
+  subtitle: "Alles, was du brauchst, um endlich Ergebnisse zu sehen.",
   price: "297",
   currency: "€",
   period: "/Monat",
   originalValue: "1.013",
+  savings: "716",
   features: [
-    { name: "Individueller Trainingsplan", value: "3-4x/Woche, 30 Min" },
-    { name: "Ernährungsstrategie auf 1g genau", value: "Passt zu deinem Alltag" },
-    { name: "Supplement-Protokoll", value: "Richtiges Timing, richtige Dosis" },
-    { name: "Schlaf-Optimierung", value: "Hormone brauchen Schlaf" },
-    { name: "24/7 WhatsApp-Support", value: "Frage = Antwort" },
-    { name: "Wöchentliche Check-ins", value: "Du kannst nicht versagen" },
-    { name: "Blutwerte-Analyse", value: "Optional, aber empfohlen" }
+    { 
+      name: "Performance-Onboarding", 
+      subtitle: "dein persönlicher Standort-Scan",
+      description: "Bevor wir irgendwas machen, analysieren wir deinen aktuellen Stand: Wo stehst du körperlich? Was läuft gut, was nicht? Welche Gewohnheiten sabotieren dich? Das ist die Basis für alles, was danach kommt – individuell auf dich abgestimmt.",
+      value: "149 €" 
+    },
+    { 
+      name: "Individueller Trainingsplan", 
+      subtitle: "dein physisches Fundament",
+      description: "3-4x pro Woche, jeweils 30 Minuten. Kein stundenlanger Gym-Marathon. Du bekommst genau die Übungen, die bei DIR funktionieren – abgestimmt auf deinen Körper, deine Zeit und deine Ziele. Mehr brauchst du nicht.",
+      value: "149 €" 
+    },
+    { 
+      name: "Persönliche Ernährungsstrategie & Makro-System", 
+      subtitle: "",
+      description: "Ernährung auf 1g genau – aber so, dass es in deinen Alltag passt. Keine komplizierten Rezepte, keine unrealistischen Pläne. Du weißt genau, was du essen musst, wann du es essen musst und warum. Kein Raten mehr.",
+      value: "149 €" 
+    },
+    { 
+      name: "Supplement- & Schlafoptimierung", 
+      subtitle: "",
+      description: "Die richtigen Supplements im richtigen Timing und in der richtigen Dosis. Dazu optimieren wir deinen Schlaf, denn ohne guten Schlaf funktionieren deine Hormone nicht – egal wie gut der Rest ist.",
+      value: "149 €" 
+    },
+    { 
+      name: "Mentales Upgrade & Habit-Reprogrammierung", 
+      subtitle: "",
+      description: "Disziplin ist kein Charakterzug – es ist ein System. Wir bauen die richtigen Gewohnheiten auf und eliminieren die, die dich sabotieren. So wird das Ganze automatisch, nicht anstrengend.",
+      value: "99 €" 
+    },
+    { 
+      name: "24/7 WhatsApp-Support", 
+      subtitle: "",
+      description: "Du hast eine Frage? Du bekommst eine Antwort – so einfach ist das. Keine Wartezeiten, kein „Ich melde mich nächste Woche". Du bist nicht alleine in diesem Prozess.",
+      value: "199 €" 
+    },
+    { 
+      name: "Wöchentliche Check-ins & Performance-Tracking", 
+      subtitle: "",
+      description: "Jeden Freitag kontrolliere ich deine Fortschritte. Wenn du aus der Spur kommst, bringe ich dich sofort zurück auf Kurs. Du kannst gar nicht versagen, weil ich jede Woche auf dich schaue.",
+      value: "119 €" 
+    }
   ],
   bonuses: [
-    { name: "Monatlicher Primetime-Guide", value: "Neue Hacks, sofort umsetzbar" },
-    { name: "Primetime-Channel Zugang", value: "Tägliche Impulse" },
-    { name: "Wöchentlicher Live Q&A Call", value: "Direkte Strategieberatung" },
-    { name: "Notion-Template", value: "Alles auf einen Blick" }
+    { 
+      name: "Monatlicher Primetime-Guide (PDF/Video)", 
+      description: "„Testosteron-Boost", „Kaffee-Hacks", „Low Dopamin Days", „Schlaf wie ein Tier" – du bekommst monatlich kompaktes Know-how, das du direkt umsetzen kannst. Wissenschaftlich fundiert, praxisnah, kein Bullshit.",
+      value: "69 € / Monat" 
+    },
+    { 
+      name: "Zugang zum Primetime-Channel", 
+      description: "Tägliche Impulse, neue Studien, Biohacks, Routinen und Selbstexperimente – direkt auf dein Handy. Kein Smalltalk, keine Ablenkung, nur purer Input für dein System-Upgrade.",
+      value: "39 € / Monat" 
+    },
+    { 
+      name: "Wöchentlicher Live-Q&A-Call (Zoom)", 
+      description: "Einmal pro Woche direkte Strategieberatung mit mir. Du hast Fragen? Ich liefere dir die Antworten – klar, direkt und sofort umsetzbar.",
+      value: "59 € / Monat" 
+    },
+    { 
+      name: "Notion-Template & Tracking-Dashboard", 
+      description: "Alles auf einen Blick: Makros, Schlaf, Fortschritt, Ziele, Check-ins. Strukturiert, fokussiert und messbar – du siehst immer genau, wo du stehst.",
+      value: "39 € (einmalig)" 
+    }
   ],
+  bonusTotal: "≈ 206 € / Monat",
+  bonusNote: "Du bekommst alles kostenlos dazu – nur solange Plätze verfügbar sind.",
   highlights: [
-    "Monatlich kündbar",
-    "Kein Vertrag, keine Falle",
+    "Jederzeit kündbar",
+    "Keine Mindestlaufzeit",
     "30-Tage Garantie"
-  ]
+  ],
+  scarcity: "Nur 10 Plätze pro Monat – jederzeit kündbar"
 };
 
 export const coachData = {
+  badge: "WER DAHINTER STECKT",
   name: "Arseni",
   title: "Der Typ, der selbst durchmusste",
   image: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a84fc9d4f73fdc20a7_91008DB6-EF45-4878-BA4F-626D57B02FDD.webp",
@@ -238,53 +300,61 @@ export const coachData = {
     "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a90cc98a6f33381130_IMG_9396.webp",
     "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/690455a907a142c11f6bca1a_IMG_3611.webp"
   ],
-  tagline: "Kein Guru. Kein Hochglanz-Coach. Einer, der es selbst durchgemacht hat.",
-  bio: "Ich war früher genau da, wo du jetzt bist. Übergewicht. Hormone im Eimer. Testosteron zu niedrig, Cortisol zu hoch. Jeden Morgen gerädert aufgewacht. Nachmittags tot. Ich habe ALLES probiert. YouTube-Pläne. Supplements für hunderte Euro. Crash-Diäten. Nichts hat funktioniert – weil ich geraten habe statt zu wissen.",
+  tagline: "Kein Guru und kein Hochglanz-Coach – sondern jemand, der es selbst durchgemacht hat.",
+  bio: "Ich war früher genau da, wo du jetzt bist: Übergewicht, keine Energie und das Gefühl, dass im Körper irgendwas nicht stimmt. Mein Testosteron war zu niedrig, mein Cortisol zu hoch, und egal wie lange ich geschlafen habe, ich bin morgens gerädert aufgewacht und nachmittags komplett eingebrochen. Ich habe alles ausprobiert, was man so ausprobiert: YouTube-Pläne, Supplements für hunderte Euro und die nächste „geniale" Crash-Diät. Funktioniert hat es trotzdem nicht – weil ich am Ende immer geraten habe, statt ein System zu haben, das wirklich zu mir passt.",
   credentials: [
     "Biohacking-Ausbildung bei NextVital (staatlich geprüft)",
-    "HolisticBio-Ausbildung – ganzheitliches Biohacking",
+    "HolisticBio-Ausbildung (ganzheitliches Biohacking)",
     "10+ Jahre Coaching-Erfahrung",
     "Russischer Meister im Schwimmen (Jugend)",
     "Bayerischer Meister im Kickboxen",
     "Aktiver MMA-Leistungssportler"
   ],
-  approach: "Ich bin nicht der Coach, der dir sagt, was du hören willst. Ich bin der Typ, der dir sagt, was du tun musst. Direkt. Ohne Bullshit. Wenn du das willst – lass uns arbeiten."
+  approach: "Ich bin nicht der Coach, der dir sagt, was du hören willst. Ich bin der Typ, der dir klar sagt, was du tun musst – direkt und ohne Bullshit. Wenn du das willst, lass uns arbeiten.",
+  ctaText: "System starten"
 };
 
 export const faqData = [
   {
     question: "Ist das wieder nur Gelaber wie bei den anderen Coaches?",
-    answer: "Verstehe ich. Du hast wahrscheinlich schon Geld für Kurse ausgegeben, die nichts gebracht haben. Der Unterschied hier: Ich gebe dir nicht noch mehr Infos. Ich gebe dir ein SYSTEM. Und ich kontrolliere jede Woche, ob du es umsetzt. Wenn nicht, bringe ich dich zurück auf Kurs. Das ist der Unterschied zwischen 'Content-Creator' und Coach."
+    answer: "Verstehe ich. Viele haben schon Geld für Inhalte ausgegeben, die sich gut anhören, aber im Alltag nichts verändern. Der Unterschied hier ist nicht „noch mehr Wissen", sondern ein System, das auf dich zugeschnitten ist – inklusive sauberer Umsetzung. Du bekommst klare Schritte, wir checken regelmäßig, was funktioniert und was nicht, und ich passe das so lange an, bis es in deinem Leben läuft und Ergebnisse liefert."
   },
   {
     question: "Ich habe keine Zeit für 2h Gym jeden Tag.",
-    answer: "Brauchst du nicht. 30 Minuten Training, 3-4x pro Woche. Das war's. Der Rest ist Ernährung und Lifestyle – und das integriere ich in DEINEN Alltag, nicht umgekehrt. Schichtarbeit? Kinder? Stress-Job? Alles schon gehabt. Funktioniert trotzdem."
+    answer: "Musst du auch nicht. Wir bauen das Ganze so, dass es zu deinem Alltag passt – nicht umgekehrt. Entscheidend ist nicht, wie „perfekt" es auf dem Papier aussieht, sondern was du realistisch und konstant umsetzen kannst. Egal ob Schichtarbeit, Kinder oder Stress-Job: Wir wählen den kleinsten Aufwand, der die größte Wirkung bringt, und setzen genau dort an."
   },
   {
     question: "Funktioniert das bei MIR? Mein Körper ist anders.",
-    answer: "Genau deshalb ist es individuell. Ich kopiere nicht einen Plan für alle. Ich schaue mir DEINE Situation an. Deine Werte. Deinen Alltag. Was bei dir funktioniert, funktioniert vielleicht nicht beim nächsten. Darum ist das hier 1:1 Coaching, kein Online-Kurs."
+    answer: "Genau deshalb ist es 1:1 Coaching. Wir starten nicht mit einem Copy-Paste-Plan, sondern mit deiner Situation: Alltag, Ziele, Symptome, Routinen und – wenn sinnvoll – auch Werte. Auf dieser Basis bauen wir dein System und optimieren es, bis du merkst, dass dein Körper wieder in die richtige Richtung arbeitet."
   },
   {
     question: "297€/Monat ist viel Geld.",
-    answer: "Stimmt. Und du hast wahrscheinlich schon mehr für Gym-Abos, Supplements und Online-Kurse ausgegeben, die nichts gebracht haben. Der Unterschied: Hier bekommst du nicht nur einen Plan – du bekommst Kontrolle. Jemanden, der dafür sorgt, dass du nicht wieder scheiterst. Was kostet dich EIN weiteres Jahr ohne Ergebnisse?"
+    answer: "Ja, das ist eine Entscheidung – und die sollst du bewusst treffen. Du bezahlst hier nicht für „einen Plan", sondern dafür, dass du ein System bekommst, das zu dir passt, und dass du jemanden hast, der dich durch die Umsetzung führt und nachjustiert, wenn's hakt. Wenn du willst, kannst du es ganz nüchtern sehen: Was hat dich bisher Geld gekostet, ohne dass sich langfristig etwas geändert hat – und was wäre es dir wert, wenn es diesmal wirklich läuft?"
   },
   {
     question: "Was, wenn ich wieder versage?",
-    answer: "Kannst du nicht. Ich kontrolliere jede Woche. Wenn du aus der Spur kommst, merke ich das – und wir korrigieren. Du bist nicht alleine. Das ist der ganze Punkt. Alleine hast du es schon probiert. Hat nicht funktioniert. Diesmal hast du jemanden, der dich nicht versagen lässt."
+    answer: "Dann ist das kein „Charakterproblem", sondern ein Signal, dass das System an einer Stelle noch nicht gut genug in deinen Alltag integriert ist. Genau dafür sind die Check-ins da: Wir sehen früh, wo du abrutschst, und korrigieren, bevor daraus wieder ein kompletter Abbruch wird. Du musst nicht perfekt sein – du brauchst ein System, das dich auffängt und auf Kurs hält."
   },
   {
     question: "Brauche ich Supplements?",
-    answer: "Kommt drauf an. Nicht jeder braucht alles. Ich schaue mir deine Situation an und sage dir, was bei DIR Sinn macht. Kein Supplement-Verkauf, keine Affiliate-Links. Nur das, was funktioniert."
+    answer: "Nicht automatisch. Die Basis sind immer Training, Ernährung, Schlaf und Stressmanagement – und darauf bauen wir auf. Wenn Supplements bei dir Sinn ergeben, bekommst du eine klare, minimalistische Empfehlung mit Timing und Dosierung. Und wenn sie keinen Unterschied machen, lassen wir sie weg. Keine Produktverkäufe, keine Affiliate-Links – nur das, was für dich wirklich hilft."
   }
 ];
 
+export const faqOutro = {
+  text: "Noch unsicher? Dann lass uns kurz schauen, ob das überhaupt zu dir passt.",
+  primaryCta: "Ich bin bereit – 297€/Monat",
+  secondaryCta: "Erst mal mehr erfahren"
+};
+
 export const guaranteeData = {
-  title: "Die 'Nur wenn's knallt' Garantie",
-  description: "Du bist hier für Ergebnisse. Ich auch. Keine Phrasen.",
+  title: "Die „Nur wenn's knallt"-Garantie",
+  subtitle: "Du sollst in den ersten Wochen merken, dass sich wirklich etwas bewegt. Wenn das nicht passiert, übernehmen wir das – fair, transparent und ohne Diskussion.",
   points: [
-    "30 Tage dabei, keine spürbare Veränderung? Ich baue deinen Plan komplett neu auf. Kostenlos.",
-    "Immer noch nichts? Du gehst. Ohne Kosten. Ohne Drama. Ohne Kleingedrucktes.",
-    "Du bleibst nur, wenn es funktioniert. Ich will keine Kunden, die zahlen und nicht vorankommen."
+    "Wenn du nach 30 Tagen keine spürbare Veränderung hast, bauen wir dein System komplett neu auf. Das heißt: Wir schauen gemeinsam sehr konkret auf Training, Ernährung, Schlaf, Stress und Umsetzung und finden heraus, was bei dir gerade noch bremst. Danach bekommst du eine überarbeitete Version deines Systems, die besser zu deinem Alltag und deinem Körper passt – ohne Zusatzkosten.",
+    "Was „spürbare Veränderung" bedeutet, ist bei jedem Mann etwas anderes – und genau so bewerten wir es auch. Es kann zum Beispiel sein, dass du morgens leichter rauskommst, tagsüber mehr Energie hast, der Brain Fog nachlässt, du im Training wieder Leistung aufbaust oder sich Körpergefühl und Umfang sichtbar verändern. Entscheidend ist nicht, dass du „perfekt" bist, sondern dass wir eine klare Bewegung in die richtige Richtung sehen.",
+    "Und wenn es trotz Neuaufbau immer noch nicht passt, kannst du gehen. Ohne Drama, ohne Kleingedrucktes und ohne dass du dich rechtfertigen musst. Du sollst nur bleiben, wenn du wirklich merkst, dass es für dich funktioniert.",
+    "Du zahlst hier nicht dafür, „dabei zu sein", sondern dafür, voranzukommen. Wenn du Fortschritt siehst, machen wir weiter. Wenn nicht, lösen wir es sauber – so einfach ist das."
   ]
 };
 
@@ -300,24 +370,24 @@ export const footerData = {
 
 export const marqueeData = {
   row1: [
-    "Ich hatte 50 PDFs gespeichert. Nichts umgesetzt. Bis jetzt.",
-    "Testosteron +40% – ohne TRT, nur System.",
-    "Endlich weiß ich, was ICH machen muss.",
-    "30 Min Training reichen. Wer hätte das gedacht.",
-    "Mein Hausarzt sagte 'normal'. Arseni sagte 'viel zu niedrig'. Er hatte Recht.",
+    "Ich hatte 50 PDFs gespeichert, aber nichts davon umgesetzt – bis jetzt.",
+    "Mein Testosteron ist um 40% gestiegen – ohne TRT, nur durch das System.",
+    "Endlich weiß ich genau, was ICH machen muss – kein Raten mehr.",
+    "30 Minuten Training reichen aus – wer hätte das gedacht?",
+    "Mein Hausarzt sagte meine Werte sind normal, aber Arseni sagte sie sind viel zu niedrig – und er hatte Recht.",
   ],
   row2: [
-    "Brain Fog weg. Ich funktioniere wieder.",
-    "Schichtarbeit + Familie + Transformation = machbar.",
-    "Kein Raten mehr. Endlich ein System.",
-    "Ich war der Typ mit 1000 Tabs. Jetzt mache ich einfach.",
-    "15 kg runter. Mit 45. Geht also doch.",
+    "Der Brain Fog ist komplett weg und ich funktioniere endlich wieder.",
+    "Schichtarbeit, Familie und Transformation – das alles ist machbar, wenn man das richtige System hat.",
+    "Kein Raten mehr, kein Ausprobieren – endlich habe ich ein System, das funktioniert.",
+    "Ich war der Typ mit 1000 offenen Tabs und null Umsetzung – jetzt mache ich einfach.",
+    "15 Kilogramm runter mit 45 Jahren – es geht also doch.",
   ],
   row3: [
-    "Jeder Influencer sagt was anderes. Arseni sagt, was ICH tun soll.",
-    "Wöchentliche Kontrolle = ich kann nicht versagen.",
-    "Hormone gecheckt. Problem gefunden. Gelöst.",
-    "Supplements im richtigen Timing. Game Changer.",
-    "Kopf ausschalten. System folgen. Funktioniert.",
+    "Die wöchentliche Kontrolle sorgt dafür, dass ich gar nicht versagen kann.",
+    "Hormone gecheckt, Problem gefunden und gelöst – so einfach war das.",
+    "Supplements im richtigen Timing zu nehmen war ein absoluter Game Changer für mich.",
+    "Einfach den Kopf ausschalten, dem System folgen – und es funktioniert.",
+    "Jeder Influencer sagt was anderes, aber Arseni sagt mir genau, was ICH tun soll.",
   ]
 };
