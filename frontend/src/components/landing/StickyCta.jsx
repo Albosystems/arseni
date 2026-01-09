@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
-import { siteConfig, offerData } from '../../data/mock';
+import { siteConfig, stickyCtaData } from '../../data/mock';
 
 const StickyCta = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,10 +33,11 @@ const StickyCta = () => {
           <div className="flex items-center justify-between gap-4">
             {/* Price info */}
             <div className="flex-1 min-w-0">
-              <p className="text-xs text-zinc-500 mb-1">Ein System. Keine 1000 Meinungen.</p>
+              <p className="text-xs text-zinc-500 mb-1">{stickyCtaData.tagline}</p>
               <div className="flex items-baseline gap-1">
-                <span className="text-xl font-bold text-white">{offerData.price}€</span>
-                <span className="text-sm text-zinc-500">/Monat</span>
+                <span className="text-xl font-bold text-white">{stickyCtaData.price}€</span>
+                <span className="text-sm text-zinc-500">{stickyCtaData.period}</span>
+                <span className="text-xs text-zinc-600 hidden sm:inline">{stickyCtaData.suffix}</span>
               </div>
             </div>
             
@@ -46,8 +47,7 @@ const StickyCta = () => {
               className="bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,198,255,0.3)] flex-shrink-0"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <span className="hidden sm:inline">System starten</span>
-                <span className="sm:hidden">Starten</span>
+                <span>{stickyCtaData.buttonText}</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
