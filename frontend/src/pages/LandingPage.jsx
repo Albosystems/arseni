@@ -1,9 +1,8 @@
 import React from 'react';
 import HeroSection from '../components/landing/HeroSection';
+import DominoEffectSection from '../components/landing/DominoEffectSection';
 import TargetAudienceSection from '../components/landing/TargetAudienceSection';
 import TestimonialsSection from '../components/landing/TestimonialsSection';
-import DominoEffectSection from '../components/landing/DominoEffectSection';
-import MarqueeSection from '../components/landing/MarqueeSection';
 import ProblemMechanismSection from '../components/landing/ProblemMechanismSection';
 import OfferSection from '../components/landing/OfferSection';
 import ProcessSection from '../components/landing/ProcessSection';
@@ -19,34 +18,31 @@ const LandingPage = () => {
       {/* 1. Hero + CTA */}
       <HeroSection />
       
-      {/* 2. Für wen ist es? / Für wen nicht? */}
-      <TargetAudienceSection />
-      
-      {/* 3. Case Studies / Testimonials */}
-      <TestimonialsSection />
-      
-      {/* 3.5 Domino Effect Comparison */}
+      {/* 2. Switchboard - Vergleich Durchschnitt vs. Primezeit */}
       <DominoEffectSection />
       
-      {/* Mini section: Marquee Proof-Chips */}
-      <MarqueeSection />
+      {/* 3. Für wen ist es? / Für wen nicht? */}
+      <TargetAudienceSection />
       
-      {/* 4. Problem → Mechanismus */}
+      {/* 4. Case Studies / Testimonials */}
+      <TestimonialsSection />
+      
+      {/* 5. Problem → Mechanismus */}
       <ProblemMechanismSection />
       
-      {/* 5. Was du bekommst (Offer) */}
+      {/* 6. Was du bekommst (Offer) */}
       <OfferSection />
       
-      {/* 6. So läuft es ab */}
+      {/* 7. So läuft es ab */}
       <ProcessSection />
       
-      {/* 7. Über den Coach */}
+      {/* 8. Über den Coach */}
       <CoachSection />
       
       {/* Mini section: WhatsApp Contact */}
       <WhatsAppSection />
       
-      {/* 8. FAQ + Garantie */}
+      {/* 9. FAQ + Garantie */}
       <FaqSection />
       
       <Footer />
