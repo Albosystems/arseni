@@ -27,7 +27,7 @@ export const targetAudienceData = {
   sectionHeadline: "Erkennst du dich wieder?",
   sectionSubheadline: "Nicht jeder Mann passt zu diesem System. Hier siehst du, ob du dazugehörst.",
   forYou: {
-    title: "Das bist du:",
+    title: "Richtig für dich:",
     items: [
       "Du hast dir unzählige Videos angesehen und PDFs heruntergeladen – aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weißt, welche Informationen jetzt die richtigen sind.",
       "Überall hörst du etwas anderes. Ein Influencer schwört auf Keto, der nächste sagt, dass Low Carb dein Testosteron killt, und der dritte predigt intermittent Fasten. Du stehst da mit all diesen Infos und machst am Ende gar nichts.",
