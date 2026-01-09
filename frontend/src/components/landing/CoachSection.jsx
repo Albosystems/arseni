@@ -33,7 +33,7 @@ const CoachSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-[#e8a032] text-sm font-medium uppercase tracking-wider mb-4">
+          <p className="text-[#FFD700] text-sm font-medium uppercase tracking-wider mb-4">
             {coachData.badge}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
@@ -67,13 +67,6 @@ const CoachSection = () => {
                   {coachData.tagline}
                 </p>
               </div>
-
-              {/* Hover indicator */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
-                <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm font-medium">
-                  Klicken zum Vergrößern
-                </span>
-              </div>
             </div>
 
             {/* Small image gallery - clickable */}
@@ -81,7 +74,7 @@ const CoachSection = () => {
               {coachData.images.map((img, index) => (
                 <div 
                   key={index}
-                  className="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-zinc-800 hover:border-[#00c6ff]/50 transition-all cursor-pointer hover:scale-105"
+                  className="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-zinc-800 hover:border-[#4FC3F7]/50 transition-all cursor-pointer hover:scale-105"
                   onClick={() => setSelectedImage(img)}
                 >
                   <img 
@@ -101,7 +94,7 @@ const CoachSection = () => {
               <p className="text-zinc-300 text-lg leading-relaxed mb-6">
                 {coachData.bio}
               </p>
-              <blockquote className="border-l-2 border-[#e8a032] pl-4 py-2">
+              <blockquote className="border-l-2 border-[#FFD700] pl-4 py-2">
                 <p className="text-white font-medium italic text-lg">
                   &ldquo;{coachData.approach}&rdquo;
                 </p>
@@ -121,8 +114,8 @@ const CoachSection = () => {
                       key={index}
                       className="flex items-start gap-3 p-3 rounded-xl bg-zinc-900/50 border border-zinc-800/50"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-[#00c6ff]/10 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-4 h-4 text-[#00c6ff]" />
+                      <div className="w-8 h-8 rounded-lg bg-[#4FC3F7]/10 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-4 h-4 text-[#4FC3F7]" />
                       </div>
                       <span className="text-zinc-300 text-sm leading-tight">
                         {credential}
@@ -137,7 +130,7 @@ const CoachSection = () => {
             <Button 
               asChild
               size="lg"
-              className="w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
+              className="w-full sm:w-auto bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 {coachData.ctaText}
