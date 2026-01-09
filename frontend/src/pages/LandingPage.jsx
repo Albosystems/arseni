@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from '../components/landing/HeroSection';
 import TargetAudienceSection from '../components/landing/TargetAudienceSection';
 import TestimonialsSection from '../components/landing/TestimonialsSection';
+import DominoEffectSection from '../components/landing/DominoEffectSection';
 import MarqueeSection from '../components/landing/MarqueeSection';
 import ProblemMechanismSection from '../components/landing/ProblemMechanismSection';
 import OfferSection from '../components/landing/OfferSection';
@@ -14,7 +15,7 @@ import StickyCta from '../components/landing/StickyCta';
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-[#121212] text-white">
       {/* 1. Hero + CTA */}
       <HeroSection />
       
@@ -23,6 +24,10 @@ const LandingPage = () => {
       
       {/* 3. Case Studies / Testimonials */}
       <TestimonialsSection />
+      
+      {/* 3.5 Domino Effect Comparison */}
+      <DominoEffectSection />
+      
       {/* Mini section: Marquee Proof-Chips */}
       <MarqueeSection />
       
