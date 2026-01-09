@@ -1,13 +1,35 @@
-import React from 'react';
-import { Award, Dumbbell, Brain, Trophy, ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Award, Dumbbell, Brain, Trophy, ArrowRight, X } from 'lucide-react';
 import { Button } from '../ui/button';
 import { coachData, siteConfig } from '../../data/mock';
 
 const CoachSection = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   const credentialIcons = [Award, Brain, Dumbbell, Trophy, Trophy, Dumbbell];
 
   return (
     <section className="relative py-20 lg:py-32 px-6 bg-zinc-950">
+      {/* Image Lightbox Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 cursor-pointer"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white hover:bg-zinc-700 transition-colors"
+            onClick={() => setSelectedImage(null)}
+          >
+            <X className="w-6 h-6" />
+          </button>
+          <img 
+            src={selectedImage}
+            alt="Arseni"
+            className="max-w-full max-h-[90vh] object-contain rounded-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -27,11 +49,14 @@ const CoachSection = () => {
           {/* Image Side */}
           <div className="relative">
             {/* Main Image */}
-            <div className="relative rounded-3xl overflow-hidden aspect-[3/4]">
+            <div 
+              className="relative rounded-3xl overflow-hidden aspect-[3/4] cursor-pointer group"
+              onClick={() => setSelectedImage(coachData.image)}
+            >
               <img 
                 src={coachData.image}
                 alt={coachData.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -42,14 +67,22 @@ const CoachSection = () => {
                   {coachData.tagline}
                 </p>
               </div>
+
+              {/* Hover indicator */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm font-medium">
+                  Klicken zum Vergrößern
+                </span>
+              </div>
             </div>
 
-            {/* Small image gallery */}
+            {/* Small image gallery - clickable */}
             <div className="flex gap-3 mt-4 overflow-x-auto pb-2">
               {coachData.images.map((img, index) => (
                 <div 
                   key={index}
-                  className="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-zinc-800 hover:border-[#00c6ff]/50 transition-colors cursor-pointer"
+                  className="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-zinc-800 hover:border-[#00c6ff]/50 transition-all cursor-pointer hover:scale-105"
+                  onClick={() => setSelectedImage(img)}
                 >
                   <img 
                     src={img}
