@@ -14,6 +14,7 @@ const Footer = () => {
     { label: 'Disclaimer', path: '/disclaimer' },
     { label: 'Widerrufsbelehrung', path: '/widerrufsbelehrung' },
     { label: 'Cookie-Richtlinie', path: '/cookie-richtlinie' },
+    { label: 'Kontakt', path: '/kontakt' },
   ];
 
   return (
