@@ -8,8 +8,8 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex flex-col justify-center px-6 py-20 lg:py-32 overflow-hidden">
       {/* Background with Arseni image */}
       <div className="absolute inset-0">
-        {/* Dark base */}
-        <div className="absolute inset-0 bg-black" />
+        {/* Dark base - updated to #121212 */}
+        <div className="absolute inset-0 bg-[#121212]" />
         
         {/* Arseni image - positioned right side on desktop */}
         <div className="absolute right-0 top-0 bottom-0 w-full lg:w-2/3">
@@ -19,8 +19,8 @@ const HeroSection = () => {
             className="w-full h-full object-cover object-center opacity-50 lg:opacity-60"
           />
           {/* Gradient overlays for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#121212] via-[#121212]/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-[#121212]/40" />
         </div>
       </div>
       
@@ -36,11 +36,11 @@ const HeroSection = () => {
       <style>{`
         @keyframes pulse-glow {
           0%, 100% {
-            box-shadow: 0 0 20px rgba(0, 198, 255, 0.4), 0 0 40px rgba(0, 198, 255, 0.2);
+            box-shadow: 0 0 20px rgba(79, 195, 247, 0.4), 0 0 40px rgba(79, 195, 247, 0.2);
             transform: scale(1);
           }
           50% {
-            box-shadow: 0 0 30px rgba(0, 198, 255, 0.6), 0 0 60px rgba(0, 198, 255, 0.3);
+            box-shadow: 0 0 30px rgba(79, 195, 247, 0.6), 0 0 60px rgba(79, 195, 247, 0.3);
             transform: scale(1.02);
           }
         }
@@ -59,7 +59,7 @@ const HeroSection = () => {
           />
           <Button 
             asChild
-            className="bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105"
+            className="bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105"
           >
             <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
               Jetzt starten
@@ -72,7 +72,7 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-5xl mx-auto lg:mx-0 lg:ml-[10%] mt-20">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
-          <span className="w-2 h-2 rounded-full bg-[#00c6ff] animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-[#4FC3F7] animate-pulse" />
           <span className="text-sm text-zinc-400 font-medium">{heroData.badge}</span>
         </div>
 
@@ -81,9 +81,9 @@ const HeroSection = () => {
           <span className="text-white">{heroData.headline}</span>
         </h1>
         
-        {/* Subheadline with gradient */}
+        {/* Subheadline with gradient - updated colors */}
         <p className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
-          <span className="bg-gradient-to-r from-[#00c6ff] to-[#e8a032] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">
             {heroData.subheadline}
           </span>
         </p>
@@ -94,11 +94,11 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row items-start gap-4 mb-10">
           <Button 
             asChild
             size="lg"
-            className="pulse-button w-full sm:w-auto bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
+            className="pulse-button w-full sm:w-auto bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
           >
             <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               {heroData.ctaText}
@@ -115,12 +115,12 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        {/* Feature Pills */}
-        <div className="flex flex-wrap items-start gap-4 sm:gap-6">
+        {/* Feature Pills - CENTERED */}
+        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6">
           {heroData.features.map((feature, index) => (
             <div key={index} className="flex items-center gap-2 text-zinc-300">
-              <div className="w-5 h-5 rounded-full bg-[#e8a032]/20 flex items-center justify-center">
-                <Check className="w-3 h-3 text-[#e8a032]" />
+              <div className="w-5 h-5 rounded-full bg-[#FFD700]/20 flex items-center justify-center">
+                <Check className="w-3 h-3 text-[#FFD700]" />
               </div>
               <span className="text-sm font-medium">{feature}</span>
             </div>
