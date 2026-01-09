@@ -27,7 +27,7 @@ const StickyCta = () => {
   if (!isVisible || isAtBottom) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-black via-black/95 to-transparent pointer-events-none">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-[#121212] via-[#121212]/95 to-transparent pointer-events-none">
       <div className="max-w-lg mx-auto pointer-events-auto">
         <div className="bg-zinc-900/90 backdrop-blur-lg border border-zinc-800 rounded-2xl p-4 shadow-2xl shadow-black/50">
           <div className="flex items-center justify-between gap-4">
@@ -44,7 +44,7 @@ const StickyCta = () => {
             {/* CTA Button */}
             <Button 
               asChild
-              className="bg-[#00c6ff] hover:bg-[#00b4e6] text-black font-bold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,198,255,0.3)] flex-shrink-0"
+              className="bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(79,195,247,0.3)] flex-shrink-0"
             >
               <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <span>{stickyCtaData.buttonText}</span>
