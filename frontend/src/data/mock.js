@@ -414,24 +414,24 @@ export const footerData = {
 
 export const marqueeData = {
   row1: [
-    "50 PDFs gespeichert, nichts umgesetzt – bis jetzt.",
-    "Testosteron +40% – ohne TRT.",
-    "Endlich weiß ich, was ICH machen muss.",
+    "50 PDFs gespeichert, nichts umgesetzt - bis jetzt.",
+    "Testosteron +40% - ohne TRT.",
+    "Endlich weiss ich, was ICH machen muss.",
     "30 Min Training reichen aus.",
-    "Meine Werte waren „normal" – Arseni sagte: viel zu niedrig.",
+    "Meine Werte waren normal - Arseni sagte: viel zu niedrig.",
   ],
   row2: [
     "Brain Fog komplett weg.",
-    "Schichtarbeit, Familie, Transformation – machbar.",
+    "Schichtarbeit, Familie, Transformation - machbar.",
     "Endlich ein System, das funktioniert.",
-    "1000 offene Tabs, null Umsetzung – jetzt mache ich einfach.",
+    "1000 offene Tabs, null Umsetzung - jetzt mache ich einfach.",
     "15kg runter mit 45 Jahren.",
   ],
   row3: [
-    "Wöchentliche Kontrolle = kein Versagen möglich.",
-    "Hormone gecheckt, Problem gelöst.",
+    "Woechentliche Kontrolle = kein Versagen moeglich.",
+    "Hormone gecheckt, Problem geloest.",
     "Supplements im richtigen Timing = Game Changer.",
-    "Kopf aus, System folgen – funktioniert.",
+    "Kopf aus, System folgen - funktioniert.",
     "Arseni sagt mir genau, was ICH tun soll.",
   ]
 };
