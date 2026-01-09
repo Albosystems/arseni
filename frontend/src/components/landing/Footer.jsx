@@ -59,7 +59,7 @@ const Footer = () => {
             {/* Email */}
             <a 
               href={`mailto:${emailAddress}`}
-              className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#00c6ff] hover:border-[#00c6ff]/50 transition-all"
+              className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#4FC3F7] hover:border-[#4FC3F7]/50 transition-all"
               title="E-Mail"
             >
               <Mail className="w-5 h-5" />
