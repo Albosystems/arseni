@@ -359,6 +359,18 @@ export const stickyCtaData = {
   buttonText: "Los geht's"
 };
 
+export const whatsAppSectionData = {
+  headline: "Du hast noch Fragen?",
+  subheadline: "Schreibe mir einfach auf WhatsApp",
+  buttonText: "Zu WhatsApp",
+  bottomText: "Kein Chatbot. Du erreichst mich hier persönlich"
+};
+
+export const availableSpotsData = {
+  current: 8,
+  total: 10
+};
+
 export const footerData = {
   links: [
     { label: "Impressum", url: "/impressum" },
