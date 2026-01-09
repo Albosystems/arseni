@@ -13,7 +13,7 @@ export const heroData = {
   badge: "1:1 Coaching für Männer, die endlich EIN ganzes System wollen",
   headline: "Mehr Fokus. Mehr Energie. Mehr Kraft.",
   subheadline: "Schon in den ersten 30 Tagen.",
-  description: "Viele Coaches optimieren nur Training und Ernährung – aber ignorieren dabei das, was am Ende alles steuert: Hormone, Schlaf und Stress. Genau deshalb bleibt der Fortschritt aus, obwohl du \"alles richtig\" machst – hier optimieren wir das ganze System, nicht nur Kalorien.",
+  description: "Wenn Hormone, Schlaf und Stress nicht passen, bringt dir der beste Plan nichts – hier bauen wir dein System so, dass es funktioniert.",
   ctaText: "System starten",
   secondaryCta: "Ablauf ansehen",
   features: [
