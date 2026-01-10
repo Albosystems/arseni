@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
                               <img 
                                 src={testimonial.imageBefore}
                                 alt="Vorher"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover object-top"
                               />
                               <div className="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-black/70 text-xs font-medium text-zinc-300">
                                 Vorher
@@ -107,7 +107,7 @@ const TestimonialsSection = () => {
                               <img 
                                 src={testimonial.imageAfter}
                                 alt="Nachher"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover object-[center_20%]"
                               />
                               <div className="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-[#00c6ff]/90 text-xs font-medium text-black">
                                 Nachher
