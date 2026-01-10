@@ -1,10 +1,10 @@
 import React from 'react';
-import { ClipboardCheck, Rocket, HeartHandshake, ArrowRight } from 'lucide-react';
+import { ClipboardCheck, Rocket, HeartHandshake, GraduationCap, ArrowRight } from 'lucide-react';
 import { processData, siteConfig } from '../../data/mock';
 import { Button } from '../ui/button';
 
 const ProcessSection = () => {
-  const icons = [ClipboardCheck, Rocket, HeartHandshake];
+  const icons = [ClipboardCheck, Rocket, HeartHandshake, GraduationCap];
 
   return (
     <section className="relative py-20 lg:py-32 px-6 bg-zinc-950">
