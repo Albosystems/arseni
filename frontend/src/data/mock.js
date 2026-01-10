@@ -186,6 +186,12 @@ export const processData = {
       title: "Wöchentliche Kontrolle – damit du nicht wieder abrutschst",
       description: "Jede Woche prüfen wir, was funktioniert hat, wo du abgewichen bist und was wir konkret verändern, damit du wieder sauber auf Kurs bist. Du musst dabei nicht alleine herumprobieren: Wenn etwas auftaucht, klären wir es direkt per WhatsApp, bevor aus einem kleinen Fehler wieder ein kompletter Abbruch wird. Genau dafür ist die Betreuung da: Umsetzung sichern, Kurs halten, Fortschritt erzwingen.",
       duration: "Fortlaufend"
+    },
+    {
+      phase: "Wissensausbau",
+      title: "Du lernst langfristig dazu – Wissen, das bleibt",
+      description: "Im Coaching wird dir nicht nur alles vorgekaut – du verstehst mit der Zeit auch, WARUM wir bestimmte Dinge machen. Hormone, Ernährung, Training, Regeneration – du baust echtes Verständnis auf, das dir ein Leben lang bleibt. Nach dem Coaching bist du nicht abhängig, sondern eigenständig handlungsfähig.",
+      duration: "Kontinuierlich"
     }
   ]
 };
