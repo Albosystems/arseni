@@ -10,16 +10,16 @@ export const siteConfig = {
 };
 
 export const heroData = {
-  badge: "1:1 Coaching für Männer, die endlich EIN ganzes System wollen",
+  badge: "1:1 Coaching fur Manner, die endlich EIN ganzes System wollen",
   headline: "Mehr Fokus. Mehr Energie. Mehr Kraft.",
   subheadline: "Schon in den ersten 30 Tagen.",
-  description: "Wenn Hormone, Schlaf und Stress nicht passen, bringt dir der beste Plan nichts – hier bauen wir dein System so, dass es funktioniert.",
+  description: "Wenn Hormone, Regeneration und Stress nicht passen, bringt dir der beste Plan nichts - hier bauen wir dein System so, dass es funktioniert.",
   ctaText: "System starten",
   secondaryCta: "Ablauf ansehen",
   features: [
     "100% individuell",
     "24/7 WhatsApp-Support",
-    "Wöchentliche Kontrolle"
+    "Wochentliche Kontrolle"
   ]
 };
 
@@ -29,9 +29,9 @@ export const targetAudienceData = {
   forYou: {
     title: "Richtig für dich:",
     items: [
-      "Du hast dir unzählige Videos angesehen und PDFs heruntergeladen – aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weißt, welche Informationen jetzt die richtigen sind.",
-      "Überall hörst du etwas anderes. Ein Influencer schwört auf Keto, der nächste sagt, dass Low Carb dein Testosteron killt, und der dritte predigt intermittent Fasten. Du stehst da mit all diesen Infos und machst am Ende gar nichts.",
-      "Du schläfst eigentlich lang genug, hast aber trotzdem Brain Fog und die Müdigkeit begleiten dich den ganzen Tag. Nachmittags bist du komplett platt, und abends hast du weder Energie für deine Familie noch Lust auf Sex.",
+      "Du hast dir unzahlige Videos angesehen und PDFs heruntergeladen - aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weisst, welche Informationen jetzt die richtigen sind.",
+      "Du trainierst schon regelmasig und achtest auf deine Ernahrung - du bist also auf der richtigen Spur. Aber du merkst, dass du noch nicht dein volles Potenzial ausschopfst. Du willst nicht Durchschnitt sein, sondern in die Top-Liga aufsteigen.",
+      "Du schlafst eigentlich lang genug, hast aber trotzdem Brain Fog und die Mudigkeit begleiten dich den ganzen Tag. Nachmittags bist du komplett platt, und abends hast du weder Energie fur deine Familie noch Lust auf Sex.",
       "Dein Körper verändert sich – und nicht zum Besseren. Der Bauch wird weicher, Muskeln verschwinden langsam, und auch deine Libido ist nicht mehr das, was sie mal war. Du merkst, dass etwas nicht stimmt, aber du weißt nicht, wo du ansetzen sollst.",
       "Du willst keinen weiteren Trainingsplan oder die hundertste Meinung – du brauchst jemanden, der dir klipp und klar sagt, was du tun musst und was zu dir und deiner Situation passt."
     ]
