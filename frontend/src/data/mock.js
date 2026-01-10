@@ -29,9 +29,9 @@ export const targetAudienceData = {
   forYou: {
     title: "Richtig für dich:",
     items: [
-      "Du hast dir unzahlige Videos angesehen und PDFs heruntergeladen - aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weisst, welche Informationen jetzt die richtigen sind.",
-      "Du trainierst schon regelmasig und achtest auf deine Ernahrung - du bist also auf der richtigen Spur. Aber du merkst, dass du noch nicht dein volles Potenzial ausschopfst. Du willst nicht Durchschnitt sein, sondern in die Top-Liga aufsteigen.",
-      "Du schlafst eigentlich lang genug, hast aber trotzdem Brain Fog und die Mudigkeit begleiten dich den ganzen Tag. Nachmittags bist du komplett platt, und abends hast du weder Energie fur deine Familie noch Lust auf Sex.",
+      "Du hast dir unzählige Videos angesehen und PDFs heruntergeladen – aber am Ende des Tages setzt du nichts davon um. Nicht, weil du faul bist, sondern weil du einfach nicht weißt, welche Informationen jetzt die richtigen sind.",
+      "Du trainierst schon regelmäßig und achtest auf deine Ernährung – du bist also auf der richtigen Spur. Aber du merkst, dass du noch nicht dein volles Potenzial ausschöpfst. Du willst nicht Durchschnitt sein, sondern in die Top-Liga aufsteigen.",
+      "Du schläfst eigentlich lang genug, hast aber trotzdem Brain Fog und die Müdigkeit begleitet dich den ganzen Tag. Nachmittags bist du komplett platt, und abends hast du weder Energie für deine Familie noch Lust auf Sex.",
       "Dein Körper verändert sich – und nicht zum Besseren. Der Bauch wird weicher, Muskeln verschwinden langsam, und auch deine Libido ist nicht mehr das, was sie mal war. Du merkst, dass etwas nicht stimmt, aber du weißt nicht, wo du ansetzen sollst.",
       "Du willst keinen weiteren Trainingsplan oder die hundertste Meinung – du brauchst jemanden, der dir klipp und klar sagt, was du tun musst und was zu dir und deiner Situation passt."
     ]
