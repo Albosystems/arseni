@@ -248,8 +248,8 @@ const DominoEffectSection = () => {
               <div className="grid grid-cols-2 gap-3 sm:gap-4 relative z-10">
                 {[
                   { label: "Energie", val: Math.min(score * 1.1, 100), icon: <Battery className="w-5 h-5" />, color: "bg-[#4FC3F7]" },
-                  { label: "Fokus", val: Math.min((levers.schlaf * 0.6 + (100-levers.stress) * 0.4), 100), icon: <Brain className="w-5 h-5" />, color: "bg-indigo-500" },
-                  { label: "Körper", val: Math.min((levers.hormone * 0.7 + (100-levers.stress) * 0.3), 100), icon: <Dumbbell className="w-5 h-5" />, color: "bg-orange-500" },
+                  { label: "Fokus", val: Math.min((levers.ernaehrung * 0.5 + (100-levers.stress) * 0.5), 100), icon: <Brain className="w-5 h-5" />, color: "bg-indigo-500" },
+                  { label: "Korper", val: Math.min((levers.hormone * 0.4 + levers.training * 0.4 + levers.ernaehrung * 0.2), 100), icon: <Dumbbell className="w-5 h-5" />, color: "bg-orange-500" },
                   { label: "Drive", val: Math.min(score, 100), icon: <Zap className="w-5 h-5" />, color: "bg-[#FFD700]" }
                 ].map(res => (
                   <div key={res.label} className="p-4 bg-zinc-950/80 rounded-xl border border-zinc-800/50 text-center">
