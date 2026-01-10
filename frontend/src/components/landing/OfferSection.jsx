@@ -99,6 +99,10 @@ const OfferSection = () => {
                   </div>
                 ))}
               </div>
+              {/* Zwischensumme für normale Dienstleistungen */}
+              <p className="text-zinc-500 text-sm mt-4 text-center">
+                Gesamtwert Coaching: <span className="text-[#4FC3F7] font-semibold">{offerData.featuresTotal}</span>
+              </p>
             </div>
 
             {/* Bonuses */}
