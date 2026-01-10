@@ -1,5 +1,4 @@
 import React from 'react';
-import { Instagram } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -45,33 +44,20 @@ const FaqSection = () => {
           ))}
         </Accordion>
 
-        {/* Final CTA */}
+        {/* Final CTA - nur ein Button, keine Instagram-Weiterleitung */}
         <div className="mt-16 text-center">
           <p className="text-zinc-400 mb-6">
             {faqOutro.text}
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              asChild
-              size="lg"
-              className="w-full sm:w-auto bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(79,195,247,0.3)]"
-            >
-              <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
-                {faqOutro.primaryCta}
-              </a>
-            </Button>
-            <Button 
-              asChild
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto border-zinc-700 text-white hover:bg-white/5 px-8 py-6 rounded-xl"
-            >
-              <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Instagram className="w-5 h-5" />
-                {faqOutro.secondaryCta}
-              </a>
-            </Button>
-          </div>
+          <Button 
+            asChild
+            size="lg"
+            className="w-full sm:w-auto bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(79,195,247,0.3)]"
+          >
+            <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer">
+              {faqOutro.primaryCta}
+            </a>
+          </Button>
         </div>
       </div>
     </section>
