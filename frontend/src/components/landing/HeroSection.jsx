@@ -16,7 +16,7 @@ const HeroSection = () => {
           <img 
             src="https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/695d8f92d5b4836e15d374ce.jpeg"
             alt="Arseni"
-            className="w-full h-full object-cover object-center opacity-50 lg:opacity-60"
+            className="w-full h-full object-cover object-top opacity-50 lg:opacity-60"
           />
           {/* Gradient overlays for text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#121212] via-[#121212]/70 to-transparent" />
@@ -115,8 +115,8 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        {/* Feature Pills - CENTERED */}
-        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+        {/* Feature Pills - LEFT on desktop, CENTER on mobile */}
+        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6">
           {heroData.features.map((feature, index) => (
             <div key={index} className="flex items-center gap-2 text-zinc-300">
               <div className="w-5 h-5 rounded-full bg-[#FFD700]/20 flex items-center justify-center">
