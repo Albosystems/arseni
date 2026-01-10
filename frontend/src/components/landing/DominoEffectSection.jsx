@@ -118,32 +118,32 @@ const DominoEffectSection = () => {
               </div>
               
               <div className="space-y-4">
-                {/* Schlaf */}
+                {/* Hormonbalance - FIRST */}
                 <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="flex items-center gap-2 text-sm font-medium">
-                      <Moon className="w-4 h-4 text-indigo-400" /> 
-                      Schlaf-Qualität
+                      <Thermometer className="w-4 h-4 text-pink-400" /> 
+                      Hormonbalance
                     </span>
                     <span className={`font-mono text-sm font-bold transition-colors ${
-                      levers.schlaf > 70 ? 'text-[#4FC3F7]' : levers.schlaf > 40 ? 'text-[#FFD700]' : 'text-red-400'
+                      levers.hormone > 70 ? 'text-[#4FC3F7]' : levers.hormone > 40 ? 'text-[#FFD700]' : 'text-red-400'
                     }`}>
-                      {levers.schlaf}%
+                      {levers.hormone}%
                     </span>
                   </div>
                   <input 
-                    type="range" 
+                    type="range"
                     min="0"
-                    max="100"
-                    value={levers.schlaf}
-                    onChange={(e) => handleLevelChange('schlaf', e.target.value)}
+                    max="100" 
+                    value={levers.hormone}
+                    onChange={(e) => handleLevelChange('hormone', e.target.value)}
                     className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer"
                     style={{
-                      background: `linear-gradient(to right, #4FC3F7 0%, #4FC3F7 ${levers.schlaf}%, #27272a ${levers.schlaf}%, #27272a 100%)`
+                      background: `linear-gradient(to right, #FFD700 0%, #FFD700 ${levers.hormone}%, #27272a ${levers.hormone}%, #27272a 100%)`
                     }}
                   />
-                  <p className={`text-xs transition-colors ${getSchlafStatus(levers.schlaf).color}`}>
-                    {getSchlafStatus(levers.schlaf).text}
+                  <p className={`text-xs transition-colors ${getHormoneStatus(levers.hormone).color}`}>
+                    {getHormoneStatus(levers.hormone).text}
                   </p>
                 </div>
 
@@ -176,32 +176,61 @@ const DominoEffectSection = () => {
                   </p>
                 </div>
 
-                {/* Hormone */}
+                {/* Ernährung - NEW */}
                 <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="flex items-center gap-2 text-sm font-medium">
-                      <Thermometer className="w-4 h-4 text-pink-400" /> 
-                      Hormon-Status
+                      <Apple className="w-4 h-4 text-green-400" /> 
+                      Ernahrung
                     </span>
                     <span className={`font-mono text-sm font-bold transition-colors ${
-                      levers.hormone > 70 ? 'text-[#4FC3F7]' : levers.hormone > 40 ? 'text-[#FFD700]' : 'text-red-400'
+                      levers.ernaehrung > 70 ? 'text-[#4FC3F7]' : levers.ernaehrung > 40 ? 'text-[#FFD700]' : 'text-red-400'
                     }`}>
-                      {levers.hormone}%
+                      {levers.ernaehrung}%
                     </span>
                   </div>
                   <input 
                     type="range"
                     min="0"
                     max="100" 
-                    value={levers.hormone}
-                    onChange={(e) => handleLevelChange('hormone', e.target.value)}
+                    value={levers.ernaehrung}
+                    onChange={(e) => handleLevelChange('ernaehrung', e.target.value)}
                     className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer"
                     style={{
-                      background: `linear-gradient(to right, #FFD700 0%, #FFD700 ${levers.hormone}%, #27272a ${levers.hormone}%, #27272a 100%)`
+                      background: `linear-gradient(to right, #22c55e 0%, #22c55e ${levers.ernaehrung}%, #27272a ${levers.ernaehrung}%, #27272a 100%)`
                     }}
                   />
-                  <p className={`text-xs transition-colors ${getHormoneStatus(levers.hormone).color}`}>
-                    {getHormoneStatus(levers.hormone).text}
+                  <p className={`text-xs transition-colors ${getErnaehrungStatus(levers.ernaehrung).color}`}>
+                    {getErnaehrungStatus(levers.ernaehrung).text}
+                  </p>
+                </div>
+
+                {/* Training - NEW */}
+                <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="flex items-center gap-2 text-sm font-medium">
+                      <Dumbbell className="w-4 h-4 text-blue-400" /> 
+                      Training
+                    </span>
+                    <span className={`font-mono text-sm font-bold transition-colors ${
+                      levers.training > 70 ? 'text-[#4FC3F7]' : levers.training > 40 ? 'text-[#FFD700]' : 'text-red-400'
+                    }`}>
+                      {levers.training}%
+                    </span>
+                  </div>
+                  <input 
+                    type="range"
+                    min="0"
+                    max="100" 
+                    value={levers.training}
+                    onChange={(e) => handleLevelChange('training', e.target.value)}
+                    className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer"
+                    style={{
+                      background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${levers.training}%, #27272a ${levers.training}%, #27272a 100%)`
+                    }}
+                  />
+                  <p className={`text-xs transition-colors ${getTrainingStatus(levers.training).color}`}>
+                    {getTrainingStatus(levers.training).text}
                   </p>
                 </div>
               </div>
