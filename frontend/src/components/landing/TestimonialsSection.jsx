@@ -91,13 +91,13 @@ const TestimonialsSection = () => {
                       /* Visual Testimonial with Images */
                       <div className="grid md:grid-cols-2 gap-0">
                         {/* Images Side */}
-                        <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[400px]">
+                        <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[350px] md:max-h-[400px]">
                           <div className="absolute inset-0 grid grid-cols-2 gap-1 p-2">
                             <div className="relative overflow-hidden rounded-xl">
                               <img 
                                 src={testimonial.imageBefore}
                                 alt="Vorher"
-                                className="w-full h-full object-cover object-top"
+                                className="w-full h-full object-cover object-[center_30%]"
                               />
                               <div className="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-black/70 text-xs font-medium text-zinc-300">
                                 Vorher
@@ -107,7 +107,7 @@ const TestimonialsSection = () => {
                               <img 
                                 src={testimonial.imageAfter}
                                 alt="Nachher"
-                                className="w-full h-full object-cover object-[center_70%] scale-110"
+                                className="w-full h-full object-cover object-[center_25%]"
                               />
                               <div className="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-[#00c6ff]/90 text-xs font-medium text-black">
                                 Nachher
