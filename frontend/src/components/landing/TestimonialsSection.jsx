@@ -107,7 +107,7 @@ const TestimonialsSection = () => {
                               <img 
                                 src={testimonial.imageAfter}
                                 alt="Nachher"
-                                className="w-full h-full object-cover object-[center_20%]"
+                                className="w-full h-full object-cover object-[center_70%] scale-110"
                               />
                               <div className="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-[#00c6ff]/90 text-xs font-medium text-black">
                                 Nachher
