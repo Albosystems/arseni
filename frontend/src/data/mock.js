@@ -422,24 +422,25 @@ export const footerData = {
 
 export const marqueeData = {
   row1: [
-    "50 PDFs gespeichert, nichts umgesetzt - bis jetzt.",
-    "Testosteron +40% - ohne TRT.",
-    "Endlich weiss ich, was ICH machen muss.",
-    "30 Min Training reichen aus.",
-    "Meine Werte waren normal - Arseni sagte: viel zu niedrig.",
+    "Nichts umgesetzt. Bis jetzt.",
+    "Testosteron +40% – ohne TRT, nur System.",
+    "Endlich weiß ich, was ICH machen muss.",
+    "30 Min Training reichen. Wer hätte das gedacht.",
+    "Mein Hausarzt sagte 'normal'. Arseni sagte 'viel zu niedrig'. Er hatte Recht.",
   ],
   row2: [
-    "Brain Fog komplett weg.",
-    "Schichtarbeit, Familie, Transformation - machbar.",
-    "Endlich ein System, das funktioniert.",
-    "1000 offene Tabs, null Umsetzung - jetzt mache ich einfach.",
-    "15kg runter mit 45 Jahren.",
+    "Brain Fog weg. Ich funktioniere wieder.",
+    "Schichtarbeit + Familie + Transformation = machbar.",
+    "Kein Raten mehr. Endlich ein System.",
+    "Ich war der Typ mit 1000 Tabs. Jetzt mache ich einfach.",
+    "15 kg runter. Mit 45. Geht also doch.",
   ],
   row3: [
-    "Woechentliche Kontrolle = kein Versagen moeglich.",
-    "Hormone gecheckt, Problem geloest.",
-    "Supplements im richtigen Timing = Game Changer.",
-    "Kopf aus, System folgen - funktioniert.",
-    "Arseni sagt mir genau, was ICH tun soll.",
+    "Hormone gecheckt. Problem gefunden. Gelöst.",
+    "Supplements im richtigen Timing. Game Changer.",
+    "Kopf ausschalten. System folgen. Funktioniert.",
+    "Wöchentliche Kontrolle = ich kann nicht versagen.",
+    "Jeder Influencer sagt was anderes. Arseni sagt, was ICH tun soll.",
+    "Ich hatte 50 PDFs gespeichert. Jetzt habe ich ein System.",
   ]
 };
