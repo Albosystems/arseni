@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { Battery, Zap, Brain, Dumbbell, Moon, Wind, Thermometer, AlertTriangle, CheckCircle2, SlidersHorizontal } from 'lucide-react';
+import { Battery, Zap, Brain, Dumbbell, Wind, Thermometer, Apple, AlertTriangle, CheckCircle2, SlidersHorizontal } from 'lucide-react';
 
 const DominoEffectSection = () => {
   // Ursachen-Werte (0-100)
   const [levers, setLevers] = useState({
-    schlaf: 90,
+    hormone: 85,
     stress: 20,
-    hormone: 85
+    ernaehrung: 85,
+    training: 90
   });
 
   const [score, setScore] = useState(85);
 
   // Berechnung des Gesamtzustands bei jeder Änderung
   useEffect(() => {
-    const avg = (levers.schlaf + (100 - levers.stress) + levers.hormone) / 3;
+    const avg = (levers.hormone + (100 - levers.stress) + levers.ernaehrung + levers.training) / 4;
     setScore(avg);
   }, [levers]);
 
@@ -23,32 +24,38 @@ const DominoEffectSection = () => {
 
   // Vordefinierte Zustände (Toggles)
   const setPrime = () => {
-    setLevers({ schlaf: 90, stress: 20, hormone: 85 });
+    setLevers({ hormone: 85, stress: 20, ernaehrung: 85, training: 90 });
   };
 
   const setAverage = () => {
-    setLevers({ schlaf: 45, stress: 75, hormone: 40 });
+    setLevers({ hormone: 40, stress: 75, ernaehrung: 45, training: 35 });
   };
 
   const isPrime = score > 65;
 
   // Status-Texte für jeden Slider
-  const getSchlafStatus = (val) => {
-    if (val < 40) return { text: "Kritisch - Cortisolspiegel steigt", color: "text-red-400" };
-    if (val < 70) return { text: "Du erholst dich, aber noch nicht zuverlässig genug.", color: "text-[#FFD700]" };
-    return { text: "Du lädst sauber auf - das ist die Basis für Fortschritt.", color: "text-[#4FC3F7]" };
+  const getHormoneStatus = (val) => {
+    if (val < 40) return { text: "Antrieb und Energie sind flach, auch wenn du alles machst.", color: "text-red-400" };
+    if (val < 70) return { text: "Es geht voran, aber dein System bremst noch.", color: "text-[#FFD700]" };
+    return { text: "Stabiler Antrieb, bessere Regeneration und mehr Drive.", color: "text-[#4FC3F7]" };
   };
 
   const getStressStatus = (val) => {
-    if (val < 40) return { text: "Dein Körper kann aufbauen und sich erholen.", color: "text-[#4FC3F7]" };
-    if (val < 70) return { text: "Fortschritt wird zäh, weil Erholung gebremst ist.", color: "text-[#FFD700]" };
+    if (val < 40) return { text: "Dein Korper kann aufbauen und sich erholen.", color: "text-[#4FC3F7]" };
+    if (val < 70) return { text: "Fortschritt wird zah, weil Erholung gebremst ist.", color: "text-[#FFD700]" };
     return { text: "Cortisol dominiert - Testosteron sinkt.", color: "text-red-400" };
   };
 
-  const getHormoneStatus = (val) => {
-    if (val < 40) return { text: "Antrieb und Energie sind flach, auch wenn du \"alles machst\".", color: "text-red-400" };
-    if (val < 70) return { text: "Es geht voran, aber dein System bremst noch.", color: "text-[#FFD700]" };
-    return { text: "Stabiler Antrieb, bessere Regeneration und mehr Drive.", color: "text-[#4FC3F7]" };
+  const getErnaehrungStatus = (val) => {
+    if (val < 40) return { text: "Nahrstoffmangel bremst Hormone und Regeneration.", color: "text-red-400" };
+    if (val < 70) return { text: "Grundversorgung da, aber noch Luft nach oben.", color: "text-[#FFD700]" };
+    return { text: "Optimale Versorgung fur maximale Performance.", color: "text-[#4FC3F7]" };
+  };
+
+  const getTrainingStatus = (val) => {
+    if (val < 40) return { text: "Zu wenig Reize - dein Korper baut ab statt auf.", color: "text-red-400" };
+    if (val < 70) return { text: "Du trainierst, aber nicht optimal fur dein Ziel.", color: "text-[#FFD700]" };
+    return { text: "Intelligentes Training mit klarer Progression.", color: "text-[#4FC3F7]" };
   };
 
   return (
