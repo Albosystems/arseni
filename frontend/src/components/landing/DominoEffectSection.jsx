@@ -181,7 +181,7 @@ const DominoEffectSection = () => {
                   <div className="flex justify-between items-center">
                     <span className="flex items-center gap-2 text-sm font-medium">
                       <Apple className="w-4 h-4 text-green-400" /> 
-                      Ernahrung
+                      Ernährung
                     </span>
                     <span className={`font-mono text-sm font-bold transition-colors ${
                       levers.ernaehrung > 70 ? 'text-[#4FC3F7]' : levers.ernaehrung > 40 ? 'text-[#FFD700]' : 'text-red-400'
