@@ -41,20 +41,20 @@ const DominoEffectSection = () => {
   };
 
   const getStressStatus = (val) => {
-    if (val < 40) return { text: "Dein Korper kann aufbauen und sich erholen.", color: "text-[#4FC3F7]" };
-    if (val < 70) return { text: "Fortschritt wird zah, weil Erholung gebremst ist.", color: "text-[#FFD700]" };
-    return { text: "Cortisol dominiert - Testosteron sinkt.", color: "text-red-400" };
+    if (val < 40) return { text: "Dein Körper kann aufbauen und sich erholen.", color: "text-[#4FC3F7]" };
+    if (val < 70) return { text: "Fortschritt wird zäh, weil Erholung gebremst ist.", color: "text-[#FFD700]" };
+    return { text: "Cortisol dominiert – Testosteron sinkt.", color: "text-red-400" };
   };
 
   const getErnaehrungStatus = (val) => {
-    if (val < 40) return { text: "Nahrstoffmangel bremst Hormone und Regeneration.", color: "text-red-400" };
+    if (val < 40) return { text: "Nährstoffmangel bremst Hormone und Regeneration.", color: "text-red-400" };
     if (val < 70) return { text: "Grundversorgung da, aber noch Luft nach oben.", color: "text-[#FFD700]" };
-    return { text: "Optimale Versorgung fur maximale Performance.", color: "text-[#4FC3F7]" };
+    return { text: "Optimale Versorgung für maximale Performance.", color: "text-[#4FC3F7]" };
   };
 
   const getTrainingStatus = (val) => {
-    if (val < 40) return { text: "Zu wenig Reize - dein Korper baut ab statt auf.", color: "text-red-400" };
-    if (val < 70) return { text: "Du trainierst, aber nicht optimal fur dein Ziel.", color: "text-[#FFD700]" };
+    if (val < 40) return { text: "Zu wenig Reize – dein Körper baut ab statt auf.", color: "text-red-400" };
+    if (val < 70) return { text: "Du trainierst, aber nicht optimal für dein Ziel.", color: "text-[#FFD700]" };
     return { text: "Intelligentes Training mit klarer Progression.", color: "text-[#4FC3F7]" };
   };
 
