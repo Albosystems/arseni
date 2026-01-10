@@ -10,16 +10,16 @@ export const siteConfig = {
 };
 
 export const heroData = {
-  badge: "1:1 Coaching fur Manner, die endlich EIN ganzes System wollen",
+  badge: "1:1 Coaching für Männer, die endlich EIN ganzes System wollen",
   headline: "Mehr Fokus. Mehr Energie. Mehr Kraft.",
   subheadline: "Schon in den ersten 30 Tagen.",
-  description: "Wenn Hormone, Regeneration und Stress nicht passen, bringt dir der beste Plan nichts - hier bauen wir dein System so, dass es funktioniert.",
+  description: "Wenn Hormone, Regeneration und Stress nicht passen, bringt dir der beste Plan nichts – hier bauen wir dein System so, dass es funktioniert.",
   ctaText: "System starten",
   secondaryCta: "Ablauf ansehen",
   features: [
     "100% individuell",
     "24/7 WhatsApp-Support",
-    "Wochentliche Kontrolle"
+    "Wöchentliche Kontrolle"
   ]
 };
 
