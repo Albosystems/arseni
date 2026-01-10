@@ -141,10 +141,10 @@ const CookieBanner = () => {
         </div>
 
         {/* Actions */}
-        <div className="p-6 pt-4 border-t border-zinc-800 flex flex-col sm:flex-row gap-3">
+        <div className="p-6 pt-4 border-t border-zinc-800 grid grid-cols-1 sm:grid-cols-3 gap-3">
           <Button
             variant="outline"
-            className="flex-1 sm:flex-initial border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
+            className="w-full border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
             onClick={() => setShowSettings(!showSettings)}
           >
             <Settings className="w-4 h-4 mr-2" />
@@ -153,7 +153,7 @@ const CookieBanner = () => {
           
           {showSettings ? (
             <Button
-              className="flex-1 sm:flex-initial bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-medium"
+              className="w-full sm:col-span-2 bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-medium"
               onClick={handleAcceptSelected}
             >
               <Check className="w-4 h-4 mr-2" />
@@ -163,13 +163,13 @@ const CookieBanner = () => {
             <>
               <Button
                 variant="outline"
-                className="flex-1 sm:flex-initial border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
+                className="w-full border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
                 onClick={handleRejectAll}
               >
                 Nur Notwendige
               </Button>
               <Button
-                className="flex-1 sm:flex-initial bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-medium"
+                className="w-full bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-medium"
                 onClick={handleAcceptAll}
               >
                 <Check className="w-4 h-4 mr-2" />
