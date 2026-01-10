@@ -7,6 +7,7 @@ import ProblemMechanismSection from '../components/landing/ProblemMechanismSecti
 import OfferSection from '../components/landing/OfferSection';
 import ProcessSection from '../components/landing/ProcessSection';
 import CoachSection from '../components/landing/CoachSection';
+import MarqueeSection from '../components/landing/MarqueeSection';
 import WhatsAppSection from '../components/landing/WhatsAppSection';
 import FaqSection from '../components/landing/FaqSection';
 import Footer from '../components/landing/Footer';
@@ -35,6 +36,9 @@ const LandingPage = () => {
       
       {/* 7. So läuft es ab */}
       <ProcessSection />
+      
+      {/* Marquee Proof Section - direkt über Coach */}
+      <MarqueeSection />
       
       {/* 8. Über den Coach */}
       <CoachSection />
