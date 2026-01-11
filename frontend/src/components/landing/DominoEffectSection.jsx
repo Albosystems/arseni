@@ -119,12 +119,12 @@ const DominoEffectSection = () => {
               </div>
               
               <div className="space-y-4">
-                {/* Hormonbalance - FIRST */}
+                {/* Hormon-Balance - FIRST */}
                 <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="flex items-center gap-2 text-sm font-medium">
                       <Thermometer className="w-4 h-4 text-pink-400" /> 
-                      Hormonbalance
+                      Hormon-Balance
                     </span>
                     <span className={`font-mono text-sm font-bold transition-colors ${
                       levers.hormone > 70 ? 'text-[#4FC3F7]' : levers.hormone > 40 ? 'text-[#FFD700]' : 'text-red-400'
