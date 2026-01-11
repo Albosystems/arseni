@@ -132,18 +132,18 @@ export const testimonialsData = [
   {
     id: 3,
     name: "Leonard",
-    role: "Calisthenics-Athlet, Student",
+    role: "Calisthenics-Athlet, Selbständig",
     imageBefore: "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/6962ea7cf13bc32b3078e502.jpg",
-    imageAfter: "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/6962ea7c98efbd3befcaa02d.jpg",
-    headline: "Endlich Muscle-Ups – nachdem ich aufgehört habe, nur aufs Training zu schauen.",
-    quote: "Ich dachte, ich muss einfach härter trainieren. Mehr Wiederholungen, mehr Sätze, mehr Volumen. Aber mein Körper hat nicht mitgespielt. Arseni hat mir gezeigt: Ohne die richtige Basis bringt das beste Training nichts.",
+    imageAfter: "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/6962ebf6c7683b0bb5839c1b.png",
+    headline: "Vom Traum zur Realität – jetzt mehrere Muscle-Ups am Stück.",
+    quote: "Ich habe trainiert wie ein Verrückter. Mehr Volumen, mehr Frequenz, mehr von allem. Aber mein Körper hat einfach nicht mitgespielt. Arseni hat mir gezeigt, dass ich an den falschen Stellschrauben gedreht habe.",
     results: [
-      "Erste Muscle-Ups geschafft",
+      "Mehrere Muscle-Ups am Stück",
       "Sichtbarer Muskelaufbau",
       "Bessere Regeneration",
       "Mehr Kraft bei weniger Training"
     ],
-    fullStory: "Ich mache seit Jahren Calisthenics und habe immer nur auf Training und Ernährung geachtet. Makros getrackt, Trainingsplan befolgt, alles nach Lehrbuch. Trotzdem kam ich nicht weiter – Muscle-Ups waren ein Traum, der Muskelaufbau stagnierte, und nach dem Training war ich tagelang platt. Ich dachte, ich muss einfach härter trainieren. Arseni hat mir dann gezeigt, dass mein Problem woanders lag: Mein Schlaf war miserabel, mein Cortisol durch die Decke (Uni-Stress), und meine Regeneration war im Eimer. Wir haben zuerst meine Basis stabilisiert – Schlafprotokoll, Stress-Management, Supplements im richtigen Timing. Erst dann haben wir das Training angepasst. Das Ergebnis? Nach 8 Wochen habe ich meinen ersten sauberen Muscle-Up geschafft. Nicht weil ich mehr trainiert habe, sondern weil mein Körper endlich das umsetzen konnte, was ich ihm abverlangt habe."
+    fullStory: "Ich mache seit Jahren Calisthenics und habe immer nur auf Training und Ernährung geachtet. Makros getrackt, Trainingsplan befolgt, alles nach Lehrbuch – sogar zu viel. Ich habe trainiert wie ein Verrückter, aber ein einziger sauberer Muscle-Up war ein Traum, der einfach nicht wahr werden wollte. Der Muskelaufbau stagnierte, und nach dem Training war ich tagelang platt. Ich dachte, ich muss einfach noch härter trainieren. Arseni hat mir dann gezeigt, dass mein Problem woanders lag: Mein Schlaf war miserabel, mein Cortisol durch die Decke (Selbständigkeit halt), und meine Regeneration war komplett im Eimer. Wir haben zuerst meine Basis stabilisiert – Schlafprotokoll, Stress-Management, Supplements im richtigen Timing. Erst dann haben wir das Training angepasst – weniger, aber smarter. Das Ergebnis? Nach ein paar Wochen habe ich nicht nur einen, sondern mehrere saubere Muscle-Ups am Stück geschafft. Der Traum wurde Realität – nicht weil ich mehr trainiert habe, sondern weil mein Körper endlich das umsetzen konnte, was ich ihm abverlangt habe."
   },
   {
     id: 4,
