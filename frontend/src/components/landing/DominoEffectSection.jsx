@@ -294,11 +294,21 @@ const DominoEffectSection = () => {
               ? 'bg-[#4FC3F7]/10 border border-[#4FC3F7]/30' 
               : 'bg-red-500/10 border border-red-500/30'
           }`}>
-            <p className={`text-sm font-medium ${isPrime ? 'text-[#4FC3F7]' : 'text-red-400'}`}>
-              {isPrime 
-                ? '→ Mit diesem Setup baust du auf - nicht ab.' 
-                : '→ Wir stabilisieren zuerst die Basis - dann greifen Training und Ernährung.'}
-            </p>
+            {isPrime ? (
+              <a 
+                href={siteConfig.stripeCheckoutUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-[#4FC3F7] hover:text-white transition-colors"
+              >
+                Mit diesem Setup baust du auf – nicht ab.
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            ) : (
+              <p className="text-sm font-medium text-red-400">
+                → Wir stabilisieren zuerst die Basis – dann greifen Training und Ernährung.
+              </p>
+            )}
           </div>
         </div>
       </div>
