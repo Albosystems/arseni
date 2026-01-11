@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Battery, Zap, Brain, Dumbbell, Wind, Thermometer, Apple, AlertTriangle, CheckCircle2, SlidersHorizontal } from 'lucide-react';
+import { Battery, Zap, Brain, Dumbbell, Wind, Thermometer, Apple, AlertTriangle, CheckCircle2, SlidersHorizontal, ArrowRight } from 'lucide-react';
+import { siteConfig } from '../../data/mock';
 
 const DominoEffectSection = () => {
   // Ursachen-Werte (0-100)
