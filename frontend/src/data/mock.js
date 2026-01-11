@@ -147,6 +147,22 @@ export const testimonialsData = [
   },
   {
     id: 4,
+    name: "Slawa",
+    role: "Unternehmer, 55 Jahre",
+    imageBefore: "https://customer-assets.emergentagent.com/job_mens-transformation/artifacts/gvy8y6ip_b472cd1c-a7d5-4486-9bfa-367154c9f4bd.jpeg",
+    imageAfter: "https://customer-assets.emergentagent.com/job_mens-transformation/artifacts/w4kiymgd_5f5f2195-2bda-4a6f-b16f-1a225aab8393.jpeg",
+    headline: "Mit 55 in der besten Form meines Lebens – das hätte ich nie für möglich gehalten.",
+    quote: "Ich dachte, mit Mitte 50 ist der Zug abgefahren. Weniger Energie, mehr Bauch, keine Lust mehr. Mein Arzt sagte: 'Das ist normal in Ihrem Alter.' Arseni hat mir gezeigt, dass das Bullshit ist.",
+    results: [
+      "Beste Form mit 55",
+      "Energie wie mit 35",
+      "Bauchfett endlich weg",
+      "Libido zurück"
+    ],
+    fullStory: "Mit 55 hatte ich mich fast damit abgefunden: Der Bauch wächst, die Energie schwindet, und die Libido war auch nicht mehr das, was sie mal war. Mein Hausarzt meinte nur: 'Das ist eben so in Ihrem Alter. Willkommen im Club.' Ich habe das jahrelang geglaubt und mich damit arrangiert. Dann bin ich auf Arseni gestoßen. Er hat mir direkt gesagt: 'Das ist nicht normal – das ist nur normal für Männer, die nichts dagegen tun.' Wir haben meine Hormone gecheckt – Testosteron war im Keller, genau wie ich mich gefühlt habe. Aber anstatt mir direkt TRT zu verschreiben, haben wir zuerst an den Grundlagen gearbeitet: Schlaf optimiert, Stress gemanagt, Ernährung angepasst und die richtigen Supplements eingeführt. Das Training haben wir so aufgebaut, dass es meinen Körper unterstützt statt ihn zu überlasten. Nach 3 Monaten war ich wie ausgewechselt: Bauchfett runter, Muskeln aufgebaut, Energie den ganzen Tag über, und auch im Schlafzimmer läuft es wieder. Ich bin jetzt mit 55 in besserer Form als mit 40. Alter ist keine Ausrede – es ist eine Frage des Systems."
+  },
+  {
+    id: 5,
     name: "Daniel",
     role: "Familienvater, Führungsposition, Schichtbetrieb",
     imageBefore: null,
