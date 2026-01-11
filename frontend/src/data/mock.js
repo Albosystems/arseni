@@ -178,7 +178,7 @@ export const testimonialsData = [
     fullStory: "Ich bin Familienvater mit drei Kindern, arbeite in einer Führungsposition im Schichtbetrieb und bin nebenberuflich noch aktiv. Meine Ausrede war immer: 'Keine Zeit.' Arseni hat das zerlegt. Du brauchst keine 2 Stunden im Gym. Du brauchst 30 Minuten – aber die RICHTIGEN 30 Minuten mit dem richtigen Plan. Im ersten Monat habe ich Fett abgebaut und Muskeln aufgebaut: Bauchumfang kleiner, Arme größer – messbar, nicht nur gefühlt. Und meine chronischen Magenprobleme sind komplett verschwunden durch die richtige Ernährung zur richtigen Zeit. Das Zeug, das ich jahrelang ignoriert habe, weil ich dachte, ich weiß es besser."
   },
   {
-    id: 5,
+    id: 6,
     name: "Alexander W.",
     role: "Trader, Kopfarbeiter",
     imageBefore: null,
