@@ -131,6 +131,22 @@ export const testimonialsData = [
   },
   {
     id: 3,
+    name: "Leonard",
+    role: "Calisthenics-Athlet, Student",
+    imageBefore: "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/6962ea7cf13bc32b3078e502.jpg",
+    imageAfter: "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/6962ea7c98efbd3befcaa02d.jpg",
+    headline: "Endlich Muscle-Ups – nachdem ich aufgehört habe, nur aufs Training zu schauen.",
+    quote: "Ich dachte, ich muss einfach härter trainieren. Mehr Wiederholungen, mehr Sätze, mehr Volumen. Aber mein Körper hat nicht mitgespielt. Arseni hat mir gezeigt: Ohne die richtige Basis bringt das beste Training nichts.",
+    results: [
+      "Erste Muscle-Ups geschafft",
+      "Sichtbarer Muskelaufbau",
+      "Bessere Regeneration",
+      "Mehr Kraft bei weniger Training"
+    ],
+    fullStory: "Ich mache seit Jahren Calisthenics und habe immer nur auf Training und Ernährung geachtet. Makros getrackt, Trainingsplan befolgt, alles nach Lehrbuch. Trotzdem kam ich nicht weiter – Muscle-Ups waren ein Traum, der Muskelaufbau stagnierte, und nach dem Training war ich tagelang platt. Ich dachte, ich muss einfach härter trainieren. Arseni hat mir dann gezeigt, dass mein Problem woanders lag: Mein Schlaf war miserabel, mein Cortisol durch die Decke (Uni-Stress), und meine Regeneration war im Eimer. Wir haben zuerst meine Basis stabilisiert – Schlafprotokoll, Stress-Management, Supplements im richtigen Timing. Erst dann haben wir das Training angepasst. Das Ergebnis? Nach 8 Wochen habe ich meinen ersten sauberen Muscle-Up geschafft. Nicht weil ich mehr trainiert habe, sondern weil mein Körper endlich das umsetzen konnte, was ich ihm abverlangt habe."
+  },
+  {
+    id: 4,
     name: "Daniel",
     role: "Familienvater, Führungsposition, Schichtbetrieb",
     imageBefore: null,
@@ -146,7 +162,7 @@ export const testimonialsData = [
     fullStory: "Ich bin Familienvater mit drei Kindern, arbeite in einer Führungsposition im Schichtbetrieb und bin nebenberuflich noch aktiv. Meine Ausrede war immer: 'Keine Zeit.' Arseni hat das zerlegt. Du brauchst keine 2 Stunden im Gym. Du brauchst 30 Minuten – aber die RICHTIGEN 30 Minuten mit dem richtigen Plan. Im ersten Monat habe ich Fett abgebaut und Muskeln aufgebaut: Bauchumfang kleiner, Arme größer – messbar, nicht nur gefühlt. Und meine chronischen Magenprobleme sind komplett verschwunden durch die richtige Ernährung zur richtigen Zeit. Das Zeug, das ich jahrelang ignoriert habe, weil ich dachte, ich weiß es besser."
   },
   {
-    id: 4,
+    id: 5,
     name: "Alexander W.",
     role: "Trader, Kopfarbeiter",
     imageBefore: null,
