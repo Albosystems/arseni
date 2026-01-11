@@ -229,7 +229,7 @@ export const offerData = {
   period: "/Monat",
   originalValue: "1.181",
   savings: "884",
-  featuresTotal: "ca. 1.004 € / Monat (+ 249 € einmalig)",
+  featuresTotal: "1.004 € / Monat (+ 249 € einmalig)",
   features: [
     { 
       name: "Performance-Onboarding", 
