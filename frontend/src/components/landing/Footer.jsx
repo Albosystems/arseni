@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Description & Social */}
           <div className="flex flex-col gap-4 max-w-sm">
             <p className="text-zinc-500 text-sm leading-relaxed">
-              1:1 Performance Coaching fur Manner, die ein komplettes System wollen - nicht noch mehr Informationen.
+              1:1 Performance Coaching für Männer, die ein komplettes System wollen – nicht noch mehr Informationen.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-3">
