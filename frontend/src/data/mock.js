@@ -312,7 +312,7 @@ export const offerData = {
       value: "49 € (einmalig)" 
     }
   ],
-  bonusTotal: "ca. 177 € / Monat",
+  bonusTotal: "78 € / Monat (+ 128 € einmalig)",
   bonusNote: "Du bekommst alles kostenlos dazu – nur solange Plätze verfügbar sind.",
   highlights: [
     "Jederzeit kündbar",
