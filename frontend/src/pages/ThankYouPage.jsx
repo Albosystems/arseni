@@ -103,14 +103,6 @@ const ThankYouPage = () => {
                 </Link>
                 <div className="hidden md:flex items-center gap-6">
                     <a 
-                        href={billingLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-xs font-medium text-zinc-500 hover:text-white transition-colors"
-                    >
-                        <CreditCard size={14} /> Abo verwalten
-                    </a>
-                    <a 
                         href={telegramLink}
                         target="_blank"
                         rel="noopener noreferrer"
