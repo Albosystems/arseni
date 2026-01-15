@@ -243,8 +243,8 @@ export const offerData = {
   price: "297",
   currency: "€",
   period: "/Monat",
-  originalValue: "1.181",
-  savings: "884",
+  originalValue: "1.082",
+  savings: "785",
   featuresTotal: "1.004 € / Monat (+ 249 € einmalig)",
   features: [
     { 
