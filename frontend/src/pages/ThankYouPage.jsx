@@ -135,17 +135,16 @@ const ThankYouPage = () => {
 
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
                         Glückwunsch!<br/>
-                        <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">Du hast die richtige Entscheidung getroffen.</span>
+                        <span className="bg-gradient-to-r from-[#4FC3F7] to-[#FFD700] bg-clip-text text-transparent">Jetzt check deine E-Mails.</span>
                     </h1>
                     
                     <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-                        Ich freue mich brutal, dich auf deinem Weg zu begleiten – und verspreche dir: 
-                        Wir werden das gemeinsam komplett rasieren und eine Transformation hinlegen, 
-                        auf die wir beide stolz sein können.
+                        Ich habe dir gerade alle wichtigen Details per E-Mail geschickt. 
+                        Schau jetzt in dein Postfach (auch im Spam-Ordner!) – dort findest du alles, was du brauchst.
                     </p>
 
                     <p className="mt-6 text-white font-medium text-lg">
-                        Erledige jetzt die folgenden 3 Schritte, damit wir loslegen können:
+                        Danach erledigst du diese 3 Schritte:
                     </p>
                 </section>
 
