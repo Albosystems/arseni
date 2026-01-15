@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import KontaktPage from "./pages/KontaktPage";
+import ThankYouPage from "./pages/ThankYouPage";
 import ImpressumPage from "./pages/legal/ImpressumPage";
 import DatenschutzPage from "./pages/legal/DatenschutzPage";
 import AGBPage from "./pages/legal/AGBPage";
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/kontakt" element={<KontaktPage />} />
+          <Route path="/danke" element={<ThankYouPage />} />
           <Route path="/impressum" element={<ImpressumPage />} />
           <Route path="/datenschutz" element={<DatenschutzPage />} />
           <Route path="/agb" element={<AGBPage />} />
