@@ -302,9 +302,9 @@ export const offerData = {
       value: "29 € / Monat" 
     },
     { 
-      name: "Wöchentlicher Live-Q&A-Call (Zoom)", 
-      description: "Einmal pro Woche direkte Strategieberatung mit mir. Du hast Fragen? Ich liefere dir die Antworten – klar, direkt und sofort umsetzbar.",
-      value: "99 € / Monat" 
+      name: "1-Monats-Strategie-Call", 
+      description: "Nach dem ersten Monat setzen wir uns zusammen: Wo stehst du? Was hat funktioniert? Wie stellen wir uns die nächsten Monate vor? Ein fokussierter Call, um deinen Fortschritt zu bewerten und die nächsten Schritte zu planen.",
+      value: "79 € (einmalig)" 
     },
     { 
       name: "Notion-Template & Tracking-Dashboard", 
