@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { 
     CheckCircle2, Zap, 
     Download, Send, BarChart3, ShieldCheck, Instagram, 
-    ArrowRight, Crown, ExternalLink, CreditCard,
+    ArrowRight, Crown, ExternalLink,
     Smartphone
 } from 'lucide-react';
 import { siteConfig, coachData } from '../data/mock';
