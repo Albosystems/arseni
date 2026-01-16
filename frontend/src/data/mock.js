@@ -148,7 +148,7 @@ export const testimonialsData = [
   {
     id: 4,
     name: "Slawa",
-    role: "Unternehmer, 55 Jahre",
+    role: "Familienvater, 55 Jahre",
     imageBefore: "https://customer-assets.emergentagent.com/job_mens-transformation/artifacts/gvy8y6ip_b472cd1c-a7d5-4486-9bfa-367154c9f4bd.jpeg",
     imageAfter: "https://customer-assets.emergentagent.com/job_mens-transformation/artifacts/w4kiymgd_5f5f2195-2bda-4a6f-b16f-1a225aab8393.jpeg",
     headline: "Mit 55 in der besten Form meines Lebens – das hätte ich nie für möglich gehalten.",
