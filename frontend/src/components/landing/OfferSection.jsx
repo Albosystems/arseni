@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { Check, ArrowRight, Shield, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '../ui/button';
-import { offerData, guaranteeData, siteConfig, availableSpotsData } from '../../data/mock';
+import { offerData, guaranteeData, siteConfig } from '../../data/mock';
 
 const OfferSection = () => {
   const [expandedFeature, setExpandedFeature] = useState(null);
   const [expandedBonus, setExpandedBonus] = useState(null);
-
-  const spotsPercentage = ((availableSpotsData.total - availableSpotsData.current) / availableSpotsData.total) * 100;
 
   return (
     <section className="relative py-20 lg:py-32 px-6 bg-[#121212]">
