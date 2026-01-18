@@ -319,7 +319,7 @@ export const offerData = {
     "Keine Mindestlaufzeit",
     "30-Tage Garantie"
   ],
-  scarcity: "Nur 10 Plätze pro Monat – jederzeit kündbar"
+  scarcity: "Limitiert auf 20 Plätze"
 };
 
 export const coachData = {
