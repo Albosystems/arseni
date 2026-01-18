@@ -109,7 +109,7 @@ export const testimonialsData = [
       "15 kg in 3 Monaten",
       "Rauchfrei nach 20 Jahren",
       "Muay-Thai Kampf gewonnen",
-      "Mit 45 Jahren"
+      "Als Unternehmer"
     ],
     fullStory: "Ich bin Unternehmer – Voclain, Innoversity, zwei Firmen aufgebaut. Aber mein Körper? Den habe ich jahrelang komplett vernachlässigt. Dabei wusste ich ALLES über Fitness: YouTube, Podcasts, Bücher, ich hatte mir alles angesehen. Trotzdem hatte ich 15kg Übergewicht, war Kettenraucher und nachmittags war ich komplett tot. Das Problem war nie das Wissen. Das Problem war, dass mir niemand gesagt hat, was ICH konkret machen soll. Arseni hat das geändert. Nicht dieses 'Finde deinen Weg'-Gelaber, sondern klare Ansagen: 'Mach genau das. Jetzt. Und am Freitag kontrolliere ich, ob du es gemacht hast.' Nach 3 Monaten war ich 15kg leichter, hatte mit dem Rauchen aufgehört (nach 20 Jahren!) und habe mich in Thailand spontan zu einem Muay-Thai-Kampf angemeldet – den ich dann auch gewonnen habe. Mit 45 Jahren. Das System funktioniert, wenn du machst, was er sagt."
   },
