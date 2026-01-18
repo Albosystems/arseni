@@ -199,19 +199,6 @@ const ThankYouPage = () => {
                     />
                 </div>
 
-                {/* Billing Link Section */}
-                <div className="max-w-xl mx-auto mb-24 p-6 rounded-2xl border border-zinc-800/50 bg-zinc-900/30 text-center">
-                    <p className="text-zinc-500 text-sm mb-3 font-medium">Abonnement & Rechnungen</p>
-                    <a 
-                        href={billingLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-[#4FC3F7] hover:underline font-medium"
-                    >
-                        Hier kannst du dein Abo jederzeit verwalten <ExternalLink size={14} />
-                    </a>
-                </div>
-
                 {/* Vertrauensbereich / Motivation */}
                 <div className="bg-zinc-900/50 rounded-3xl p-8 md:p-12 lg:p-16 border border-zinc-800/50 relative overflow-hidden">
                     {/* Background Icon */}
