@@ -186,37 +186,12 @@ const OfferSection = () => {
                 Das sind {offerData.savings}€ Ersparnis pro Monat.
               </p>
 
-              {/* Scarcity with Progress Bar */}
-              <div className="inline-flex flex-col items-center gap-3 px-6 py-5 rounded-2xl bg-[#FFD700]/10 border border-[#FFD700]/30 w-full max-w-md">
+              {/* Scarcity - Simple but noticeable */}
+              <div className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-[#FFD700]/10 border border-[#FFD700]/30">
+                <div className="w-3 h-3 bg-[#FFD700] rounded-full animate-pulse shadow-[0_0_10px_#FFD700]" />
                 <span className="text-[#FFD700] font-bold text-lg">
-                  Nur 10 Plätze pro Monat
+                  Limitiert auf 20 Plätze
                 </span>
-                
-                {/* Animated Progress Bar */}
-                <div className="w-full">
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="text-zinc-400">Aktuell verfügbar:</span>
-                    <span className="text-white font-semibold">{availableSpotsData.current}/{availableSpotsData.total} Plätze</span>
-                  </div>
-                  <div className="h-3 bg-zinc-800 rounded-full overflow-hidden relative">
-                    <div 
-                      className="h-full bg-gradient-to-r from-[#FFD700] to-[#FF6B6B] rounded-full transition-all duration-1000 relative overflow-hidden"
-                      style={{ width: `${spotsPercentage}%` }}
-                    >
-                      {/* Animated shine effect */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shimmer_2s_infinite]" 
-                           style={{ transform: 'skewX(-20deg)' }} />
-                    </div>
-                    {/* Pulsing glow at the end */}
-                    <div 
-                      className="absolute top-0 h-full w-2 bg-[#FF6B6B] rounded-full animate-pulse shadow-[0_0_8px_#FF6B6B,0_0_16px_#FF6B6B]"
-                      style={{ left: `calc(${spotsPercentage}% - 4px)` }}
-                    />
-                  </div>
-                  <p className="text-xs text-zinc-500 mt-2">
-                    {availableSpotsData.total - availableSpotsData.current} von {availableSpotsData.total} Plätzen bereits vergeben
-                  </p>
-                </div>
               </div>
               
               {/* Jederzeit kündbar - subtle below */}
