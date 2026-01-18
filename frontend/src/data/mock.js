@@ -464,7 +464,7 @@ export const marqueeData = {
     "Schichtarbeit + Familie + Transformation = machbar.",
     "Kein Raten mehr. Endlich ein System.",
     "Ich war der Typ mit 1000 Tabs. Jetzt mache ich einfach.",
-    "15 kg runter. Mit 45. Geht also doch.",
+    "15 kg runter. Geht also doch.",
   ],
   row3: [
     "Hormone gecheckt. Problem gefunden. Gelöst.",
