@@ -88,7 +88,6 @@ const ThankYouPage = () => {
     }, []);
 
     const telegramLink = "https://t.me/arseniprimezeit";
-    const billingLink = "https://billing.stripe.com/p/login/28E4gzbcrgM74ITdSO0gw00";
 
     return (
         <div className={`min-h-screen bg-[#0a0a0a] text-white transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
