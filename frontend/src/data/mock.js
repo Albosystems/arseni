@@ -103,15 +103,15 @@ export const testimonialsData = [
     role: "Unternehmer – Voclain, Innoversity",
     imageBefore: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68e90cec20dff9b72168107b_Bodybuilder%20Man.webp",
     imageAfter: "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/6962e91598efbdb5cbca6b2b.png",
-    headline: "15kg leichter, Rauchfrei nach 20 Jahren, Muay-Thai-Kampf gewonnen.",
+    headline: "15kg leichter, Rauchfrei, Muay-Thai-Kampf gewonnen.",
     quote: "Ich hatte alle Infos und wusste theoretisch alles über Ernährung. Trotzdem war ich übergewichtig, Raucher und hatte keine Energie mehr. Arseni hat mir nicht noch mehr Infos gegeben – er hat mir gesagt, was ich MACHEN soll. Jeden Tag, ohne Diskussion.",
     results: [
-      "15 kg in 3 Monaten",
-      "Rauchfrei nach 20 Jahren",
+      "15 kg abgenommen",
+      "Endlich Rauchfrei",
       "Muay-Thai Kampf gewonnen",
       "Als Unternehmer"
     ],
-    fullStory: "Ich bin Unternehmer – Voclain, Innoversity, zwei Firmen aufgebaut. Aber mein Körper? Den habe ich jahrelang komplett vernachlässigt. Dabei wusste ich ALLES über Fitness: YouTube, Podcasts, Bücher, ich hatte mir alles angesehen. Trotzdem hatte ich 15kg Übergewicht, war Kettenraucher und nachmittags war ich komplett tot. Das Problem war nie das Wissen. Das Problem war, dass mir niemand gesagt hat, was ICH konkret machen soll. Arseni hat das geändert. Nicht dieses 'Finde deinen Weg'-Gelaber, sondern klare Ansagen: 'Mach genau das. Jetzt. Und am Freitag kontrolliere ich, ob du es gemacht hast.' Nach 3 Monaten war ich 15kg leichter, hatte mit dem Rauchen aufgehört (nach 20 Jahren!) und habe mich in Thailand spontan zu einem Muay-Thai-Kampf angemeldet – den ich dann auch gewonnen habe. Das System funktioniert, wenn du machst, was er sagt."
+    fullStory: "Ich bin Unternehmer – Voclain, Innoversity, zwei Firmen aufgebaut. Aber mein Körper? Den habe ich jahrelang komplett vernachlässigt. Dabei wusste ich ALLES über Fitness: YouTube, Podcasts, Bücher, ich hatte mir alles angesehen. Trotzdem hatte ich 15kg Übergewicht, war Kettenraucher und nachmittags war ich komplett tot. Das Problem war nie das Wissen. Das Problem war, dass mir niemand gesagt hat, was ICH konkret machen soll. Arseni hat das geändert. Nicht dieses 'Finde deinen Weg'-Gelaber, sondern klare Ansagen: 'Mach genau das. Jetzt. Und am Freitag kontrolliere ich, ob du es gemacht hast.' Ich wurde 15kg leichter, habe endlich mit dem Rauchen aufgehört und mich in Thailand spontan zu einem Muay-Thai-Kampf angemeldet – den ich dann auch gewonnen habe. Das System funktioniert, wenn du machst, was er sagt."
   },
   {
     id: 2,
