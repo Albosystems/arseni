@@ -103,7 +103,7 @@ export const testimonialsData = [
     role: "Unternehmer – Voclain, Innoversity",
     imageBefore: "https://cdn.prod.website-files.com/68e7b10b3976a460110ac4d3/68e90cec20dff9b72168107b_Bodybuilder%20Man.webp",
     imageAfter: "https://storage.googleapis.com/msgsndr/lSRBjSsWvvTEe9W0zWpI/media/6962e91598efbdb5cbca6b2b.png",
-    headline: "15kg leichter, Rauchfrei nach 20 Jahren, Muay-Thai-Kampf gewonnen – mit 45.",
+    headline: "15kg leichter, Rauchfrei nach 20 Jahren, Muay-Thai-Kampf gewonnen.",
     quote: "Ich hatte alle Infos und wusste theoretisch alles über Ernährung. Trotzdem war ich übergewichtig, Raucher und hatte keine Energie mehr. Arseni hat mir nicht noch mehr Infos gegeben – er hat mir gesagt, was ich MACHEN soll. Jeden Tag, ohne Diskussion.",
     results: [
       "15 kg in 3 Monaten",
