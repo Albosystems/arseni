@@ -1,0 +1,147 @@
+import React, { useState } from 'react';
+import { Award, Dumbbell, Brain, Trophy, ArrowRight, X } from 'lucide-react';
+import { Button } from '../ui/button';
+import { coachData, siteConfig } from '../../data/mock';
+
+const CoachSection = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const credentialIcons = [Award, Brain, Dumbbell, Trophy, Trophy, Dumbbell];
+
+  return (
+    <section className="relative py-20 lg:py-32 px-6 bg-zinc-950">
+      {/* Image Lightbox Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 cursor-pointer"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white hover:bg-zinc-700 transition-colors"
+            onClick={() => setSelectedImage(null)}
+          >
+            <X className="w-6 h-6" />
+          </button>
+          <img 
+            src={selectedImage}
+            alt="Arseni"
+            className="max-w-full max-h-[90vh] object-contain rounded-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+
+      <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <p className="text-[#FFD700] text-sm font-medium uppercase tracking-wider mb-4">
+            {coachData.badge}
+          </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+            {coachData.name}
+          </h2>
+          <p className="text-zinc-400 text-lg mt-2">
+            {coachData.title}
+          </p>
+        </div>
+
+        {/* Main Content */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Image Side */}
+          <div className="relative">
+            {/* Main Image */}
+            <div 
+              className="relative rounded-3xl overflow-hidden aspect-[3/4] cursor-pointer group"
+              onClick={() => setSelectedImage(coachData.image)}
+            >
+              <img 
+                src={coachData.image}
+                alt={coachData.name}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              
+              {/* Tagline overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="text-xl lg:text-2xl font-bold text-white">
+                  {coachData.tagline}
+                </p>
+              </div>
+            </div>
+
+            {/* Small image gallery - clickable */}
+            <div className="flex gap-3 mt-4 overflow-x-auto pb-2">
+              {coachData.images.map((img, index) => (
+                <div 
+                  key={index}
+                  className="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-zinc-800 hover:border-[#4FC3F7]/50 transition-all cursor-pointer hover:scale-105"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <img 
+                    src={img}
+                    alt={`${coachData.name} ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Content Side */}
+          <div>
+            {/* Bio */}
+            <div className="mb-8">
+              <p className="text-zinc-300 text-lg leading-relaxed mb-6">
+                {coachData.bio}
+              </p>
+              <blockquote className="border-l-2 border-[#FFD700] pl-4 py-2">
+                <p className="text-white font-medium italic text-lg">
+                  &ldquo;{coachData.approach}&rdquo;
+                </p>
+              </blockquote>
+            </div>
+
+            {/* Credentials */}
+            <div className="mb-8">
+              <h4 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">
+                Qualifikationen
+              </h4>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {coachData.credentials.map((credential, index) => {
+                  const Icon = credentialIcons[index % credentialIcons.length];
+                  return (
+                    <div 
+                      key={index}
+                      className="flex items-start gap-3 p-3 rounded-xl bg-zinc-900/50 border border-zinc-800/50"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-[#4FC3F7]/10 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-4 h-4 text-[#4FC3F7]" />
+                      </div>
+                      <span className="text-zinc-300 text-sm leading-tight">
+                        {credential}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* CTA */}
+            <Button 
+              asChild
+              size="lg"
+              className="w-full sm:w-auto bg-[#4FC3F7] hover:bg-[#3AAFDF] text-black font-bold px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
+            >
+              <a href={siteConfig.stripeCheckoutUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                {coachData.ctaText}
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CoachSection;
